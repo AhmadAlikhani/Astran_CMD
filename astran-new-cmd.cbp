@@ -34,6 +34,7 @@
 			<Add option="-fexceptions" />
 		</Compiler>
 		<Unit filename="main.cpp" />
+		<Unit filename="main.h" />
 		<Unit filename="src/autocell2.cpp" />
 		<Unit filename="src/autocell2.h" />
 		<Unit filename="src/cellnetlst.cpp" />
@@ -50,6 +51,7 @@
 		<Unit filename="src/designmng.h" />
 		<Unit filename="src/draw.cpp" />
 		<Unit filename="src/draw.h" />
+		<Unit filename="src/execute_arg.cpp" />
 		<Unit filename="src/gds.cpp" />
 		<Unit filename="src/gds.h" />
 		<Unit filename="src/graphrouter.cpp" />

@@ -6,12 +6,12 @@ extern cellgen_cfg cellgen_configs;
 
 void generate_circuit(string tech, string net_list, string cellName)
 {
-    string comma = "\"";
-    string cmd = "load technology " + comma + tech + comma;
+    string back_slash = "\"";
+    string cmd = "load technology " + back_slash + tech + back_slash;
     cout<<cmd<<endl;
     design.readCommand(cmd);
 
-    cmd = "load netlist " + comma + net_list + comma;
+    cmd = "load netlist " + back_slash + net_list + back_slash;
     cout<<cmd<<endl;
     design.readCommand(cmd);
 

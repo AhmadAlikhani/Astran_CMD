@@ -4,6 +4,8 @@
  **************************************************************************/
 #include "router.h"
 
+extern string optimizer_name;
+
 Router::Router():sizeX(0), sizeY(0), sizeZ(0){}
 
 Router::~Router(){}
@@ -361,7 +363,7 @@ void Router::compactLayout(string lpSolverFile){
 		}
 	}
 
-	cpt.solve(lpSolverFile, 10000 , "cplex");
+	cpt.solve(lpSolverFile, 10000 , optimizer_name);
 
 	for (unsigned int i =0; i < geometries.size(); i++ ) {
 		int xa = cpt.getVariableVal( "x" + to_string( i ) + "a" );

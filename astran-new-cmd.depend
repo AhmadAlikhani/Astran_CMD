@@ -241,13 +241,8 @@
 1649127128 source:/home/ahmad/astran_hplp/Astran/src/verilog.cpp
 	"verilog.h"
 
-1676223753 source:/home/ahmad/Desktop/astran-new-cmd/main.cpp
-	<iostream>
-	"src/designmng.h"
-	"src/cif.h"
-	"src/interface.h"
-	"src/parser.h"
-	<vector>
+1681470805 source:/home/ahmad/Desktop/astran-new-cmd/main.cpp
+	"main.h"
 
 1675929212 source:/home/ahmad/astran_hplp/Astran/src/compaction.cpp
 	"compaction.h"
@@ -266,7 +261,7 @@
 	<regex>
 	<tgmath.h>
 
-1676117701 source:/home/ahmad/Desktop/astran-new-cmd/src/autocell2.cpp
+1681463317 source:/home/ahmad/Desktop/astran-new-cmd/src/autocell2.cpp
 	"autocell2.h"
 
 1675928201 /home/ahmad/Desktop/astran-new-cmd/src/autocell2.h
@@ -513,10 +508,10 @@
 1649127128 source:/home/ahmad/Desktop/astran-new-cmd/src/lef.cpp
 	"lef.h"
 
-1676117709 source:/home/ahmad/Desktop/astran-new-cmd/src/placer.cpp
+1681463329 source:/home/ahmad/Desktop/astran-new-cmd/src/placer.cpp
 	"placer.h"
 
-1676117714 source:/home/ahmad/Desktop/astran-new-cmd/src/router.cpp
+1681463339 source:/home/ahmad/Desktop/astran-new-cmd/src/router.cpp
 	"router.h"
 
 1649127128 source:/home/ahmad/Desktop/astran-new-cmd/src/rules.cpp
@@ -525,7 +520,7 @@
 1649127128 source:/home/ahmad/Desktop/astran-new-cmd/src/verilog.cpp
 	"verilog.h"
 
-1676150528 source:/home/ahmad/Desktop/astran-new-cmd/src/parser.cpp
+1681470865 source:/home/ahmad/Desktop/astran-new-cmd/src/parser.cpp
 	<stdio.h>
 	<fstream>
 	<istream>
@@ -540,7 +535,7 @@
 	"parser.h"
 	"interface.h"
 
-1676133589 /home/ahmad/Desktop/astran-new-cmd/src/parser.h
+1681470871 /home/ahmad/Desktop/astran-new-cmd/src/parser.h
 	<iostream>
 	"designmng.h"
 	"cif.h"
@@ -550,6 +545,17 @@
 	"designmng.h"
 	"cif.h"
 
-1676150647 source:/home/ahmad/Desktop/astran-new-cmd/src/interface.cpp
+1681410630 source:/home/ahmad/Desktop/astran-new-cmd/src/interface.cpp
 	"interface.h"
+
+1681464273 source:/home/ahmad/Desktop/astran-new-cmd/src/execute_arg.cpp
+	"../main.h"
+
+1681409863 /home/ahmad/Desktop/astran-new-cmd/main.h
+	<iostream>
+	"src/designmng.h"
+	"src/cif.h"
+	"src/interface.h"
+	"src/parser.h"
+	<vector>
 

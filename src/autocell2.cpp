@@ -4,6 +4,8 @@
  ***************************************************************************/
 #include "autocell2.h"
 
+extern string optimizer_name;
+
 AutoCell::AutoCell(): currentCell(NULL), state(0), index(0) {}
 
 AutoCell::~AutoCell() {}
@@ -797,7 +799,7 @@ bool AutoCell::compact(string lpSolverFile, int diffStretching, int griddedPoly,
     cpt.forceIntegerVar("width_gpos");
     cpt.insertLPMinVar("width", 5000);
 
-    if (!cpt.solve(lpSolverFile, timeLimit , "cplex"))
+    if (!cpt.solve(lpSolverFile, timeLimit , optimizer_name))
         return false;
 
     for (int i = 0; i < geometries.size(); i++) {

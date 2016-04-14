@@ -1,45 +1,62 @@
-#include <iostream>
-#include "src/designmng.h"
-#include "src/cif.h"
-#include "src/interface.h"
-#include "src/parser.h"
-#include <vector>
-
-
-bool On_Init();
-string execute_required_arg(int argc, char* argv[], string required_arg);
-bool execute_name_arg(int argc, char* argv[], string required_arg);
+#include"main.h"
 
 class DesignMng;
 
-using namespace std;
-
 DesignMng design;
 cellgen_cfg cellgen_configs;
+
 vector <string> name_of_cells{};
 
 string astran_path = "/home/ahmad/Desktop/astran-new-cmd";
+string cplex_path = "\"/home/ahmad/cpl/cplex/bin/x86-64_linux/cplex\"";
+string gurobi_path = "\"/opt/gurobi605/linux64/bin/gurobi_cl\"";
+string optimizer_name = "cplex";
 
 int main(int argc, char * argv[])
 {
-    cout << "Ahmad Mohammad Alikhani 4007702002" << endl;
+    std::cout << "Ahmad Mohammad Alikhani 4007702002" << endl;
 
+/************* execute technology address parameter **************/
     string tech_arg = "-tech";
     string tech = execute_required_arg(argc, argv, tech_arg);
     if(tech == "")
     {
-        cout << "tech address is null!!" <<endl;
+        std::cout << "tech address is null!!" <<endl;
         return 0;
     }
 
+/************* execute net list address parameter **************/
     string net_arg = "-net";
     string net_list = execute_required_arg(argc, argv, net_arg);
     if(net_list== "")
     {
-        cout << "net list address is null!!" <<endl;
+        std::cout << "net list address is null!!" <<endl;
         return 0;
     }
 
+/************* execute optimizer parameter **************/
+    string optimizer_arg = "-optimizer";
+    string optimizer_list = execute_required_arg(argc, argv, optimizer_arg);
+
+    if(optimizer_list == "cplex")
+    {
+        optimizer_name = "cplex";
+        change_optimizer(optimizer_name);
+        std::cout << endl << "optimizer : cplex !!" << endl;
+    }
+
+    else if(optimizer_list == "gurobi")
+    {
+        optimizer_name = "gurobi";
+        change_optimizer(optimizer_name);
+        std::cout << endl << "optimizer : gurobi !!" << endl;
+    }
+    else if(optimizer_list != "" && optimizer_list != "cplex" && optimizer_list != "gurobi")
+    {
+        optimizer_name = "cplex";
+        change_optimizer(optimizer_name);
+        std::cout << endl << "optimizer name is wrong, current optimizer : cplex !!" << endl;
+    }
 /************* generate all circuits **************/
 
     string name_arg = "-name";
@@ -47,97 +64,18 @@ int main(int argc, char * argv[])
 
   for(auto& cellName : name_of_cells)
   {
-      cout<< "generating layout for circuit : " << cellName << "  " << endl;
-
+      std::cout<< "generating layout for circuit : " << cellName << "  " << endl;
 
     if(cellName== "")
     {
-        cout << "Cell Name is null!!" <<endl;
+        std::cout << "Cell Name is null!!" <<endl;
         return 0;
     }
 
     On_Init();
     parse_cellgen_cfg();
     generate_circuit(tech, net_list, cellName);
-
-
   }
     return 0;
 }
 
-bool On_Init()
-{
-    string cmdFilename = astran_path + "/astran.cfg";
-
-    setlocale(LC_ALL, "C");
-
-    ifstream ifile(cmdFilename);
-    if ((!ifile))
-    {
-        cout << "ERROR: File \'" << cmdFilename << "\' doesn't exist" << endl;
-        return false;
-    }
-
-        DesignMng designmng;
-        string cmd;
-
-        string astran_cfg;
-        astran_cfg = "astran.cfg";
-        astran_cfg = astran_path + "/astran.cfg";
-
-        // By default load astran.cfg
-        ifstream afile(astran_cfg.c_str());
-        if (afile)
-        {
-            cmd = string("read ") + astran_cfg;
-            cout << "astran> " << cmd << endl;
-            design.readCommand(cmd);
-        }
-}
-
-string execute_required_arg(int argc, char* argv[], string required_arg)
-{
-    if(argc <= 1)
-    {
-        cout << "astran-new-cmd [-parameter] [option]"<<endl<<endl;
-        cout << "[parameter]        [option]"<<endl;
-        cout << "-tech       insert address of technology file"<<endl;
-        cout << "-net        insert address of .sp file"<<endl;
-        cout << "-name       enter name of circuit"<<endl;
-    }
-    for(int index= 0; index< argc; index++)
-    {
-        if(argv[index] == required_arg)
-        {
-            return string(argv[index+1]);
-        }
-
-    }
-    return string("");
-}
-
-
-bool execute_name_arg(int argc, char* argv[], string required_arg)
-{
-      if(argc <= 1)
-    {
-        cout << "astran-new-cmd [-parameter] [option]"<<endl<<endl;
-        cout << "[parameter]        [option]"<<endl;
-        cout << "-tech       insert address of technology file"<<endl;
-        cout << "-net        insert address of .sp file"<<endl;
-        cout << "-name       enter name of circuit"<<endl;
-    }
-    for(int index= 0; index < argc; index++)
-    {
-        if(argv[index] == required_arg)
-        {
-            for(int j = index + 1; (j < argc) && (argv[j] != string("-name")); j++)
-            {
-                name_of_cells.emplace_back(string(argv[j]));
-            }
-            return 1;
-        }
-    }
-    name_of_cells.clear();
-    return 0;
-}

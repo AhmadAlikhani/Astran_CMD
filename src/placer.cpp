@@ -9,6 +9,8 @@
 
 #include "placer.h"
 
+extern string optimizer_name;
+
 Placer::Placer():nrSites(0), utilization(100){};
 
 int Placer::getHSize(){
@@ -119,7 +121,7 @@ void Placer::incrementalPlacement(Router* rt, string lpSolverFile){
 			cpt.insertLPMinVar("N_"+ nets_it->name+"_COMPACT");
 		}
 	}
-	cpt.solve(lpSolverFile, 10000 , "cplex");
+	cpt.solve(lpSolverFile, 10000 , optimizer_name);
 
 	map<string, Instance> *cellsInsts=currentCircuit->getLayout(currentCircuit->getTopCell() + "_PL")->getInstances();
 	for(map<string, Instance>::iterator cellsInst_it=cellsInsts->begin(); cellsInst_it!=cellsInsts->end(); cellsInst_it++)

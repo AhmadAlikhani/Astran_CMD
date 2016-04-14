@@ -14,12 +14,14 @@
 #include "interface.h"
 
 extern string astran_path;
+extern string cplex_path;
+extern string gurobi_path;
 extern cellgen_cfg cellgen_configs;
 
 void parse_cellgen_cfg()
 {
-
-    FILE* cellgen_cfg_file = fopen("/home/ahmad/Desktop/astran-new-cmd/cellgen_cfg.txt", "r");
+string path = astran_path + "/cellgen_cfg.txt";
+    FILE* cellgen_cfg_file = fopen(path.c_str(), "r");
 
     char line[150];
 
@@ -32,17 +34,6 @@ void parse_cellgen_cfg()
         string config_param_non = s_line2.erase(0 , start+1);
         int last_enter = config_param_non.find('\n');
         string config_param = config_param_non.erase(last_enter);
-
-
-/*
-        for(int i = 0; (char)config_param[i] != NULL; i++)
-        {
-            if(config_param[i] == '\n')
-                config_param[i] = NULL;
-        }
-*/
-
-        //string config_param = config_param_non.erase(sizeof(config_param_non)-1,sizeof(config_param_non));
 
         if(config_name == "conservative_gen")
             {
@@ -194,4 +185,40 @@ void parse_cellgen_cfg()
         cout<<"experimental "<<cellgen_configs.experimental<<endl;
         cout<<"debug "<<cellgen_configs.debug<<endl;
         cout<<"time_limit "<<cellgen_configs.time_limit<<endl;
+}
+
+void change_optimizer(string optimizer_name)
+{
+    vector <string> lines;
+    string path = astran_path + "/astran.cfg";
+    FILE* astran_cfg_file = fopen(path.c_str(), "r+");
+
+    char line[350];
+    while(fgets(line, 350, astran_cfg_file))
+    {
+        string s_line1 = string(line);
+
+        std::string::size_type position = 1000;
+        position =s_line1.find("lpsolve");
+
+        if(position < 350)
+        {
+            position += 8;
+            string corrected_line = "set lpsolve ";
+            corrected_line += (optimizer_name == "gurobi") ? gurobi_path : cplex_path;
+            lines.push_back(corrected_line);
+        }
+        else
+        {
+            lines.push_back(s_line1);
+        }
+    }
+    fclose(astran_cfg_file);
+
+    FILE* astran_cfg = fopen(path.c_str(), "w+");
+    for(auto& temp : lines)
+    {
+        fputs(temp.c_str(), astran_cfg);
+    }
+    fclose(astran_cfg);
 }
