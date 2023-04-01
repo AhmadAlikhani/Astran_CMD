@@ -1,0 +1,555 @@
+# depslib dependency file v1.0
+1661333746 source:/home/ahmad/astran_hplp/Astran/src/autocell2.cpp
+	"autocell2.h"
+
+1675928201 /home/ahmad/astran_hplp/Astran/src/autocell2.h
+	<vector>
+	<sstream>
+	<iterator>
+	<time.h>
+	<memory>
+	"clayout.h"
+	"draw.h"
+	"rules.h"
+	"circuit.h"
+	"graphrouter.h"
+	"compaction.h"
+	"util.h"
+
+1675928191 /home/ahmad/astran_hplp/Astran/src/clayout.h
+	"draw.h"
+	"util.h"
+
+1649127128 /home/ahmad/astran_hplp/Astran/src/draw.h
+	<string>
+	<map>
+	<list>
+	"rules.h"
+	"util.h"
+
+1649127128 /home/ahmad/astran_hplp/Astran/src/rules.h
+	<iostream>
+	<fstream>
+	<strstream>
+	<string>
+	<math.h>
+	"util.h"
+
+1675928645 /home/ahmad/astran_hplp/Astran/src/util.h
+	<sstream>
+	<fstream>
+	<string>
+	<iostream>
+	<algorithm>
+	<map>
+	<algorithm>
+
+1649127128 /home/ahmad/astran_hplp/Astran/src/circuit.h
+	<list>
+	<map>
+	<string>
+	<strstream>
+	"cellnetlst.h"
+	"clayout.h"
+
+1675928198 /home/ahmad/astran_hplp/Astran/src/cellnetlst.h
+	<vector>
+	<list>
+	<map>
+	<string>
+	<iostream>
+	<strstream>
+	<sstream>
+	"math.h"
+	"thresholdaccept.h"
+	"util.h"
+
+1649127128 /home/ahmad/astran_hplp/Astran/src/thresholdaccept.h
+	<iostream>
+	<vector>
+	<math.h>
+	<ctime>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1649127128 /home/ahmad/astran_hplp/Astran/src/graphrouter.h
+	<vector>
+	<list>
+	<queue>
+	<map>
+	<iostream>
+	<strstream>
+	<time.h>
+	"util.h"
+
+1661333768 /home/ahmad/astran_hplp/Astran/src/compaction.h
+	<map>
+	<string>
+	<vector>
+	<fstream>
+	<iostream>
+	<sstream>
+	<stdio.h>
+	<stdlib.h>
+	"util.h"
+
+1649127128 source:/home/ahmad/astran_hplp/Astran/src/cif.cpp
+	"cif.h"
+
+1675928194 /home/ahmad/astran_hplp/Astran/src/cif.h
+	<fstream>
+	<iostream>
+	<time.h>
+	<map>
+	<list>
+	"clayout.h"
+	"util.h"
+	"rules.h"
+
+1649127128 source:/home/ahmad/astran_hplp/Astran/src/circuit.cpp
+	"circuit.h"
+
+1649127128 source:/home/ahmad/astran_hplp/Astran/src/clayout.cpp
+	"clayout.h"
+
+1649127128 source:/home/ahmad/astran_hplp/Astran/src/designmng.cpp
+	"designmng.h"
+
+1649127128 /home/ahmad/astran_hplp/Astran/src/designmng.h
+	<list>
+	<vector>
+	<string>
+	"clayout.h"
+	"circuit.h"
+	"draw.h"
+	"router.h"
+	"util.h"
+	"placer.h"
+	"spice.h"
+	"rules.h"
+	"autocell2.h"
+	"verilog.h"
+	"cif.h"
+	"lef.h"
+	"gds.h"
+
+1675928678 /home/ahmad/astran_hplp/Astran/src/router.h
+	<vector>
+	<list>
+	<queue>
+	<iostream>
+	<strstream>
+	<fstream>
+	<time.h>
+	"circuit.h"
+	"gridrouter.h"
+	"compaction.h"
+
+1649127128 /home/ahmad/astran_hplp/Astran/src/gridrouter.h
+	<vector>
+	<list>
+	<queue>
+	<map>
+	<iostream>
+	<strstream>
+	<fstream>
+	<time.h>
+	<math.h>
+	<stdlib.h>
+	"util.h"
+
+1649127128 /home/ahmad/astran_hplp/Astran/src/placer.h
+	<vector>
+	<list>
+	"circuit.h"
+	"compaction.h"
+	"router.h"
+
+1649127128 /home/ahmad/astran_hplp/Astran/src/spice.h
+	<iostream>
+	<fstream>
+	<strstream>
+	<string>
+	"circuit.h"
+	"util.h"
+
+1649127128 /home/ahmad/astran_hplp/Astran/src/verilog.h
+	<map>
+	<vector>
+	<string>
+	<iostream>
+	<fstream>
+	<strstream>
+	"util.h"
+	"circuit.h"
+
+1649127128 /home/ahmad/astran_hplp/Astran/src/lef.h
+	<iostream>
+	<fstream>
+	<strstream>
+	<string>
+	"circuit.h"
+	"rules.h"
+	"clayout.h"
+	"util.h"
+	<iomanip>
+
+1649127128 /home/ahmad/astran_hplp/Astran/src/gds.h
+	<fstream>
+	<string>
+	<vector>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<time.h>
+	"util.h"
+
+1649127128 source:/home/ahmad/astran_hplp/Astran/src/draw.cpp
+	"draw.h"
+
+1649127128 source:/home/ahmad/astran_hplp/Astran/src/gds.cpp
+	"gds.h"
+	<cstdlib>
+	<iostream>
+	<string>
+	<cstdio>
+	<time.h>
+
+1649127128 source:/home/ahmad/astran_hplp/Astran/src/graphrouter.cpp
+	"graphrouter.h"
+
+1649127128 source:/home/ahmad/astran_hplp/Astran/src/lef.cpp
+	"lef.h"
+
+1675928767 source:/home/ahmad/astran_hplp/Astran/src/cellnetlst.cpp
+	"cellnetlst.h"
+	<algorithm>
+
+1661334066 source:/home/ahmad/astran_hplp/Astran/src/placer.cpp
+	"placer.h"
+
+1675928775 source:/home/ahmad/astran_hplp/Astran/src/gridrouter.cpp
+	"gridrouter.h"
+
+1661334018 source:/home/ahmad/astran_hplp/Astran/src/router.cpp
+	"router.h"
+
+1649127128 source:/home/ahmad/astran_hplp/Astran/src/rules.cpp
+	"rules.h"
+
+1649127128 source:/home/ahmad/astran_hplp/Astran/src/verilog.cpp
+	"verilog.h"
+
+1676223753 source:/home/ahmad/Desktop/astran-new-cmd/main.cpp
+	<iostream>
+	"src/designmng.h"
+	"src/cif.h"
+	"src/interface.h"
+	"src/parser.h"
+	<vector>
+
+1675929212 source:/home/ahmad/astran_hplp/Astran/src/compaction.cpp
+	"compaction.h"
+	<iostream>
+	<stdio.h>
+	<fstream>
+	<istream>
+	<map>
+	<string>
+	<vector>
+	<fstream>
+	<iostream>
+	<sstream>
+	<stdio.h>
+	<stdlib.h>
+	<regex>
+	<tgmath.h>
+
+1676117701 source:/home/ahmad/Desktop/astran-new-cmd/src/autocell2.cpp
+	"autocell2.h"
+
+1675928201 /home/ahmad/Desktop/astran-new-cmd/src/autocell2.h
+	<vector>
+	<sstream>
+	<iterator>
+	<time.h>
+	<memory>
+	"clayout.h"
+	"draw.h"
+	"rules.h"
+	"circuit.h"
+	"graphrouter.h"
+	"compaction.h"
+	"util.h"
+
+1675928191 /home/ahmad/Desktop/astran-new-cmd/src/clayout.h
+	"draw.h"
+	"util.h"
+
+1649127128 /home/ahmad/Desktop/astran-new-cmd/src/draw.h
+	<string>
+	<map>
+	<list>
+	"rules.h"
+	"util.h"
+
+1649127128 /home/ahmad/Desktop/astran-new-cmd/src/rules.h
+	<iostream>
+	<fstream>
+	<strstream>
+	<string>
+	<math.h>
+	"util.h"
+
+1675928645 /home/ahmad/Desktop/astran-new-cmd/src/util.h
+	<sstream>
+	<fstream>
+	<string>
+	<iostream>
+	<algorithm>
+	<map>
+	<algorithm>
+
+1649127128 /home/ahmad/Desktop/astran-new-cmd/src/circuit.h
+	<list>
+	<map>
+	<string>
+	<strstream>
+	"cellnetlst.h"
+	"clayout.h"
+
+1675928198 /home/ahmad/Desktop/astran-new-cmd/src/cellnetlst.h
+	<vector>
+	<list>
+	<map>
+	<string>
+	<iostream>
+	<strstream>
+	<sstream>
+	"math.h"
+	"thresholdaccept.h"
+	"util.h"
+
+1649127128 /home/ahmad/Desktop/astran-new-cmd/src/thresholdaccept.h
+	<iostream>
+	<vector>
+	<math.h>
+	<ctime>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1649127128 /home/ahmad/Desktop/astran-new-cmd/src/graphrouter.h
+	<vector>
+	<list>
+	<queue>
+	<map>
+	<iostream>
+	<strstream>
+	<time.h>
+	"util.h"
+
+1661333768 /home/ahmad/Desktop/astran-new-cmd/src/compaction.h
+	<map>
+	<string>
+	<vector>
+	<fstream>
+	<iostream>
+	<sstream>
+	<stdio.h>
+	<stdlib.h>
+	"util.h"
+
+1675928767 source:/home/ahmad/Desktop/astran-new-cmd/src/cellnetlst.cpp
+	"cellnetlst.h"
+	<algorithm>
+
+1649127128 source:/home/ahmad/Desktop/astran-new-cmd/src/cif.cpp
+	"cif.h"
+
+1675928194 /home/ahmad/Desktop/astran-new-cmd/src/cif.h
+	<fstream>
+	<iostream>
+	<time.h>
+	<map>
+	<list>
+	"clayout.h"
+	"util.h"
+	"rules.h"
+
+1649127128 source:/home/ahmad/Desktop/astran-new-cmd/src/circuit.cpp
+	"circuit.h"
+
+1649127128 source:/home/ahmad/Desktop/astran-new-cmd/src/clayout.cpp
+	"clayout.h"
+
+1676121689 source:/home/ahmad/Desktop/astran-new-cmd/src/compaction.cpp
+	"compaction.h"
+	<iostream>
+	<stdio.h>
+	<fstream>
+	<istream>
+	<map>
+	<string>
+	<vector>
+	<fstream>
+	<iostream>
+	<sstream>
+	<stdio.h>
+	<stdlib.h>
+	<regex>
+	<tgmath.h>
+
+1649127128 source:/home/ahmad/Desktop/astran-new-cmd/src/designmng.cpp
+	"designmng.h"
+
+1649127128 /home/ahmad/Desktop/astran-new-cmd/src/designmng.h
+	<list>
+	<vector>
+	<string>
+	"clayout.h"
+	"circuit.h"
+	"draw.h"
+	"router.h"
+	"util.h"
+	"placer.h"
+	"spice.h"
+	"rules.h"
+	"autocell2.h"
+	"verilog.h"
+	"cif.h"
+	"lef.h"
+	"gds.h"
+
+1675928678 /home/ahmad/Desktop/astran-new-cmd/src/router.h
+	<vector>
+	<list>
+	<queue>
+	<iostream>
+	<strstream>
+	<fstream>
+	<time.h>
+	"circuit.h"
+	"gridrouter.h"
+	"compaction.h"
+
+1649127128 /home/ahmad/Desktop/astran-new-cmd/src/gridrouter.h
+	<vector>
+	<list>
+	<queue>
+	<map>
+	<iostream>
+	<strstream>
+	<fstream>
+	<time.h>
+	<math.h>
+	<stdlib.h>
+	"util.h"
+
+1649127128 /home/ahmad/Desktop/astran-new-cmd/src/placer.h
+	<vector>
+	<list>
+	"circuit.h"
+	"compaction.h"
+	"router.h"
+
+1649127128 /home/ahmad/Desktop/astran-new-cmd/src/spice.h
+	<iostream>
+	<fstream>
+	<strstream>
+	<string>
+	"circuit.h"
+	"util.h"
+
+1649127128 /home/ahmad/Desktop/astran-new-cmd/src/verilog.h
+	<map>
+	<vector>
+	<string>
+	<iostream>
+	<fstream>
+	<strstream>
+	"util.h"
+	"circuit.h"
+
+1649127128 /home/ahmad/Desktop/astran-new-cmd/src/lef.h
+	<iostream>
+	<fstream>
+	<strstream>
+	<string>
+	"circuit.h"
+	"rules.h"
+	"clayout.h"
+	"util.h"
+	<iomanip>
+
+1649127128 /home/ahmad/Desktop/astran-new-cmd/src/gds.h
+	<fstream>
+	<string>
+	<vector>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<time.h>
+	"util.h"
+
+1649127128 source:/home/ahmad/Desktop/astran-new-cmd/src/draw.cpp
+	"draw.h"
+
+1649127128 source:/home/ahmad/Desktop/astran-new-cmd/src/gds.cpp
+	"gds.h"
+	<cstdlib>
+	<iostream>
+	<string>
+	<cstdio>
+	<time.h>
+
+1649127128 source:/home/ahmad/Desktop/astran-new-cmd/src/graphrouter.cpp
+	"graphrouter.h"
+
+1675928775 source:/home/ahmad/Desktop/astran-new-cmd/src/gridrouter.cpp
+	"gridrouter.h"
+
+1649127128 source:/home/ahmad/Desktop/astran-new-cmd/src/lef.cpp
+	"lef.h"
+
+1676117709 source:/home/ahmad/Desktop/astran-new-cmd/src/placer.cpp
+	"placer.h"
+
+1676117714 source:/home/ahmad/Desktop/astran-new-cmd/src/router.cpp
+	"router.h"
+
+1649127128 source:/home/ahmad/Desktop/astran-new-cmd/src/rules.cpp
+	"rules.h"
+
+1649127128 source:/home/ahmad/Desktop/astran-new-cmd/src/verilog.cpp
+	"verilog.h"
+
+1676150528 source:/home/ahmad/Desktop/astran-new-cmd/src/parser.cpp
+	<stdio.h>
+	<fstream>
+	<istream>
+	<map>
+	<string>
+	<vector>
+	<fstream>
+	<iostream>
+	<sstream>
+	<stdio.h>
+	<stdlib.h>
+	"parser.h"
+	"interface.h"
+
+1676133589 /home/ahmad/Desktop/astran-new-cmd/src/parser.h
+	<iostream>
+	"designmng.h"
+	"cif.h"
+
+1676146593 /home/ahmad/Desktop/astran-new-cmd/src/interface.h
+	<iostream>
+	"designmng.h"
+	"cif.h"
+
+1676150647 source:/home/ahmad/Desktop/astran-new-cmd/src/interface.cpp
+	"interface.h"
+

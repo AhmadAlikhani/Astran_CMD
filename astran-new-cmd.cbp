@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="astran-new-cmd" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/astran-new-cmd" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/astran-new-cmd" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-std=c17" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="main.cpp" />
+		<Unit filename="src/autocell2.cpp" />
+		<Unit filename="src/autocell2.h" />
+		<Unit filename="src/cellnetlst.cpp" />
+		<Unit filename="src/cellnetlst.h" />
+		<Unit filename="src/cif.cpp" />
+		<Unit filename="src/cif.h" />
+		<Unit filename="src/circuit.cpp" />
+		<Unit filename="src/circuit.h" />
+		<Unit filename="src/clayout.cpp" />
+		<Unit filename="src/clayout.h" />
+		<Unit filename="src/compaction.cpp" />
+		<Unit filename="src/compaction.h" />
+		<Unit filename="src/designmng.cpp" />
+		<Unit filename="src/designmng.h" />
+		<Unit filename="src/draw.cpp" />
+		<Unit filename="src/draw.h" />
+		<Unit filename="src/gds.cpp" />
+		<Unit filename="src/gds.h" />
+		<Unit filename="src/graphrouter.cpp" />
+		<Unit filename="src/graphrouter.h" />
+		<Unit filename="src/gridrouter.cpp" />
+		<Unit filename="src/gridrouter.h" />
+		<Unit filename="src/interface.cpp" />
+		<Unit filename="src/interface.h" />
+		<Unit filename="src/lef.cpp" />
+		<Unit filename="src/lef.h" />
+		<Unit filename="src/parser.cpp" />
+		<Unit filename="src/parser.h" />
+		<Unit filename="src/placer.cpp" />
+		<Unit filename="src/placer.h" />
+		<Unit filename="src/router.cpp" />
+		<Unit filename="src/router.h" />
+		<Unit filename="src/rules.cpp" />
+		<Unit filename="src/rules.h" />
+		<Unit filename="src/spice.h" />
+		<Unit filename="src/thresholdaccept.h" />
+		<Unit filename="src/util.h" />
+		<Unit filename="src/verilog.cpp" />
+		<Unit filename="src/verilog.h" />
+		<Extensions />
+	</Project>
+</CodeBlocks_project_file>
