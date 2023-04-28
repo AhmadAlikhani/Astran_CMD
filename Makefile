@@ -39,9 +39,9 @@ OBJECTFILES= \
 	
 
 
-build/bin/Astran: ${OBJECTFILES}
+build/bin/Astran_CMD: ${OBJECTFILES}
 	${MKDIR} -p bin/Debug
-	${LINK.cc} -o bin/Debug/Astran ${OBJECTFILES}
+	${LINK.cc} -o bin/Debug/Astran_CMD ${OBJECTFILES}
 	
 ${OFILESDIR}/main.o: main.cpp
 	${MKDIR} -p ${OFILESDIR}
