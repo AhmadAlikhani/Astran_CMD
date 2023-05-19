@@ -1,5 +1,6 @@
 #include <iostream>
 #include "designmng.h"
+#include "datatypes.h"
 #include "cif.h"
 
 struct cellgen_cfg{
@@ -31,7 +32,7 @@ string time_limit;
 
 
 
-void generate_circuit(string tech, string net_list, string cellName);
+void generate_circuit(string tech, string net_list, string cellName, OutPutFileMode output_mode);
 void set_fold_tr_configs();
 void set_place_tr_configs();
 void set_route_configs();

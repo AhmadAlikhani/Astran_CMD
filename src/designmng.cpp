@@ -337,19 +337,18 @@ bool DesignMng::readCommand(string cmd){
                     if(circuit->getLayout(upcase(words[2]))){
                         if(tipo=="GDS"){
 
-                            const std::string file_name = words[2] + string(".gds");
-
+                        // use gdscpp lib to generate gds output file
                             gdscpp fooGDS;
                             gdsSTR fooSTR;
 
                             vector <int> corX;
                             vector <int> corY;
 
-                            fooSTR.name = "arrow_box";
+                            const std::string file_name = words[2] + string(".gds");
+                            fooSTR.name = words[2];
 
-
-                            rules->saveGDSIILayerTable(getPath(filename)+"GDSIILTable.txt");
-                            cout << "-> Saving layout " << words[2] << " to file: " << filename << endl;
+                            //rules->saveGDSIILayerTable(getPath(filename)+"GDSIILTable.txt");
+                            //cout << "-> Saving layout " << words[2] << " to file: " << filename << endl;
 
                             //Insert Boxes
                             list <Box>::iterator layer_it;
@@ -379,46 +378,8 @@ bool DesignMng::readCommand(string cmd){
                                 }
                             }
 
-                            list<Label>::iterator labels_it;
-                            for (labels_it = circuit->getLayout(words[2])->labels.begin(); labels_it != circuit->getLayout(words[2])->labels.end(); labels_it++){
-                                //strcpy(tmp, labels_it->text.c_str());
-                                //g.generateLabel(strToInt(rules->getGDSIIVal(MET1)), 2*labels_it->pt.getX(), 2*labels_it->pt.getY(), tmp);
-                                //g.generateEndelement();
-                            }
-
                             fooGDS.setSTR(fooSTR);
                             fooGDS.write(file_name);
-
-/*
-const std::string file_name = "example1.gds";
-
-gdscpp fooGDS;
-gdsSTR fooSTR;
-
-vector <int> corX;
-vector <int> corY;
-
-fooSTR.name = "arrow_box";
-
-corX = {000, 200, 400};
-corY = {700, 900, 700};
-
-fooSTR.PATH.push_back(drawPath(1,5,corX, corY));
-
-corX = {200, 200};
-corY = {900, 000};
-
-fooSTR.PATH.push_back(drawPath(1,5,corX, corY));
-
-corX = {500, 500, 700 , 700};
-corY = {400, 600, 600 , 400};
-
-fooSTR.BOUNDARY.push_back(drawBoundary(2, corX, corY));
-
-fooGDS.setSTR(fooSTR);
-fooGDS.write(file_name);
-*/
-
 
                         }else if(tipo=="C2C"){
                             Cif cifOut(removeExt(filename)+".cif", *rules);

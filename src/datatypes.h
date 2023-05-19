@@ -1,0 +1,13 @@
+#ifndef DATATYPES_H_INCLUDED
+#define DATATYPES_H_INCLUDED
+
+enum class OutPutFileMode
+{
+    CIF_OUTPUT_MODE = 0,
+    GDS_OUTPUT_MODE = 1,
+    ALL_OUTPUT_MODES = 2,
+};
+
+
+
+#endif // DATATYPES_H_INCLUDED

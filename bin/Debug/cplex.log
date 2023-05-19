@@ -8418,3 +8418,1783 @@ Deterministic time = 50.08 ticks  (187.25 ticks/sec)
 
 
 Incumbent solution written to file '/home/ahmad/Desktop/astran-new-cmd/bin/Debug/xmlsol.sol'.
+
+Log started (V12.8.0.0) Fri May 19 06:34:32 2023
+
+Warning, line 4: Characters after RHS value are ignored.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning: 'End' missing.
+266 name warnings not printed.
+
+Problem '/home/ahmad/Desktop/astran-new-cmd/bin/Debug/ILPmodel.lp' read.
+Read time = 0.01 sec. (0.08 ticks)
+Tried aggregator 4 times.
+MIP Presolve eliminated 319 rows and 105 columns.
+MIP Presolve modified 116 coefficients.
+Aggregator did 107 substitutions.
+Reduced MIP has 462 rows, 309 columns, and 1287 nonzeros.
+Reduced MIP has 133 binaries, 176 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.01 sec. (2.55 ticks)
+Probing time = 0.00 sec. (0.14 ticks)
+Tried aggregator 1 time.
+MIP Presolve modified 28 coefficients.
+Reduced MIP has 462 rows, 309 columns, and 1287 nonzeros.
+Reduced MIP has 133 binaries, 176 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.77 ticks)
+Probing time = 0.00 sec. (0.13 ticks)
+Clique table members: 30.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 8 threads.
+Root relaxation solution time = 0.00 sec. (1.65 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+      0     0   606502.0023   112                 606502.0023      141         
+      0     0   606627.6575    92                    Cuts: 51      190         
+      0     0   606647.6367    32                    Cuts: 34      219         
+      0     0   606647.6367    50                     Cuts: 2      221         
+      0     0   606647.6367    50                 ZeroHalf: 4      223         
+*     0+    0                       611083.0000   606647.6367             0.73%
+*     0+    0                       606689.0000   606647.6367             0.01%
+
+Implied bound cuts applied:  12
+Mixed integer rounding cuts applied:  11
+Zero-half cuts applied:  5
+Gomory fractional cuts applied:  22
+
+Root node processing (before b&c):
+  Real time             =    0.23 sec. (54.72 ticks)
+Parallel b&c, 8 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.23 sec. (54.72 ticks)
+
+Solution pool: 2 solutions saved.
+
+MIP - Integer optimal, tolerance (0.0001/1e-06):  Objective =  6.0668900000e+05
+Current MIP best bound =  6.0664763670e+05 (gap = 41.3633, 0.01%)
+Solution time =    0.24 sec.  Iterations = 223  Nodes = 0 (1)
+Deterministic time = 54.72 ticks  (228.66 ticks/sec)
+
+
+Incumbent solution written to file '/home/ahmad/Desktop/astran-new-cmd/bin/Debug/xmlsol.sol'.
+
+Log started (V12.8.0.0) Fri May 19 06:34:33 2023
+
+Warning, line 4: Characters after RHS value are ignored.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning: 'End' missing.
+266 name warnings not printed.
+
+Problem '/home/ahmad/Desktop/astran-new-cmd/bin/Debug/ILPmodel.lp' read.
+Read time = 0.01 sec. (0.08 ticks)
+Tried aggregator 4 times.
+MIP Presolve eliminated 319 rows and 105 columns.
+MIP Presolve modified 116 coefficients.
+Aggregator did 107 substitutions.
+Reduced MIP has 462 rows, 309 columns, and 1287 nonzeros.
+Reduced MIP has 133 binaries, 176 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.01 sec. (2.55 ticks)
+Probing time = 0.00 sec. (0.14 ticks)
+Tried aggregator 1 time.
+MIP Presolve modified 28 coefficients.
+Reduced MIP has 462 rows, 309 columns, and 1287 nonzeros.
+Reduced MIP has 133 binaries, 176 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.77 ticks)
+Probing time = 0.00 sec. (0.13 ticks)
+Clique table members: 30.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 8 threads.
+Root relaxation solution time = 0.00 sec. (1.63 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+      0     0   606502.0023   112                 606502.0023      140         
+      0     0   606627.1410   101                    Cuts: 49      185         
+      0     0   606647.6367    57                    Cuts: 36      209         
+      0     0   606647.6367    34                     Cuts: 5      215         
+      0     0   606647.6367    57                     Cuts: 3      218         
+*     0+    0                       610703.0000   606647.6367             0.66%
+*     0+    0                       606680.0000   606647.6367             0.01%
+
+Implied bound cuts applied:  9
+Mixed integer rounding cuts applied:  5
+Zero-half cuts applied:  1
+Gomory fractional cuts applied:  19
+
+Root node processing (before b&c):
+  Real time             =    0.24 sec. (50.08 ticks)
+Parallel b&c, 8 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.24 sec. (50.08 ticks)
+
+Solution pool: 2 solutions saved.
+
+MIP - Integer optimal, tolerance (0.0001/1e-06):  Objective =  6.0668000000e+05
+Current MIP best bound =  6.0664763670e+05 (gap = 32.3633, 0.01%)
+Solution time =    0.25 sec.  Iterations = 218  Nodes = 0 (1)
+Deterministic time = 50.08 ticks  (201.39 ticks/sec)
+
+
+Incumbent solution written to file '/home/ahmad/Desktop/astran-new-cmd/bin/Debug/xmlsol.sol'.
+
+Log started (V12.8.0.0) Fri May 19 06:34:50 2023
+
+Warning, line 4: Characters after RHS value are ignored.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning: 'End' missing.
+266 name warnings not printed.
+
+Problem '/home/ahmad/Desktop/astran-new-cmd/bin/Debug/ILPmodel.lp' read.
+Read time = 0.01 sec. (0.08 ticks)
+Tried aggregator 4 times.
+MIP Presolve eliminated 319 rows and 105 columns.
+MIP Presolve modified 116 coefficients.
+Aggregator did 107 substitutions.
+Reduced MIP has 462 rows, 309 columns, and 1287 nonzeros.
+Reduced MIP has 133 binaries, 176 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.01 sec. (2.55 ticks)
+Probing time = 0.00 sec. (0.14 ticks)
+Tried aggregator 1 time.
+MIP Presolve modified 28 coefficients.
+Reduced MIP has 462 rows, 309 columns, and 1287 nonzeros.
+Reduced MIP has 133 binaries, 176 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.77 ticks)
+Probing time = 0.00 sec. (0.13 ticks)
+Clique table members: 30.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 8 threads.
+Root relaxation solution time = 0.00 sec. (1.65 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+      0     0   606502.0023   112                 606502.0023      141         
+      0     0   606627.6575    92                    Cuts: 51      190         
+      0     0   606647.6367    32                    Cuts: 34      219         
+      0     0   606647.6367    50                     Cuts: 2      221         
+      0     0   606647.6367    50                 ZeroHalf: 4      223         
+*     0+    0                       611083.0000   606647.6367             0.73%
+*     0+    0                       606689.0000   606647.6367             0.01%
+
+Implied bound cuts applied:  12
+Mixed integer rounding cuts applied:  11
+Zero-half cuts applied:  5
+Gomory fractional cuts applied:  22
+
+Root node processing (before b&c):
+  Real time             =    0.21 sec. (54.72 ticks)
+Parallel b&c, 8 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.21 sec. (54.72 ticks)
+
+Solution pool: 2 solutions saved.
+
+MIP - Integer optimal, tolerance (0.0001/1e-06):  Objective =  6.0668900000e+05
+Current MIP best bound =  6.0664763670e+05 (gap = 41.3633, 0.01%)
+Solution time =    0.22 sec.  Iterations = 223  Nodes = 0 (1)
+Deterministic time = 54.72 ticks  (251.33 ticks/sec)
+
+
+Incumbent solution written to file '/home/ahmad/Desktop/astran-new-cmd/bin/Debug/xmlsol.sol'.
+
+Log started (V12.8.0.0) Fri May 19 06:34:51 2023
+
+Warning, line 4: Characters after RHS value are ignored.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning: 'End' missing.
+266 name warnings not printed.
+
+Problem '/home/ahmad/Desktop/astran-new-cmd/bin/Debug/ILPmodel.lp' read.
+Read time = 0.01 sec. (0.08 ticks)
+Tried aggregator 4 times.
+MIP Presolve eliminated 319 rows and 105 columns.
+MIP Presolve modified 116 coefficients.
+Aggregator did 107 substitutions.
+Reduced MIP has 462 rows, 309 columns, and 1287 nonzeros.
+Reduced MIP has 133 binaries, 176 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.01 sec. (2.55 ticks)
+Probing time = 0.00 sec. (0.14 ticks)
+Tried aggregator 1 time.
+MIP Presolve modified 28 coefficients.
+Reduced MIP has 462 rows, 309 columns, and 1287 nonzeros.
+Reduced MIP has 133 binaries, 176 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.77 ticks)
+Probing time = 0.00 sec. (0.13 ticks)
+Clique table members: 30.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 8 threads.
+Root relaxation solution time = 0.00 sec. (1.63 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+      0     0   606502.0023   112                 606502.0023      140         
+      0     0   606627.1410   101                    Cuts: 49      185         
+      0     0   606647.6367    57                    Cuts: 36      209         
+      0     0   606647.6367    34                     Cuts: 5      215         
+      0     0   606647.6367    57                     Cuts: 3      218         
+*     0+    0                       610703.0000   606647.6367             0.66%
+*     0+    0                       606680.0000   606647.6367             0.01%
+
+Implied bound cuts applied:  9
+Mixed integer rounding cuts applied:  5
+Zero-half cuts applied:  1
+Gomory fractional cuts applied:  19
+
+Root node processing (before b&c):
+  Real time             =    0.22 sec. (50.08 ticks)
+Parallel b&c, 8 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.22 sec. (50.08 ticks)
+
+Solution pool: 2 solutions saved.
+
+MIP - Integer optimal, tolerance (0.0001/1e-06):  Objective =  6.0668000000e+05
+Current MIP best bound =  6.0664763670e+05 (gap = 32.3633, 0.01%)
+Solution time =    0.23 sec.  Iterations = 218  Nodes = 0 (1)
+Deterministic time = 50.08 ticks  (219.39 ticks/sec)
+
+
+Incumbent solution written to file '/home/ahmad/Desktop/astran-new-cmd/bin/Debug/xmlsol.sol'.
+
+Log started (V12.8.0.0) Fri May 19 06:35:34 2023
+
+Warning, line 4: Characters after RHS value are ignored.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning: 'End' missing.
+266 name warnings not printed.
+
+Problem '/home/ahmad/Desktop/astran-new-cmd/bin/Debug/ILPmodel.lp' read.
+Read time = 0.01 sec. (0.08 ticks)
+Tried aggregator 4 times.
+MIP Presolve eliminated 319 rows and 105 columns.
+MIP Presolve modified 116 coefficients.
+Aggregator did 107 substitutions.
+Reduced MIP has 462 rows, 309 columns, and 1287 nonzeros.
+Reduced MIP has 133 binaries, 176 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.01 sec. (2.55 ticks)
+Probing time = 0.00 sec. (0.14 ticks)
+Tried aggregator 1 time.
+MIP Presolve modified 28 coefficients.
+Reduced MIP has 462 rows, 309 columns, and 1287 nonzeros.
+Reduced MIP has 133 binaries, 176 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.77 ticks)
+Probing time = 0.00 sec. (0.13 ticks)
+Clique table members: 30.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 8 threads.
+Root relaxation solution time = 0.00 sec. (1.65 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+      0     0   606502.0023   112                 606502.0023      141         
+      0     0   606627.6575    92                    Cuts: 51      190         
+      0     0   606647.6367    32                    Cuts: 34      219         
+      0     0   606647.6367    50                     Cuts: 2      221         
+      0     0   606647.6367    50                 ZeroHalf: 4      223         
+*     0+    0                       611083.0000   606647.6367             0.73%
+*     0+    0                       606689.0000   606647.6367             0.01%
+
+Implied bound cuts applied:  12
+Mixed integer rounding cuts applied:  11
+Zero-half cuts applied:  5
+Gomory fractional cuts applied:  22
+
+Root node processing (before b&c):
+  Real time             =    0.23 sec. (54.72 ticks)
+Parallel b&c, 8 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.23 sec. (54.72 ticks)
+
+Solution pool: 2 solutions saved.
+
+MIP - Integer optimal, tolerance (0.0001/1e-06):  Objective =  6.0668900000e+05
+Current MIP best bound =  6.0664763670e+05 (gap = 41.3633, 0.01%)
+Solution time =    0.24 sec.  Iterations = 223  Nodes = 0 (1)
+Deterministic time = 54.72 ticks  (230.59 ticks/sec)
+
+
+Incumbent solution written to file '/home/ahmad/Desktop/astran-new-cmd/bin/Debug/xmlsol.sol'.
+
+Log started (V12.8.0.0) Fri May 19 06:35:35 2023
+
+Warning, line 4: Characters after RHS value are ignored.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning: 'End' missing.
+266 name warnings not printed.
+
+Problem '/home/ahmad/Desktop/astran-new-cmd/bin/Debug/ILPmodel.lp' read.
+Read time = 0.01 sec. (0.08 ticks)
+Tried aggregator 4 times.
+MIP Presolve eliminated 319 rows and 105 columns.
+MIP Presolve modified 116 coefficients.
+Aggregator did 107 substitutions.
+Reduced MIP has 462 rows, 309 columns, and 1287 nonzeros.
+Reduced MIP has 133 binaries, 176 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.01 sec. (2.55 ticks)
+Probing time = 0.00 sec. (0.14 ticks)
+Tried aggregator 1 time.
+MIP Presolve modified 28 coefficients.
+Reduced MIP has 462 rows, 309 columns, and 1287 nonzeros.
+Reduced MIP has 133 binaries, 176 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.77 ticks)
+Probing time = 0.00 sec. (0.13 ticks)
+Clique table members: 30.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 8 threads.
+Root relaxation solution time = 0.00 sec. (1.63 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+      0     0   606502.0023   112                 606502.0023      140         
+      0     0   606627.1410   101                    Cuts: 49      185         
+      0     0   606647.6367    57                    Cuts: 36      209         
+      0     0   606647.6367    34                     Cuts: 5      215         
+      0     0   606647.6367    57                     Cuts: 3      218         
+*     0+    0                       610703.0000   606647.6367             0.66%
+*     0+    0                       606680.0000   606647.6367             0.01%
+
+Implied bound cuts applied:  9
+Mixed integer rounding cuts applied:  5
+Zero-half cuts applied:  1
+Gomory fractional cuts applied:  19
+
+Root node processing (before b&c):
+  Real time             =    0.29 sec. (50.08 ticks)
+Parallel b&c, 8 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.29 sec. (50.08 ticks)
+
+Solution pool: 2 solutions saved.
+
+MIP - Integer optimal, tolerance (0.0001/1e-06):  Objective =  6.0668000000e+05
+Current MIP best bound =  6.0664763670e+05 (gap = 32.3633, 0.01%)
+Solution time =    0.30 sec.  Iterations = 218  Nodes = 0 (1)
+Deterministic time = 50.08 ticks  (167.27 ticks/sec)
+
+
+Incumbent solution written to file '/home/ahmad/Desktop/astran-new-cmd/bin/Debug/xmlsol.sol'.
+
+Log started (V12.8.0.0) Fri May 19 06:38:27 2023
+
+Warning, line 4: Characters after RHS value are ignored.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning: 'End' missing.
+266 name warnings not printed.
+
+Problem '/home/ahmad/Desktop/astran-new-cmd/bin/Debug/ILPmodel.lp' read.
+Read time = 0.01 sec. (0.08 ticks)
+Tried aggregator 4 times.
+MIP Presolve eliminated 319 rows and 105 columns.
+MIP Presolve modified 116 coefficients.
+Aggregator did 107 substitutions.
+Reduced MIP has 462 rows, 309 columns, and 1287 nonzeros.
+Reduced MIP has 133 binaries, 176 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.01 sec. (2.55 ticks)
+Probing time = 0.00 sec. (0.14 ticks)
+Tried aggregator 1 time.
+MIP Presolve modified 28 coefficients.
+Reduced MIP has 462 rows, 309 columns, and 1287 nonzeros.
+Reduced MIP has 133 binaries, 176 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.77 ticks)
+Probing time = 0.00 sec. (0.13 ticks)
+Clique table members: 30.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 8 threads.
+Root relaxation solution time = 0.00 sec. (1.65 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+      0     0   606502.0023   112                 606502.0023      141         
+      0     0   606627.6575    92                    Cuts: 51      190         
+      0     0   606647.6367    32                    Cuts: 34      219         
+      0     0   606647.6367    50                     Cuts: 2      221         
+      0     0   606647.6367    50                 ZeroHalf: 4      223         
+*     0+    0                       611083.0000   606647.6367             0.73%
+*     0+    0                       606689.0000   606647.6367             0.01%
+
+Implied bound cuts applied:  12
+Mixed integer rounding cuts applied:  11
+Zero-half cuts applied:  5
+Gomory fractional cuts applied:  22
+
+Root node processing (before b&c):
+  Real time             =    0.24 sec. (54.72 ticks)
+Parallel b&c, 8 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.24 sec. (54.72 ticks)
+
+Solution pool: 2 solutions saved.
+
+MIP - Integer optimal, tolerance (0.0001/1e-06):  Objective =  6.0668900000e+05
+Current MIP best bound =  6.0664763670e+05 (gap = 41.3633, 0.01%)
+Solution time =    0.25 sec.  Iterations = 223  Nodes = 0 (1)
+Deterministic time = 54.72 ticks  (222.26 ticks/sec)
+
+
+Incumbent solution written to file '/home/ahmad/Desktop/astran-new-cmd/bin/Debug/xmlsol.sol'.
+
+Log started (V12.8.0.0) Fri May 19 06:38:28 2023
+
+Warning, line 4: Characters after RHS value are ignored.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning: 'End' missing.
+266 name warnings not printed.
+
+Problem '/home/ahmad/Desktop/astran-new-cmd/bin/Debug/ILPmodel.lp' read.
+Read time = 0.01 sec. (0.08 ticks)
+Tried aggregator 4 times.
+MIP Presolve eliminated 319 rows and 105 columns.
+MIP Presolve modified 116 coefficients.
+Aggregator did 107 substitutions.
+Reduced MIP has 462 rows, 309 columns, and 1287 nonzeros.
+Reduced MIP has 133 binaries, 176 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.01 sec. (2.55 ticks)
+Probing time = 0.00 sec. (0.14 ticks)
+Tried aggregator 1 time.
+MIP Presolve modified 28 coefficients.
+Reduced MIP has 462 rows, 309 columns, and 1287 nonzeros.
+Reduced MIP has 133 binaries, 176 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.77 ticks)
+Probing time = 0.00 sec. (0.13 ticks)
+Clique table members: 30.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 8 threads.
+Root relaxation solution time = 0.00 sec. (1.63 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+      0     0   606502.0023   112                 606502.0023      140         
+      0     0   606627.1410   101                    Cuts: 49      185         
+      0     0   606647.6367    57                    Cuts: 36      209         
+      0     0   606647.6367    34                     Cuts: 5      215         
+      0     0   606647.6367    57                     Cuts: 3      218         
+*     0+    0                       610703.0000   606647.6367             0.66%
+*     0+    0                       606680.0000   606647.6367             0.01%
+
+Implied bound cuts applied:  9
+Mixed integer rounding cuts applied:  5
+Zero-half cuts applied:  1
+Gomory fractional cuts applied:  19
+
+Root node processing (before b&c):
+  Real time             =    0.23 sec. (50.08 ticks)
+Parallel b&c, 8 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.23 sec. (50.08 ticks)
+
+Solution pool: 2 solutions saved.
+
+MIP - Integer optimal, tolerance (0.0001/1e-06):  Objective =  6.0668000000e+05
+Current MIP best bound =  6.0664763670e+05 (gap = 32.3633, 0.01%)
+Solution time =    0.24 sec.  Iterations = 218  Nodes = 0 (1)
+Deterministic time = 50.08 ticks  (207.99 ticks/sec)
+
+
+Incumbent solution written to file '/home/ahmad/Desktop/astran-new-cmd/bin/Debug/xmlsol.sol'.
+
+Log started (V12.8.0.0) Fri May 19 06:44:42 2023
+
+Warning, line 4: Characters after RHS value are ignored.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning: 'End' missing.
+266 name warnings not printed.
+
+Problem '/home/ahmad/Desktop/astran-new-cmd/bin/Debug/ILPmodel.lp' read.
+Read time = 0.01 sec. (0.08 ticks)
+Tried aggregator 4 times.
+MIP Presolve eliminated 319 rows and 105 columns.
+MIP Presolve modified 116 coefficients.
+Aggregator did 107 substitutions.
+Reduced MIP has 462 rows, 309 columns, and 1287 nonzeros.
+Reduced MIP has 133 binaries, 176 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.01 sec. (2.55 ticks)
+Probing time = 0.00 sec. (0.14 ticks)
+Tried aggregator 1 time.
+MIP Presolve modified 28 coefficients.
+Reduced MIP has 462 rows, 309 columns, and 1287 nonzeros.
+Reduced MIP has 133 binaries, 176 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.77 ticks)
+Probing time = 0.00 sec. (0.13 ticks)
+Clique table members: 30.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 8 threads.
+Root relaxation solution time = 0.00 sec. (1.65 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+      0     0   606502.0023   112                 606502.0023      141         
+      0     0   606627.6575    92                    Cuts: 51      190         
+      0     0   606647.6367    32                    Cuts: 34      219         
+      0     0   606647.6367    50                     Cuts: 2      221         
+      0     0   606647.6367    50                 ZeroHalf: 4      223         
+*     0+    0                       611083.0000   606647.6367             0.73%
+*     0+    0                       606689.0000   606647.6367             0.01%
+
+Implied bound cuts applied:  12
+Mixed integer rounding cuts applied:  11
+Zero-half cuts applied:  5
+Gomory fractional cuts applied:  22
+
+Root node processing (before b&c):
+  Real time             =    0.23 sec. (54.72 ticks)
+Parallel b&c, 8 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.23 sec. (54.72 ticks)
+
+Solution pool: 2 solutions saved.
+
+MIP - Integer optimal, tolerance (0.0001/1e-06):  Objective =  6.0668900000e+05
+Current MIP best bound =  6.0664763670e+05 (gap = 41.3633, 0.01%)
+Solution time =    0.24 sec.  Iterations = 223  Nodes = 0 (1)
+Deterministic time = 54.72 ticks  (225.04 ticks/sec)
+
+
+Incumbent solution written to file '/home/ahmad/Desktop/astran-new-cmd/bin/Debug/xmlsol.sol'.
+
+Log started (V12.8.0.0) Fri May 19 06:44:43 2023
+
+Warning, line 4: Characters after RHS value are ignored.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning: 'End' missing.
+266 name warnings not printed.
+
+Problem '/home/ahmad/Desktop/astran-new-cmd/bin/Debug/ILPmodel.lp' read.
+Read time = 0.01 sec. (0.08 ticks)
+Tried aggregator 4 times.
+MIP Presolve eliminated 319 rows and 105 columns.
+MIP Presolve modified 116 coefficients.
+Aggregator did 107 substitutions.
+Reduced MIP has 462 rows, 309 columns, and 1287 nonzeros.
+Reduced MIP has 133 binaries, 176 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.01 sec. (2.55 ticks)
+Probing time = 0.00 sec. (0.14 ticks)
+Tried aggregator 1 time.
+MIP Presolve modified 28 coefficients.
+Reduced MIP has 462 rows, 309 columns, and 1287 nonzeros.
+Reduced MIP has 133 binaries, 176 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.77 ticks)
+Probing time = 0.00 sec. (0.13 ticks)
+Clique table members: 30.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 8 threads.
+Root relaxation solution time = 0.00 sec. (1.63 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+      0     0   606502.0023   112                 606502.0023      140         
+      0     0   606627.1410   101                    Cuts: 49      185         
+      0     0   606647.6367    57                    Cuts: 36      209         
+      0     0   606647.6367    34                     Cuts: 5      215         
+      0     0   606647.6367    57                     Cuts: 3      218         
+*     0+    0                       610703.0000   606647.6367             0.66%
+*     0+    0                       606680.0000   606647.6367             0.01%
+
+Implied bound cuts applied:  9
+Mixed integer rounding cuts applied:  5
+Zero-half cuts applied:  1
+Gomory fractional cuts applied:  19
+
+Root node processing (before b&c):
+  Real time             =    0.27 sec. (50.08 ticks)
+Parallel b&c, 8 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.27 sec. (50.08 ticks)
+
+Solution pool: 2 solutions saved.
+
+MIP - Integer optimal, tolerance (0.0001/1e-06):  Objective =  6.0668000000e+05
+Current MIP best bound =  6.0664763670e+05 (gap = 32.3633, 0.01%)
+Solution time =    0.28 sec.  Iterations = 218  Nodes = 0 (1)
+Deterministic time = 50.08 ticks  (178.14 ticks/sec)
+
+
+Incumbent solution written to file '/home/ahmad/Desktop/astran-new-cmd/bin/Debug/xmlsol.sol'.
+
+Log started (V12.8.0.0) Fri May 19 06:44:58 2023
+
+Warning, line 4: Characters after RHS value are ignored.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning: 'End' missing.
+266 name warnings not printed.
+
+Problem '/home/ahmad/Desktop/astran-new-cmd/bin/Debug/ILPmodel.lp' read.
+Read time = 0.01 sec. (0.08 ticks)
+Tried aggregator 4 times.
+MIP Presolve eliminated 319 rows and 105 columns.
+MIP Presolve modified 116 coefficients.
+Aggregator did 107 substitutions.
+Reduced MIP has 462 rows, 309 columns, and 1287 nonzeros.
+Reduced MIP has 133 binaries, 176 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.01 sec. (2.55 ticks)
+Probing time = 0.00 sec. (0.14 ticks)
+Tried aggregator 1 time.
+MIP Presolve modified 28 coefficients.
+Reduced MIP has 462 rows, 309 columns, and 1287 nonzeros.
+Reduced MIP has 133 binaries, 176 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.77 ticks)
+Probing time = 0.00 sec. (0.13 ticks)
+Clique table members: 30.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 8 threads.
+Root relaxation solution time = 0.00 sec. (1.65 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+      0     0   606502.0023   112                 606502.0023      141         
+      0     0   606627.6575    92                    Cuts: 51      190         
+      0     0   606647.6367    32                    Cuts: 34      219         
+      0     0   606647.6367    50                     Cuts: 2      221         
+      0     0   606647.6367    50                 ZeroHalf: 4      223         
+*     0+    0                       611083.0000   606647.6367             0.73%
+*     0+    0                       606689.0000   606647.6367             0.01%
+
+Implied bound cuts applied:  12
+Mixed integer rounding cuts applied:  11
+Zero-half cuts applied:  5
+Gomory fractional cuts applied:  22
+
+Root node processing (before b&c):
+  Real time             =    0.24 sec. (54.72 ticks)
+Parallel b&c, 8 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.24 sec. (54.72 ticks)
+
+Solution pool: 2 solutions saved.
+
+MIP - Integer optimal, tolerance (0.0001/1e-06):  Objective =  6.0668900000e+05
+Current MIP best bound =  6.0664763670e+05 (gap = 41.3633, 0.01%)
+Solution time =    0.25 sec.  Iterations = 223  Nodes = 0 (1)
+Deterministic time = 54.72 ticks  (220.58 ticks/sec)
+
+
+Incumbent solution written to file '/home/ahmad/Desktop/astran-new-cmd/bin/Debug/xmlsol.sol'.
+
+Log started (V12.8.0.0) Fri May 19 06:44:58 2023
+
+Warning, line 4: Characters after RHS value are ignored.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning: 'End' missing.
+266 name warnings not printed.
+
+Problem '/home/ahmad/Desktop/astran-new-cmd/bin/Debug/ILPmodel.lp' read.
+Read time = 0.01 sec. (0.08 ticks)
+Tried aggregator 4 times.
+MIP Presolve eliminated 319 rows and 105 columns.
+MIP Presolve modified 116 coefficients.
+Aggregator did 107 substitutions.
+Reduced MIP has 462 rows, 309 columns, and 1287 nonzeros.
+Reduced MIP has 133 binaries, 176 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.01 sec. (2.55 ticks)
+Probing time = 0.00 sec. (0.14 ticks)
+Tried aggregator 1 time.
+MIP Presolve modified 28 coefficients.
+Reduced MIP has 462 rows, 309 columns, and 1287 nonzeros.
+Reduced MIP has 133 binaries, 176 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.77 ticks)
+Probing time = 0.00 sec. (0.13 ticks)
+Clique table members: 30.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 8 threads.
+Root relaxation solution time = 0.00 sec. (1.63 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+      0     0   606502.0023   112                 606502.0023      140         
+      0     0   606627.1410   101                    Cuts: 49      185         
+      0     0   606647.6367    57                    Cuts: 36      209         
+      0     0   606647.6367    34                     Cuts: 5      215         
+      0     0   606647.6367    57                     Cuts: 3      218         
+*     0+    0                       610703.0000   606647.6367             0.66%
+*     0+    0                       606680.0000   606647.6367             0.01%
+
+Implied bound cuts applied:  9
+Mixed integer rounding cuts applied:  5
+Zero-half cuts applied:  1
+Gomory fractional cuts applied:  19
+
+Root node processing (before b&c):
+  Real time             =    0.29 sec. (50.08 ticks)
+Parallel b&c, 8 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.29 sec. (50.08 ticks)
+
+Solution pool: 2 solutions saved.
+
+MIP - Integer optimal, tolerance (0.0001/1e-06):  Objective =  6.0668000000e+05
+Current MIP best bound =  6.0664763670e+05 (gap = 32.3633, 0.01%)
+Solution time =    0.30 sec.  Iterations = 218  Nodes = 0 (1)
+Deterministic time = 50.08 ticks  (168.52 ticks/sec)
+
+
+Incumbent solution written to file '/home/ahmad/Desktop/astran-new-cmd/bin/Debug/xmlsol.sol'.
+
+Log started (V12.8.0.0) Fri May 19 06:45:42 2023
+
+Warning, line 4: Characters after RHS value are ignored.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning: 'End' missing.
+266 name warnings not printed.
+
+Problem '/home/ahmad/Desktop/astran-new-cmd/bin/Debug/ILPmodel.lp' read.
+Read time = 0.01 sec. (0.08 ticks)
+Tried aggregator 4 times.
+MIP Presolve eliminated 319 rows and 105 columns.
+MIP Presolve modified 116 coefficients.
+Aggregator did 107 substitutions.
+Reduced MIP has 462 rows, 309 columns, and 1287 nonzeros.
+Reduced MIP has 133 binaries, 176 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.01 sec. (2.55 ticks)
+Probing time = 0.00 sec. (0.14 ticks)
+Tried aggregator 1 time.
+MIP Presolve modified 28 coefficients.
+Reduced MIP has 462 rows, 309 columns, and 1287 nonzeros.
+Reduced MIP has 133 binaries, 176 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.77 ticks)
+Probing time = 0.00 sec. (0.13 ticks)
+Clique table members: 30.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 8 threads.
+Root relaxation solution time = 0.01 sec. (1.65 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+      0     0   606502.0023   112                 606502.0023      141         
+      0     0   606627.6575    92                    Cuts: 51      190         
+      0     0   606647.6367    32                    Cuts: 34      219         
+      0     0   606647.6367    50                     Cuts: 2      221         
+      0     0   606647.6367    50                 ZeroHalf: 4      223         
+*     0+    0                       611083.0000   606647.6367             0.73%
+*     0+    0                       606689.0000   606647.6367             0.01%
+
+Implied bound cuts applied:  12
+Mixed integer rounding cuts applied:  11
+Zero-half cuts applied:  5
+Gomory fractional cuts applied:  22
+
+Root node processing (before b&c):
+  Real time             =    0.23 sec. (54.72 ticks)
+Parallel b&c, 8 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.23 sec. (54.72 ticks)
+
+Solution pool: 2 solutions saved.
+
+MIP - Integer optimal, tolerance (0.0001/1e-06):  Objective =  6.0668900000e+05
+Current MIP best bound =  6.0664763670e+05 (gap = 41.3633, 0.01%)
+Solution time =    0.24 sec.  Iterations = 223  Nodes = 0 (1)
+Deterministic time = 54.72 ticks  (227.76 ticks/sec)
+
+
+Incumbent solution written to file '/home/ahmad/Desktop/astran-new-cmd/bin/Debug/xmlsol.sol'.
+
+Log started (V12.8.0.0) Fri May 19 06:45:43 2023
+
+Warning, line 4: Characters after RHS value are ignored.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning, line 893: '+' not valid identifier.
+Warning: 'End' missing.
+266 name warnings not printed.
+
+Problem '/home/ahmad/Desktop/astran-new-cmd/bin/Debug/ILPmodel.lp' read.
+Read time = 0.01 sec. (0.08 ticks)
+Tried aggregator 4 times.
+MIP Presolve eliminated 319 rows and 105 columns.
+MIP Presolve modified 116 coefficients.
+Aggregator did 107 substitutions.
+Reduced MIP has 462 rows, 309 columns, and 1287 nonzeros.
+Reduced MIP has 133 binaries, 176 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.01 sec. (2.55 ticks)
+Probing time = 0.00 sec. (0.14 ticks)
+Tried aggregator 1 time.
+MIP Presolve modified 28 coefficients.
+Reduced MIP has 462 rows, 309 columns, and 1287 nonzeros.
+Reduced MIP has 133 binaries, 176 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.77 ticks)
+Probing time = 0.00 sec. (0.13 ticks)
+Clique table members: 30.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 8 threads.
+Root relaxation solution time = 0.00 sec. (1.63 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+      0     0   606502.0023   112                 606502.0023      140         
+      0     0   606627.1410   101                    Cuts: 49      185         
+      0     0   606647.6367    57                    Cuts: 36      209         
+      0     0   606647.6367    34                     Cuts: 5      215         
+      0     0   606647.6367    57                     Cuts: 3      218         
+*     0+    0                       610703.0000   606647.6367             0.66%
+*     0+    0                       606680.0000   606647.6367             0.01%
+
+Implied bound cuts applied:  9
+Mixed integer rounding cuts applied:  5
+Zero-half cuts applied:  1
+Gomory fractional cuts applied:  19
+
+Root node processing (before b&c):
+  Real time             =    0.33 sec. (50.08 ticks)
+Parallel b&c, 8 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.33 sec. (50.08 ticks)
+
+Solution pool: 2 solutions saved.
+
+MIP - Integer optimal, tolerance (0.0001/1e-06):  Objective =  6.0668000000e+05
+Current MIP best bound =  6.0664763670e+05 (gap = 32.3633, 0.01%)
+Solution time =    0.34 sec.  Iterations = 218  Nodes = 0 (1)
+Deterministic time = 50.08 ticks  (146.99 ticks/sec)
+
+
+Incumbent solution written to file '/home/ahmad/Desktop/astran-new-cmd/bin/Debug/xmlsol.sol'.
+
+Log started (V12.8.0.0) Fri May 19 06:47:21 2023
+
+Warning, line 4: Characters after RHS value are ignored.
+Warning, line 569: '+' not valid identifier.
+Warning, line 569: '+' not valid identifier.
+Warning, line 569: '+' not valid identifier.
+Warning, line 569: '+' not valid identifier.
+Warning, line 569: '+' not valid identifier.
+Warning, line 569: '+' not valid identifier.
+Warning, line 569: '+' not valid identifier.
+Warning, line 569: '+' not valid identifier.
+Warning, line 569: '+' not valid identifier.
+Warning, line 569: '+' not valid identifier.
+Warning, line 569: '+' not valid identifier.
+Warning, line 569: '+' not valid identifier.
+Warning, line 569: '+' not valid identifier.
+Warning, line 569: '+' not valid identifier.
+Warning, line 569: '+' not valid identifier.
+Warning, line 569: '+' not valid identifier.
+Warning, line 569: '+' not valid identifier.
+Warning, line 569: '+' not valid identifier.
+Warning, line 569: '+' not valid identifier.
+Warning, line 569: '+' not valid identifier.
+Warning: 'End' missing.
+75 name warnings not printed.
+
+Problem '/home/ahmad/Desktop/astran-new-cmd/bin/Debug/ILPmodel.lp' read.
+Read time = 0.01 sec. (0.05 ticks)
+Tried aggregator 4 times.
+MIP Presolve eliminated 266 rows and 121 columns.
+MIP Presolve modified 58 coefficients.
+Aggregator did 66 substitutions.
+Reduced MIP has 232 rows, 159 columns, and 592 nonzeros.
+Reduced MIP has 63 binaries, 96 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.01 sec. (1.28 ticks)
+Probing time = 0.00 sec. (0.06 ticks)
+Tried aggregator 1 time.
+MIP Presolve eliminated 4 rows and 0 columns.
+MIP Presolve modified 6 coefficients.
+Reduced MIP has 228 rows, 159 columns, and 584 nonzeros.
+Reduced MIP has 63 binaries, 96 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.40 ticks)
+Probing time = 0.00 sec. (0.05 ticks)
+Clique table members: 14.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 8 threads.
+Root relaxation solution time = 0.00 sec. (0.75 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+      0     0   604058.3606    44                 604058.3606       74         
+      0     0   604123.7030    53                    Cuts: 13       85         
+      0     0   604133.0000    37                    Cuts: 12       93         
+      0     0   604133.0000    29                    Fract: 1       95         
+*     0+    0                       606353.0000   604133.0000             0.37%
+*     0+    0                       604137.0000   604133.0000             0.00%
+
+Implied bound cuts applied:  4
+Gomory fractional cuts applied:  10
+
+Root node processing (before b&c):
+  Real time             =    0.12 sec. (13.22 ticks)
+Parallel b&c, 8 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.12 sec. (13.22 ticks)
+
+Solution pool: 2 solutions saved.
+
+MIP - Integer optimal, tolerance (0.0001/1e-06):  Objective =  6.0413700000e+05
+Current MIP best bound =  6.0413300000e+05 (gap = 4, 0.00%)
+Solution time =    0.13 sec.  Iterations = 95  Nodes = 0 (1)
+Deterministic time = 13.23 ticks  (99.24 ticks/sec)
+
+
+Incumbent solution written to file '/home/ahmad/Desktop/astran-new-cmd/bin/Debug/xmlsol.sol'.
+
+Log started (V12.8.0.0) Fri May 19 06:47:21 2023
+
+Warning, line 4: Characters after RHS value are ignored.
+Warning, line 569: '+' not valid identifier.
+Warning, line 569: '+' not valid identifier.
+Warning, line 569: '+' not valid identifier.
+Warning, line 569: '+' not valid identifier.
+Warning, line 569: '+' not valid identifier.
+Warning, line 569: '+' not valid identifier.
+Warning, line 569: '+' not valid identifier.
+Warning, line 569: '+' not valid identifier.
+Warning, line 569: '+' not valid identifier.
+Warning, line 569: '+' not valid identifier.
+Warning, line 569: '+' not valid identifier.
+Warning, line 569: '+' not valid identifier.
+Warning, line 569: '+' not valid identifier.
+Warning, line 569: '+' not valid identifier.
+Warning, line 569: '+' not valid identifier.
+Warning, line 569: '+' not valid identifier.
+Warning, line 569: '+' not valid identifier.
+Warning, line 569: '+' not valid identifier.
+Warning, line 569: '+' not valid identifier.
+Warning, line 569: '+' not valid identifier.
+Warning: 'End' missing.
+75 name warnings not printed.
+
+Problem '/home/ahmad/Desktop/astran-new-cmd/bin/Debug/ILPmodel.lp' read.
+Read time = 0.01 sec. (0.05 ticks)
+Tried aggregator 4 times.
+MIP Presolve eliminated 266 rows and 121 columns.
+MIP Presolve modified 58 coefficients.
+Aggregator did 66 substitutions.
+Reduced MIP has 232 rows, 159 columns, and 592 nonzeros.
+Reduced MIP has 63 binaries, 96 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.01 sec. (1.28 ticks)
+Probing time = 0.00 sec. (0.06 ticks)
+Tried aggregator 1 time.
+MIP Presolve eliminated 4 rows and 0 columns.
+MIP Presolve modified 6 coefficients.
+Reduced MIP has 228 rows, 159 columns, and 584 nonzeros.
+Reduced MIP has 63 binaries, 96 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.40 ticks)
+Probing time = 0.00 sec. (0.05 ticks)
+Clique table members: 14.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 8 threads.
+Root relaxation solution time = 0.00 sec. (0.75 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+      0     0   604058.3606    44                 604058.3606       74         
+      0     0   604123.7030    53                    Cuts: 13       85         
+      0     0   604133.0000    37                    Cuts: 12       93         
+      0     0   604133.0000    29                    Fract: 1       95         
+*     0+    0                       606353.0000   604133.0000             0.37%
+*     0+    0                       604137.0000   604133.0000             0.00%
+
+Implied bound cuts applied:  4
+Gomory fractional cuts applied:  10
+
+Root node processing (before b&c):
+  Real time             =    0.10 sec. (13.22 ticks)
+Parallel b&c, 8 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.10 sec. (13.22 ticks)
+
+Solution pool: 2 solutions saved.
+
+MIP - Integer optimal, tolerance (0.0001/1e-06):  Objective =  6.0413700000e+05
+Current MIP best bound =  6.0413300000e+05 (gap = 4, 0.00%)
+Solution time =    0.11 sec.  Iterations = 95  Nodes = 0 (1)
+Deterministic time = 13.23 ticks  (118.30 ticks/sec)
+
+
+Incumbent solution written to file '/home/ahmad/Desktop/astran-new-cmd/bin/Debug/xmlsol.sol'.
+
+Log started (V12.8.0.0) Fri May 19 06:51:01 2023
+
+Warning, line 4: Characters after RHS value are ignored.
+Warning, line 5457: '+' not valid identifier.
+Warning, line 5457: '+' not valid identifier.
+Warning, line 5457: '+' not valid identifier.
+Warning, line 5457: '+' not valid identifier.
+Warning, line 5457: '+' not valid identifier.
+Warning, line 5457: '+' not valid identifier.
+Warning, line 5457: '+' not valid identifier.
+Warning, line 5457: '+' not valid identifier.
+Warning, line 5457: '+' not valid identifier.
+Warning, line 5457: '+' not valid identifier.
+Warning, line 5457: '+' not valid identifier.
+Warning, line 5457: '+' not valid identifier.
+Warning, line 5457: '+' not valid identifier.
+Warning, line 5457: '+' not valid identifier.
+Warning, line 5457: '+' not valid identifier.
+Warning, line 5457: '+' not valid identifier.
+Warning, line 5457: '+' not valid identifier.
+Warning, line 5457: '+' not valid identifier.
+Warning, line 5457: '+' not valid identifier.
+Warning, line 5457: '+' not valid identifier.
+Warning: 'End' missing.
+2601 name warnings not printed.
+
+Problem '/home/ahmad/Desktop/astran-new-cmd/bin/Debug/ILPmodel.lp' read.
+Read time = 0.02 sec. (0.54 ticks)
+Tried aggregator 4 times.
+MIP Presolve eliminated 1555 rows and 224 columns.
+MIP Presolve modified 2073 coefficients.
+Aggregator did 360 substitutions.
+Reduced MIP has 3538 rows, 1991 columns, and 10330 nonzeros.
+Reduced MIP has 1189 binaries, 802 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.05 sec. (18.46 ticks)
+Probing time = 0.02 sec. (0.86 ticks)
+Cover probing fixed 0 vars, tightened 47 bounds.
+Tried aggregator 1 time.
+MIP Presolve eliminated 8 rows and 0 columns.
+MIP Presolve modified 260 coefficients.
+Reduced MIP has 3530 rows, 1991 columns, and 10314 nonzeros.
+Reduced MIP has 1189 binaries, 802 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.02 sec. (5.81 ticks)
+Probing time = 0.02 sec. (0.90 ticks)
+Clique table members: 356.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 8 threads.
+Root relaxation solution time = 0.17 sec. (34.71 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+      0     0  1428462.3105   558                1428462.3105      865         
+      0     0  1428681.4744   338                   Cuts: 180     1009         
+      0     0  1428751.6336   387                    Cuts: 55     1141         
+      0     0  1428757.4109   378                     Cuts: 9     1163         
+      0     0  1428759.4207   375                    Cuts: 10     1175         
+      0     0  1428759.9869   400                     Cuts: 2     1177         
+*     0+    0                      1431069.0000  1428759.9869             0.16%
+*     0+    0                      1430953.0000  1428763.4487             0.15%
+
+Repeating presolve.
+Tried aggregator 3 times.
+MIP Presolve eliminated 831 rows and 443 columns.
+MIP Presolve modified 2491 coefficients.
+Aggregator did 75 substitutions.
+Reduced MIP has 2624 rows, 1473 columns, and 7704 nonzeros.
+Reduced MIP has 727 binaries, 746 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.03 sec. (13.76 ticks)
+Probing time = 0.01 sec. (2.47 ticks)
+Cover probing fixed 0 vars, tightened 14 bounds.
+Tried aggregator 1 time.
+MIP Presolve modified 808 coefficients.
+Reduced MIP has 2624 rows, 1473 columns, and 7704 nonzeros.
+Reduced MIP has 727 binaries, 746 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.02 sec. (4.66 ticks)
+Represolve time = 0.07 sec. (23.16 ticks)
+Probing time = 0.01 sec. (2.49 ticks)
+Clique table members: 363.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 8 threads.
+Root relaxation solution time = 0.07 sec. (22.77 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                      1430953.0000  1428763.4487             0.15%
+      0     0  1428767.5279   401  1430953.0000  1428767.5279     1954    0.15%
+      0     0  1428793.9955   430  1430953.0000     Cuts: 146     2090    0.15%
+      0     0  1428803.7315   499  1430953.0000      Cuts: 68     2212    0.15%
+      0     0  1428805.1919   379  1430953.0000      Cuts: 28     2234    0.15%
+      0     0  1428807.5911   410  1430953.0000      Cuts: 18     2265    0.15%
+      0     2  1428807.5911   410  1430953.0000  1428831.4149     2265    0.15%
+Elapsed time = 5.43 sec. (1182.41 ticks, tree = 0.01 MB, solutions = 2)
+*   740+  539                      1430690.0000  1428855.9082             0.13%
+*   922+  556                      1430396.0000  1428855.9082             0.11%
+*   943   542      integral     0  1430352.0000  1428855.9082    14729    0.10%
+   1013   576  1429462.8288   114  1430352.0000  1428855.9082    15059    0.10%
+*  1383+  760                      1430346.0000  1428944.7318             0.10%
+   2273  1572  1430035.2876    87  1430346.0000  1429052.5076    28689    0.09%
+*  2327  1650      integral     0  1430338.0000  1429052.5076    28902    0.09%
+*  2464  1760      integral     0  1430318.0000  1429052.5076    30658    0.09%
+*  2995  1953      integral     0  1430160.0000  1429074.3339    34250    0.08%
+*  3032+ 1632                      1430156.0000  1429074.3339             0.08%
+*  3291  1706      integral     0  1430133.0000  1429077.4999    36000    0.07%
+*  3313+ 1759                      1430099.0000  1429077.4999             0.07%
+*  3318+ 2114                      1430041.0000  1429077.4999             0.07%
+*  3325+ 2114                      1429941.0000  1429077.4999             0.06%
+*  3326+  689                      1429938.0000  1429088.9217             0.06%
+*  3326+  458                      1429910.0000  1429088.9217             0.06%
+*  3326+  305                      1429768.0000  1429182.9544             0.04%
+*  3326+  202                      1429543.0000  1429182.9544             0.03%
+*  3326+  134                      1429531.0000  1429271.5604             0.02%
+   3326   135  1429059.6786   548  1429531.0000  1429271.5604    40828    0.02%
+   3337     3  1429232.1319   283  1429531.0000  1429271.5604    41855    0.02%
+   3412    24  1429269.0722   206  1429531.0000  1429271.5604    44222    0.02%
+
+Clique cuts applied:  2
+Implied bound cuts applied:  13
+Flow cuts applied:  5
+Mixed integer rounding cuts applied:  124
+Zero-half cuts applied:  8
+Lift and project cuts applied:  2
+Gomory fractional cuts applied:  52
+
+Root node processing (before b&c):
+  Real time             =    5.41 sec. (1181.66 ticks)
+Parallel b&c, 8 threads:
+  Real time             =   12.11 sec. (2500.64 ticks)
+  Sync time (average)   =    2.34 sec.
+  Wait time (average)   =    0.01 sec.
+                          ------------
+Total (root+branch&cut) =   17.52 sec. (3682.30 ticks)
+
+Solution pool: 21 solutions saved.
+
+MIP - Integer optimal, tolerance (0.0001/1e-06):  Objective =  1.4295310000e+06
+Current MIP best bound =  1.4293992927e+06 (gap = 131.707, 0.01%)
+Solution time =   17.54 sec.  Iterations = 44775  Nodes = 3423 (24)
+Deterministic time = 3682.31 ticks  (209.99 ticks/sec)
+
+
+Incumbent solution written to file '/home/ahmad/Desktop/astran-new-cmd/bin/Debug/xmlsol.sol'.
+
+Log started (V12.8.0.0) Fri May 19 06:51:33 2023
+
+Warning, line 4: Characters after RHS value are ignored.
+Warning, line 5508: '+' not valid identifier.
+Warning, line 5508: '+' not valid identifier.
+Warning, line 5508: '+' not valid identifier.
+Warning, line 5508: '+' not valid identifier.
+Warning, line 5508: '+' not valid identifier.
+Warning, line 5508: '+' not valid identifier.
+Warning, line 5508: '+' not valid identifier.
+Warning, line 5508: '+' not valid identifier.
+Warning, line 5508: '+' not valid identifier.
+Warning, line 5508: '+' not valid identifier.
+Warning, line 5508: '+' not valid identifier.
+Warning, line 5508: '+' not valid identifier.
+Warning, line 5508: '+' not valid identifier.
+Warning, line 5508: '+' not valid identifier.
+Warning, line 5508: '+' not valid identifier.
+Warning, line 5508: '+' not valid identifier.
+Warning, line 5508: '+' not valid identifier.
+Warning, line 5508: '+' not valid identifier.
+Warning, line 5508: '+' not valid identifier.
+Warning, line 5508: '+' not valid identifier.
+Warning: 'End' missing.
+2564 name warnings not printed.
+
+Problem '/home/ahmad/Desktop/astran-new-cmd/bin/Debug/ILPmodel.lp' read.
+Read time = 0.02 sec. (0.55 ticks)
+Tried aggregator 4 times.
+MIP Presolve eliminated 1557 rows and 221 columns.
+MIP Presolve modified 1902 coefficients.
+Aggregator did 359 substitutions.
+Reduced MIP has 3588 rows, 1997 columns, and 10391 nonzeros.
+Reduced MIP has 1185 binaries, 812 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.06 sec. (18.18 ticks)
+Probing time = 0.03 sec. (0.87 ticks)
+Cover probing fixed 0 vars, tightened 60 bounds.
+Tried aggregator 1 time.
+MIP Presolve eliminated 8 rows and 0 columns.
+MIP Presolve modified 250 coefficients.
+Reduced MIP has 3580 rows, 1997 columns, and 10375 nonzeros.
+Reduced MIP has 1185 binaries, 812 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.02 sec. (5.84 ticks)
+Probing time = 0.02 sec. (0.78 ticks)
+Clique table members: 356.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 8 threads.
+Root relaxation solution time = 0.14 sec. (34.80 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+      0     0  1428474.6279   585                1428474.6279      881         
+      0     0  1428727.9896   314                   Cuts: 154     1024         
+      0     0  1428772.3850   313                    Cuts: 65     1113         
+      0     0  1428775.4312   657                    Cuts: 27     1161         
+      0     0  1428775.4853   537                     Cuts: 8     1168         
+      0     0  1428775.4853   537                    Cuts: 15     1182         
+*     0+    0                      1430851.0000  1428775.4853             0.15%
+*     0+    0                      1430827.0000  1428810.2750             0.14%
+      0     2  1428775.4853   537  1430827.0000  1428810.2750     1184    0.14%
+Elapsed time = 4.75 sec. (1025.85 ticks, tree = 0.01 MB, solutions = 2)
+*    20+    5                      1430813.0000  1428810.2750             0.14%
+*    39+    7                      1430795.0000  1428810.2750             0.14%
+    625   499  1430660.6308   223  1430795.0000  1428810.2750    10776    0.14%
+*  1104   839      integral     0  1430681.0000  1428810.2750    17115    0.13%
+*  1122   820      integral     0  1430529.0000  1428810.2750    16779    0.12%
+*  1206   820      integral     0  1430112.0000  1428810.2750    17902    0.09%
+*  1449   864      integral     0  1429914.0000  1428815.3501    21510    0.08%
+   1570   753  1429021.6796   263  1429914.0000  1428815.3501    21835    0.08%
+*  2129+ 1082                      1429859.0000  1428827.1787             0.07%
+*  2143+  924                      1429676.0000  1428827.1787             0.06%
+*  2143+ 1025                      1429642.0000  1428827.1787             0.06%
+   2254   810  1429478.7864   168  1429642.0000  1428828.3342    30693    0.06%
+*  2694+ 1032                      1429633.0000  1428829.4128             0.06%
+   3076  1383  1429373.1681   291  1429633.0000  1428832.6937    42128    0.06%
+   3480  1772  1429041.2988   637  1429633.0000  1429077.5014    51864    0.04%
+   3513    90  1429279.5615   170  1429633.0000  1429127.0146    53351    0.04%
+   3607    59  1429341.6453   192  1429633.0000  1429137.4570    56097    0.03%
+*  3765+  136                      1429515.0000  1429149.5914             0.03%
+*  3814+  140                      1429512.0000  1429149.5914             0.03%
+   4157   264        cutoff        1429512.0000  1429246.4842    64443    0.02%
+*  4559+  444                      1429511.0000  1429267.9483             0.02%
+
+Clique cuts applied:  7
+Implied bound cuts applied:  51
+Flow cuts applied:  12
+Mixed integer rounding cuts applied:  166
+Zero-half cuts applied:  10
+Lift and project cuts applied:  8
+Gomory fractional cuts applied:  73
+
+Root node processing (before b&c):
+  Real time             =    4.70 sec. (1024.82 ticks)
+Parallel b&c, 8 threads:
+  Real time             =   18.30 sec. (3273.78 ticks)
+  Sync time (average)   =    3.76 sec.
+  Wait time (average)   =    0.01 sec.
+                          ------------
+Total (root+branch&cut) =   22.99 sec. (4298.61 ticks)
+
+Solution pool: 28 solutions saved.
+
+MIP - Integer optimal, tolerance (0.0001/1e-06):  Objective =  1.4295110000e+06
+Current MIP best bound =  1.4293697894e+06 (gap = 141.211, 0.01%)
+Solution time =   23.00 sec.  Iterations = 71977  Nodes = 4633 (535)
+Deterministic time = 4298.61 ticks  (186.87 ticks/sec)
+
+
+Incumbent solution written to file '/home/ahmad/Desktop/astran-new-cmd/bin/Debug/xmlsol.sol'.
+
+Log started (V12.8.0.0) Fri May 19 06:53:21 2023
+
+Warning, line 4: Characters after RHS value are ignored.
+Warning, line 1348: '+' not valid identifier.
+Warning, line 1348: '+' not valid identifier.
+Warning, line 1348: '+' not valid identifier.
+Warning, line 1348: '+' not valid identifier.
+Warning, line 1348: '+' not valid identifier.
+Warning, line 1348: '+' not valid identifier.
+Warning, line 1348: '+' not valid identifier.
+Warning, line 1348: '+' not valid identifier.
+Warning, line 1348: '+' not valid identifier.
+Warning, line 1348: '+' not valid identifier.
+Warning, line 1348: '+' not valid identifier.
+Warning, line 1348: '+' not valid identifier.
+Warning, line 1348: '+' not valid identifier.
+Warning, line 1348: '+' not valid identifier.
+Warning, line 1348: '+' not valid identifier.
+Warning, line 1348: '+' not valid identifier.
+Warning, line 1348: '+' not valid identifier.
+Warning, line 1348: '+' not valid identifier.
+Warning, line 1348: '+' not valid identifier.
+Warning, line 1348: '+' not valid identifier.
+Warning: 'End' missing.
+531 name warnings not printed.
+
+Problem '/home/ahmad/Desktop/astran-new-cmd/bin/Debug/ILPmodel.lp' read.
+Read time = 0.01 sec. (0.12 ticks)
+Tried aggregator 4 times.
+MIP Presolve eliminated 396 rows and 114 columns.
+MIP Presolve modified 185 coefficients.
+Aggregator did 128 substitutions.
+Reduced MIP has 819 rows, 489 columns, and 2319 nonzeros.
+Reduced MIP has 223 binaries, 266 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.01 sec. (4.01 ticks)
+Probing fixed 4 vars, tightened 0 bounds.
+Probing time = 0.00 sec. (0.33 ticks)
+Cover probing fixed 0 vars, tightened 3 bounds.
+Tried aggregator 2 times.
+MIP Presolve eliminated 9 rows and 7 columns.
+MIP Presolve modified 86 coefficients.
+Aggregator did 1 substitutions.
+Reduced MIP has 809 rows, 481 columns, and 2291 nonzeros.
+Reduced MIP has 215 binaries, 266 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.01 sec. (2.08 ticks)
+Probing time = 0.00 sec. (0.30 ticks)
+Clique table members: 55.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 8 threads.
+Root relaxation solution time = 0.01 sec. (4.01 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+      0     0   607123.1630   239                 607123.1630      256         
+      0     0   607344.0560   149                    Cuts: 76      313         
+      0     0   607383.1355   183                    Cuts: 35      363         
+      0     0   607383.6184   175                    Cuts: 10      376         
+      0     0   607383.6194   174                 ZeroHalf: 4      382         
+      0     0   607387.5752   176                     Cuts: 5      388         
+*     0+    0                       608003.0000   607387.5752             0.10%
+      0     2   607390.6086   171   608003.0000   607387.5752      391    0.10%
+Elapsed time = 0.68 sec. (99.44 ticks, tree = 0.01 MB, solutions = 1)
+*    62+    2                       607997.0000   607475.4433             0.09%
+*   483+  280                       607820.0000   607516.1951             0.05%
+*   949+  364                       607814.0000   607516.5118             0.05%
+*  1642+  765                       607771.0000   607517.8420             0.04%
+*  3190+ 1125                       607762.0000   607525.2690             0.04%
+*  3606+ 1212                       607757.0000   607545.4971             0.03%
+   3961  1085   607752.1738    55   607757.0000   607559.8485    21076    0.03%
+
+Cover cuts applied:  1
+Implied bound cuts applied:  8
+Flow cuts applied:  7
+Mixed integer rounding cuts applied:  62
+Zero-half cuts applied:  6
+Lift and project cuts applied:  9
+Gomory fractional cuts applied:  52
+
+Root node processing (before b&c):
+  Real time             =    0.63 sec. (99.13 ticks)
+Parallel b&c, 8 threads:
+  Real time             =    2.91 sec. (497.77 ticks)
+  Sync time (average)   =    0.83 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    3.55 sec. (596.90 ticks)
+
+Solution pool: 10 solutions saved.
+
+MIP - Integer optimal, tolerance (0.0001/1e-06):  Objective =  6.0775700000e+05
+Current MIP best bound =  6.0769623412e+05 (gap = 60.7659, 0.01%)
+Solution time =    3.56 sec.  Iterations = 32989  Nodes = 5287 (1694)
+Deterministic time = 596.90 ticks  (167.62 ticks/sec)
+
+
+Incumbent solution written to file '/home/ahmad/Desktop/astran-new-cmd/bin/Debug/xmlsol.sol'.
+
+Log started (V12.8.0.0) Fri May 19 06:53:26 2023
+
+Warning, line 4: Characters after RHS value are ignored.
+Warning, line 1348: '+' not valid identifier.
+Warning, line 1348: '+' not valid identifier.
+Warning, line 1348: '+' not valid identifier.
+Warning, line 1348: '+' not valid identifier.
+Warning, line 1348: '+' not valid identifier.
+Warning, line 1348: '+' not valid identifier.
+Warning, line 1348: '+' not valid identifier.
+Warning, line 1348: '+' not valid identifier.
+Warning, line 1348: '+' not valid identifier.
+Warning, line 1348: '+' not valid identifier.
+Warning, line 1348: '+' not valid identifier.
+Warning, line 1348: '+' not valid identifier.
+Warning, line 1348: '+' not valid identifier.
+Warning, line 1348: '+' not valid identifier.
+Warning, line 1348: '+' not valid identifier.
+Warning, line 1348: '+' not valid identifier.
+Warning, line 1348: '+' not valid identifier.
+Warning, line 1348: '+' not valid identifier.
+Warning, line 1348: '+' not valid identifier.
+Warning, line 1348: '+' not valid identifier.
+Warning: 'End' missing.
+531 name warnings not printed.
+
+Problem '/home/ahmad/Desktop/astran-new-cmd/bin/Debug/ILPmodel.lp' read.
+Read time = 0.01 sec. (0.12 ticks)
+Tried aggregator 4 times.
+MIP Presolve eliminated 396 rows and 114 columns.
+MIP Presolve modified 185 coefficients.
+Aggregator did 128 substitutions.
+Reduced MIP has 819 rows, 489 columns, and 2319 nonzeros.
+Reduced MIP has 223 binaries, 266 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.02 sec. (4.01 ticks)
+Probing fixed 4 vars, tightened 0 bounds.
+Probing time = 0.00 sec. (0.33 ticks)
+Cover probing fixed 0 vars, tightened 3 bounds.
+Tried aggregator 2 times.
+MIP Presolve eliminated 9 rows and 7 columns.
+MIP Presolve modified 86 coefficients.
+Aggregator did 1 substitutions.
+Reduced MIP has 809 rows, 481 columns, and 2291 nonzeros.
+Reduced MIP has 215 binaries, 266 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.01 sec. (2.08 ticks)
+Probing time = 0.00 sec. (0.30 ticks)
+Clique table members: 55.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 8 threads.
+Root relaxation solution time = 0.01 sec. (4.01 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+      0     0   607123.1630   239                 607123.1630      256         
+      0     0   607344.0560   149                    Cuts: 76      313         
+      0     0   607383.1355   183                    Cuts: 35      363         
+      0     0   607383.6184   175                    Cuts: 10      376         
+      0     0   607383.6194   174                 ZeroHalf: 4      382         
+      0     0   607387.5752   176                     Cuts: 5      388         
+*     0+    0                       608003.0000   607387.5752             0.10%
+      0     2   607390.6086   171   608003.0000   607387.5752      391    0.10%
+Elapsed time = 0.64 sec. (99.44 ticks, tree = 0.01 MB, solutions = 1)
+*    62+    2                       607997.0000   607475.4433             0.09%
+*   483+  280                       607820.0000   607516.1951             0.05%
+*   949+  364                       607814.0000   607516.5118             0.05%
+*  1642+  765                       607771.0000   607517.8420             0.04%
+*  3190+ 1125                       607762.0000   607525.2690             0.04%
+*  3606+ 1212                       607757.0000   607545.4971             0.03%
+   3961  1085   607752.1738    55   607757.0000   607559.8485    21076    0.03%
+
+Cover cuts applied:  1
+Implied bound cuts applied:  8
+Flow cuts applied:  7
+Mixed integer rounding cuts applied:  62
+Zero-half cuts applied:  6
+Lift and project cuts applied:  9
+Gomory fractional cuts applied:  52
+
+Root node processing (before b&c):
+  Real time             =    0.62 sec. (99.13 ticks)
+Parallel b&c, 8 threads:
+  Real time             =    2.81 sec. (497.77 ticks)
+  Sync time (average)   =    0.80 sec.
+  Wait time (average)   =    0.01 sec.
+                          ------------
+Total (root+branch&cut) =    3.43 sec. (596.90 ticks)
+
+Solution pool: 10 solutions saved.
+
+MIP - Integer optimal, tolerance (0.0001/1e-06):  Objective =  6.0775700000e+05
+Current MIP best bound =  6.0769623412e+05 (gap = 60.7659, 0.01%)
+Solution time =    3.44 sec.  Iterations = 32989  Nodes = 5287 (1694)
+Deterministic time = 596.90 ticks  (173.57 ticks/sec)
+
+
+Incumbent solution written to file '/home/ahmad/Desktop/astran-new-cmd/bin/Debug/xmlsol.sol'.

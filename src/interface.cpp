@@ -1,6 +1,7 @@
 
 #include "interface.h"
 #include "gdslib/include/gdsCpp.hpp"
+#include "datatypes.h"
 #include <iostream>
 #include <string.h>
 
@@ -8,7 +9,7 @@ extern DesignMng design;
 extern cellgen_cfg cellgen_configs;
 extern std::string astran_path;
 
-void generate_circuit(string tech, string net_list, string cellName)
+void generate_circuit(string tech, string net_list, string cellName, OutPutFileMode output_mode)
 {
     string back_slash = "\"";
     string cmd = "load technology " + back_slash + tech + back_slash;
@@ -33,10 +34,19 @@ void generate_circuit(string tech, string net_list, string cellName)
     design.readCommand(cmd);
 
 // generate cif output file
-    generate_cif_output(cellName);
+    if(output_mode == OutPutFileMode::CIF_OUTPUT_MODE || output_mode == OutPutFileMode::ALL_OUTPUT_MODES)
+    {
+        cout << "create file based on : " << static_cast<int>(output_mode) << std::endl;
+        generate_cif_output(cellName);
+    }
+
 
 //generate gds file output
-    generate_gds_output(cellName);
+    if(output_mode == OutPutFileMode::GDS_OUTPUT_MODE || output_mode == OutPutFileMode::ALL_OUTPUT_MODES)
+    {
+        cout << "create file based on : " << static_cast<int>(output_mode) << std::endl;
+        generate_gds_output(cellName);
+    }
 
 }
 

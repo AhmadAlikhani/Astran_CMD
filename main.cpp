@@ -1,4 +1,5 @@
 #include"main.h"
+#include "src/datatypes.h"
 
 class DesignMng;
 
@@ -11,6 +12,7 @@ string astran_path = "/home/ahmad/Desktop/astran-new-cmd";
 string cplex_path = "\"/home/ahmad/cpl/cplex/bin/x86-64_linux/cplex\"";
 string gurobi_path = "\"/opt/gurobi605/linux64/bin/gurobi_cl\"";
 string optimizer_name = "cplex";
+
 
 int main(int argc, char * argv[])
 {
@@ -57,6 +59,28 @@ int main(int argc, char * argv[])
         change_optimizer(optimizer_name);
         std::cout << endl << "optimizer name is wrong, current optimizer : cplex !!" << endl;
     }
+
+    /************* execute output file mode parameter **************/
+    OutPutFileMode output_mode = OutPutFileMode::CIF_OUTPUT_MODE;
+
+    string out_arg = "-out";
+    string out_mode = execute_required_arg(argc, argv, out_arg);
+
+    if((out_mode == "") || (out_mode == "cif") || (out_mode == "CIF"))
+    {
+        std::cout << "Output File will be created in CIF mode!" <<endl;
+        output_mode = OutPutFileMode::CIF_OUTPUT_MODE;
+    }
+    else if((out_mode == "gds") || (out_mode == "GDS"))
+    {
+        std::cout << "Output File will be created in GDS mode!" <<endl;
+        output_mode = OutPutFileMode::GDS_OUTPUT_MODE;
+    }
+
+    else if((out_mode == "all") || (out_mode == "ALL"))
+    {
+        output_mode = OutPutFileMode::ALL_OUTPUT_MODES;
+    }
 /************* generate all circuits **************/
 
     string name_arg = "-name";
@@ -74,7 +98,7 @@ int main(int argc, char * argv[])
 
     On_Init();
     parse_cellgen_cfg();
-    generate_circuit(tech, net_list, cellName);
+    generate_circuit(tech, net_list, cellName, output_mode);
   }
     return 0;
 }
