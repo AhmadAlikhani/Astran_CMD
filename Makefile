@@ -35,6 +35,10 @@ OBJECTFILES= \
 	${OFILESDIR}/src/execute_arg.o \
 	${OFILESDIR}/src/interface.o \
 	${OFILESDIR}/src/parser.o \
+	${OFILESDIR}/src/gdslib/src/gdsCpp.o \
+	${OFILESDIR}/src/gdslib/src/gdsForge.o \
+	${OFILESDIR}/src/gdslib/src/gdsImport.o \
+	${OFILESDIR}/src/gdslib/src/gdsParser.o \
 	${OFILESDIR}/main.o 
 	
 
@@ -157,4 +161,24 @@ ${OFILESDIR}/src/graphrouter.o: src/graphrouter.cpp
 	${MKDIR} -p ${OFILESDIR}/src
 	${RM} $@.d
 	$(COMPILE.cc) -g -MMD -MP -MF $@.d -o ${OFILESDIR}/src/graphrouter.o src/graphrouter.cpp
-
+	
+		
+${OFILESDIR}/src/gdslib/src/gdsCpp.o: src/gdslib/src/gdsCpp.cpp
+	${MKDIR} -p ${OFILESDIR}/src/gdslib/src/
+	${RM} $@.d
+	$(COMPILE.cc) -g -MMD -MP -MF $@.d -o ${OFILESDIR}/src/gdslib/src/gdsCpp.o src/gdslib/src/gdsCpp.cpp
+	
+${OFILESDIR}/src/gdslib/src/gdsForge.o: src/gdslib/src/gdsForge.cpp
+	${MKDIR} -p ${OFILESDIR}/src/gdslib/src/
+	${RM} $@.d
+	$(COMPILE.cc) -g -MMD -MP -MF $@.d -o ${OFILESDIR}/src/gdslib/src/gdsForge.o src/gdslib/src/gdsForge.cpp
+	
+${OFILESDIR}/src/gdslib/src/gdsImport.o: src/gdslib/src/gdsImport.cpp
+	${MKDIR} -p ${OFILESDIR}/src/gdslib/src/
+	${RM} $@.d
+	$(COMPILE.cc) -g -MMD -MP -MF $@.d -o ${OFILESDIR}/src/gdslib/src/gdsImport.o src/gdslib/src/gdsImport.cpp
+	
+${OFILESDIR}/src/gdslib/src/gdsParser.o: src/gdslib/src/gdsParser.cpp
+	${MKDIR} -p ${OFILESDIR}/src/gdslib/src/
+	${RM} $@.d
+	$(COMPILE.cc) -g -MMD -MP -MF $@.d -o ${OFILESDIR}/src/gdslib/src/gdsParser.o src/gdslib/src/gdsParser.cpp

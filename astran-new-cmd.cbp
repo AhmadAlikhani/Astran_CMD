@@ -47,6 +47,7 @@
 		<Unit filename="src/clayout.h" />
 		<Unit filename="src/compaction.cpp" />
 		<Unit filename="src/compaction.h" />
+		<Unit filename="src/datatypes.h" />
 		<Unit filename="src/designmng.cpp" />
 		<Unit filename="src/designmng.h" />
 		<Unit filename="src/draw.cpp" />
