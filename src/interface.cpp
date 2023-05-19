@@ -1,8 +1,12 @@
 
 #include "interface.h"
+#include "gdslib/include/gdsCpp.hpp"
+#include <iostream>
+#include <string.h>
 
 extern DesignMng design;
 extern cellgen_cfg cellgen_configs;
+extern std::string astran_path;
 
 void generate_circuit(string tech, string net_list, string cellName)
 {
@@ -28,11 +32,12 @@ void generate_circuit(string tech, string net_list, string cellName)
     cout<<cmd;
     design.readCommand(cmd);
 
-		Cif *cif=new Cif(cellName+".cif", *(design.getRules()));
-		cif->cellCif(*(design.getCircuit()->getLayouts()), cellName);
-		delete(cif);
-		cmd = design.getViewer() + " "+cellName+".cif";
-		cout << "-> Opening viewer: " << cmd << endl;
+// generate cif output file
+    generate_cif_output(cellName);
+
+//generate gds file output
+    generate_gds_output(cellName);
+
 }
 
 void set_place_tr_configs()
@@ -100,4 +105,19 @@ void set_compact_layout_configs()
     cmd += cellgen_configs.time_limit;
 cout << "**************"<<cmd <<endl<<endl<<endl<<endl;
     design.readCommand(cmd);
+}
+
+void generate_cif_output(std::string cellName)
+{
+		Cif *cif=new Cif(cellName+".cif", *(design.getRules()));
+		cif->cellCif(*(design.getCircuit()->getLayouts()), cellName);
+		delete(cif);
+}
+
+void generate_gds_output(std::string cellName)
+{
+    std::string cmd;
+		cmd = string("export layout ") + cellName + string(" \"") + string("/home/ahmad/Desktop/astran-new-cmd/bin/Debug/") + cellName + string(".gds\"");
+		cout << cmd;
+		design.readCommand(cmd);
 }

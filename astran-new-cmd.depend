@@ -241,7 +241,7 @@
 1649127128 source:/home/ahmad/astran_hplp/Astran/src/verilog.cpp
 	"verilog.h"
 
-1682685895 source:/home/ahmad/Desktop/astran-new-cmd/main.cpp
+1682716544 source:/home/ahmad/Desktop/astran-new-cmd/main.cpp
 	"main.h"
 
 1675929212 source:/home/ahmad/astran_hplp/Astran/src/compaction.cpp
@@ -261,7 +261,7 @@
 	<regex>
 	<tgmath.h>
 
-1682685895 source:/home/ahmad/Desktop/astran-new-cmd/src/autocell2.cpp
+1684241944 source:/home/ahmad/Desktop/astran-new-cmd/src/autocell2.cpp
 	"autocell2.h"
 
 1675928202 /home/ahmad/Desktop/astran-new-cmd/src/autocell2.h
@@ -297,7 +297,7 @@
 	<math.h>
 	"util.h"
 
-1675928646 /home/ahmad/Desktop/astran-new-cmd/src/util.h
+1684241944 /home/ahmad/Desktop/astran-new-cmd/src/util.h
 	<sstream>
 	<fstream>
 	<string>
@@ -326,7 +326,7 @@
 	"thresholdaccept.h"
 	"util.h"
 
-1649127128 /home/ahmad/Desktop/astran-new-cmd/src/thresholdaccept.h
+1684241944 /home/ahmad/Desktop/astran-new-cmd/src/thresholdaccept.h
 	<iostream>
 	<vector>
 	<math.h>
@@ -360,7 +360,7 @@
 	"cellnetlst.h"
 	<algorithm>
 
-1649127128 source:/home/ahmad/Desktop/astran-new-cmd/src/cif.cpp
+1684241944 source:/home/ahmad/Desktop/astran-new-cmd/src/cif.cpp
 	"cif.h"
 
 1675928194 /home/ahmad/Desktop/astran-new-cmd/src/cif.h
@@ -379,7 +379,7 @@
 1649127128 source:/home/ahmad/Desktop/astran-new-cmd/src/clayout.cpp
 	"clayout.h"
 
-1682685895 source:/home/ahmad/Desktop/astran-new-cmd/src/compaction.cpp
+1684241944 source:/home/ahmad/Desktop/astran-new-cmd/src/compaction.cpp
 	"compaction.h"
 	<iostream>
 	<stdio.h>
@@ -396,10 +396,13 @@
 	<regex>
 	<tgmath.h>
 
-1649127128 source:/home/ahmad/Desktop/astran-new-cmd/src/designmng.cpp
+1684501649 source:/home/ahmad/Desktop/astran-new-cmd/src/designmng.cpp
 	"designmng.h"
+	"gdslib/include/gdsCpp.hpp"
+	<iostream>
+	<string.h>
 
-1682685895 /home/ahmad/Desktop/astran-new-cmd/src/designmng.h
+1684446349 /home/ahmad/Desktop/astran-new-cmd/src/designmng.h
 	<list>
 	<vector>
 	<string>
@@ -491,7 +494,7 @@
 1649127128 source:/home/ahmad/Desktop/astran-new-cmd/src/draw.cpp
 	"draw.h"
 
-1649127128 source:/home/ahmad/Desktop/astran-new-cmd/src/gds.cpp
+1684241944 source:/home/ahmad/Desktop/astran-new-cmd/src/gds.cpp
 	"gds.h"
 	<cstdlib>
 	<iostream>
@@ -499,10 +502,10 @@
 	<cstdio>
 	<time.h>
 
-1649127128 source:/home/ahmad/Desktop/astran-new-cmd/src/graphrouter.cpp
+1684241944 source:/home/ahmad/Desktop/astran-new-cmd/src/graphrouter.cpp
 	"graphrouter.h"
 
-1675928776 source:/home/ahmad/Desktop/astran-new-cmd/src/gridrouter.cpp
+1684241944 source:/home/ahmad/Desktop/astran-new-cmd/src/gridrouter.cpp
 	"gridrouter.h"
 
 1649127128 source:/home/ahmad/Desktop/astran-new-cmd/src/lef.cpp
@@ -511,13 +514,13 @@
 1682685895 source:/home/ahmad/Desktop/astran-new-cmd/src/placer.cpp
 	"placer.h"
 
-1682685895 source:/home/ahmad/Desktop/astran-new-cmd/src/router.cpp
+1684241944 source:/home/ahmad/Desktop/astran-new-cmd/src/router.cpp
 	"router.h"
 
 1649127128 source:/home/ahmad/Desktop/astran-new-cmd/src/rules.cpp
 	"rules.h"
 
-1649127128 source:/home/ahmad/Desktop/astran-new-cmd/src/verilog.cpp
+1684241944 source:/home/ahmad/Desktop/astran-new-cmd/src/verilog.cpp
 	"verilog.h"
 
 1682685895 source:/home/ahmad/Desktop/astran-new-cmd/src/parser.cpp
@@ -540,22 +543,117 @@
 	"designmng.h"
 	"cif.h"
 
-1676146594 /home/ahmad/Desktop/astran-new-cmd/src/interface.h
+1684501671 /home/ahmad/Desktop/astran-new-cmd/src/interface.h
 	<iostream>
 	"designmng.h"
 	"cif.h"
 
-1682685895 source:/home/ahmad/Desktop/astran-new-cmd/src/interface.cpp
+1684501684 source:/home/ahmad/Desktop/astran-new-cmd/src/interface.cpp
 	"interface.h"
+	"gdslib/include/gdsCpp.hpp"
+	<iostream>
+	<string.h>
 
 1681464274 source:/home/ahmad/Desktop/astran-new-cmd/src/execute_arg.cpp
 	"../main.h"
 
-1681409863 /home/ahmad/Desktop/astran-new-cmd/main.h
+1683914440 /home/ahmad/Desktop/astran-new-cmd/main.h
 	<iostream>
 	"src/designmng.h"
 	"src/cif.h"
 	"src/interface.h"
 	"src/parser.h"
 	<vector>
+
+1591817520 /home/ahmad/Desktop/astran-new-cmd/src/gdslib/include/gdscpp/gdsCpp.hpp
+	"gdsForge.hpp"
+	"gdsParser.hpp"
+	<algorithm>
+	<bitset>
+	<fstream>
+	<iostream>
+	<map>
+	<sstream>
+	<stdio.h>
+	<string>
+	<unordered_map>
+	<vector>
+
+1591817520 /home/ahmad/Desktop/astran-new-cmd/src/gdslib/include/gdscpp/gdsForge.hpp
+	"gdsCpp.hpp"
+	"gdsParser.hpp"
+	<bitset>
+	<cmath>
+	<cstring>
+	<fstream>
+	<iostream>
+	<map>
+	<set>
+	<stdio.h>
+	<string>
+	<vector>
+
+1591817520 /home/ahmad/Desktop/astran-new-cmd/src/gdslib/include/gdscpp/gdsParser.hpp
+	<bitset>
+	<cstring>
+	<fstream>
+	<iostream>
+	<map>
+	<math.h>
+	<set>
+	<stdio.h>
+	<string>
+	<vector>
+
+1684485620 source:/home/ahmad/Desktop/astran-new-cmd/src/gdslib/src/gdsCpp.cpp
+	"../include/gdsCpp.hpp"
+
+1591817520 /home/ahmad/Desktop/astran-new-cmd/src/gdslib/include/gdsCpp.hpp
+	"gdsForge.hpp"
+	"gdsParser.hpp"
+	<algorithm>
+	<bitset>
+	<fstream>
+	<iostream>
+	<map>
+	<sstream>
+	<stdio.h>
+	<string>
+	<unordered_map>
+	<vector>
+
+1591817520 /home/ahmad/Desktop/astran-new-cmd/src/gdslib/include/gdsForge.hpp
+	"gdsCpp.hpp"
+	"gdsParser.hpp"
+	<bitset>
+	<cmath>
+	<cstring>
+	<fstream>
+	<iostream>
+	<map>
+	<set>
+	<stdio.h>
+	<string>
+	<vector>
+
+1591817520 /home/ahmad/Desktop/astran-new-cmd/src/gdslib/include/gdsParser.hpp
+	<bitset>
+	<cstring>
+	<fstream>
+	<iostream>
+	<map>
+	<math.h>
+	<set>
+	<stdio.h>
+	<string>
+	<vector>
+
+1684488005 source:/home/ahmad/Desktop/astran-new-cmd/src/gdslib/src/gdsForge.cpp
+	"../include/gdsForge.hpp"
+
+1684485673 source:/home/ahmad/Desktop/astran-new-cmd/src/gdslib/src/gdsImport.cpp
+	"../include/gdsCpp.hpp"
+
+1684485696 source:/home/ahmad/Desktop/astran-new-cmd/src/gdslib/src/gdsParser.cpp
+	"../include/gdsParser.hpp"
 

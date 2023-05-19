@@ -54,6 +54,16 @@
 		<Unit filename="src/execute_arg.cpp" />
 		<Unit filename="src/gds.cpp" />
 		<Unit filename="src/gds.h" />
+		<Unit filename="src/gdslib/include/gdsCpp.hpp" />
+		<Unit filename="src/gdslib/include/gdsForge.hpp" />
+		<Unit filename="src/gdslib/include/gdsParser.hpp" />
+		<Unit filename="src/gdslib/include/gdscpp/gdsCpp.hpp" />
+		<Unit filename="src/gdslib/include/gdscpp/gdsForge.hpp" />
+		<Unit filename="src/gdslib/include/gdscpp/gdsParser.hpp" />
+		<Unit filename="src/gdslib/src/gdsCpp.cpp" />
+		<Unit filename="src/gdslib/src/gdsForge.cpp" />
+		<Unit filename="src/gdslib/src/gdsImport.cpp" />
+		<Unit filename="src/gdslib/src/gdsParser.cpp" />
 		<Unit filename="src/graphrouter.cpp" />
 		<Unit filename="src/graphrouter.h" />
 		<Unit filename="src/gridrouter.cpp" />
