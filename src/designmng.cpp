@@ -372,7 +372,8 @@ bool DesignMng::readCommand(string cmd){
                                             corX = {x1, x1, x2 , x2};
                                             corY = {y1, y2, y2 , y1};
 
-                                            fooSTR.BOUNDARY.push_back(drawBoundary(layer, corX, corY));
+                                            //fooSTR.BOUNDARY.push_back(drawBoundary(layer, corX, corY));
+                                            fooSTR.BOUNDARY.push_back(draw2ptBox(layer, x1, y1, x2, y2));
                                         }
                                     }
                                 }
