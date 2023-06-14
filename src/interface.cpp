@@ -48,7 +48,7 @@ void generate_circuit(string tech, string net_list, string cellName, OutPutFileM
         generate_gds_output(cellName);
     }
 
-    generate_magic_output(cellName);
+    interface_generate_magic_output(cellName);
 
 }
 
@@ -134,8 +134,8 @@ void generate_gds_output(std::string cellName)
 		design.readCommand(cmd);
 }
 
-void generate_magic_output(std::string cellName)
+void interface_generate_magic_output(std::string cellName)
 {
-    //design.generate_magic_output(cellName);
+    design.generate_magic_output(cellName);
 }
 

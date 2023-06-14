@@ -53,6 +53,7 @@ public:
 	string getName(){return name;};
 	void check_layer_name_for_mag_type(FILE* file_name, std::string later_name, std::string type);
 
+
 private:
     enum command_name {
         // New - 2
@@ -209,6 +210,40 @@ private:
         {"*", "Comment"},
         {"EXIT", "Close the program"}
     };
+
+    	std::string mag_layer_names[N_LAYER_NAMES] = {
+        {"m2contact"},
+        {"poly"},
+        {"ndiff"},
+        {"pdiff"},
+        {"ndiffusion"},
+        {"pdiffusion"},
+        {"nwell"},
+        {"pwell"},
+        {"via"},
+        {"via2"},
+        {"via"},
+        {"via"},
+        {"via"},
+        {"via"},
+        {"via"},
+        {"via"},
+        {"via"},
+        {"metal1"},
+        {"metal2"},
+        {"metal3"},
+        {"metal1"},
+        {"metal1"},
+        {"metal1"},
+        {"metal1"},
+        {"metal1"},
+        {"metal1"},
+        {"metal1"},
+        {"glass"},
+        {"metal1"},
+        {"metal2"},
+        {"metal3"},
+	};
 
     string name;
     std::unique_ptr<Circuit> circuit = std::unique_ptr<Circuit>(new Circuit());

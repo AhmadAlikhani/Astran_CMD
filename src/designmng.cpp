@@ -729,6 +729,7 @@ bool DesignMng::readCommand(string cmd){
 
 void DesignMng::generate_magic_output(std::string circuit_name)
 {
+
     string path = circuit_name + ".mag";
     FILE* mag_file = fopen(path.c_str(), "w");
 
@@ -771,7 +772,7 @@ void DesignMng::generate_magic_output(std::string circuit_name)
                     {
                         if(layers_it->first == check_over)
                         {
-                            std::string layer_names = rules->getLayerName(check_over);
+                            std::string layer_names = mag_layer_names[check_over];
                             std::cout << layer_names << " " << layers_it->first <<std::endl;
 
                                 layer_names = std::string("<< ") + layer_names + std::string(" >>");
