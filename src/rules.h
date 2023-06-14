@@ -96,7 +96,7 @@ private:
     };
 
     layer_labels layer_labels_lst[N_LAYER_NAMES]={
-        {"genericcontact","Contact","","","",L_DRAWING},
+        {"contact","Contact","","","",L_DRAWING},
         {"poly","Polysilicon","","","",L_DRAWING},
         {"ndiff","N+ Diffusion","","","",L_DRAWING},
         {"pdiff","P+ Diffusion","","","",L_DRAWING},
@@ -105,7 +105,7 @@ private:
         {"nwell","N Well","","","",L_DRAWING},
         {"pwell","P Well","","","",L_DRAWING},
         {"via","Via 1","","","",L_DRAWING},
-        {"via","Via 2","","","",L_DRAWING},
+        {"via2","Via 2","","","",L_DRAWING},
         {"via","Via 3","","","",L_DRAWING},
         {"via","Via 4","","","",L_DRAWING},
         {"via","Via 5","","","",L_DRAWING},

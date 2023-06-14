@@ -290,7 +290,7 @@
 	"rules.h"
 	"util.h"
 
-1686701423 /home/ahmad/Desktop/astran-new-cmd/src/rules.h
+1686778743 /home/ahmad/Desktop/astran-new-cmd/src/rules.h
 	<iostream>
 	<fstream>
 	<strstream>
@@ -397,10 +397,9 @@
 	<regex>
 	<tgmath.h>
 
-1686693452 source:/home/ahmad/Desktop/astran-new-cmd/src/designmng.cpp
+1686778930 source:/home/ahmad/Desktop/astran-new-cmd/src/designmng.cpp
 	"designmng.h"
 	"gdslib/include/gdsCpp.hpp"
-	<magic.h>
 	<iostream>
 	<string.h>
 
@@ -551,7 +550,7 @@
 	"datatypes.h"
 	"cif.h"
 
-1686693560 source:/home/ahmad/Desktop/astran-new-cmd/src/interface.cpp
+1686778794 source:/home/ahmad/Desktop/astran-new-cmd/src/interface.cpp
 	"interface.h"
 	"gdslib/include/gdsCpp.hpp"
 	"datatypes.h"

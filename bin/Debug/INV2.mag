@@ -1,0 +1,127 @@
+magic
+tech scmos
+magscale 1 2
+timestamp 1686778770
+<< contact >>
+rect 172 786 206 820
+<< contact >>
+rect 172 712 206 746
+<< contact >>
+rect 172 282 206 316
+<< contact >>
+rect 172 208 206 242
+<< contact >>
+rect 140 432 174 466
+<< contact >>
+rect 72 786 106 820
+<< contact >>
+rect 72 712 106 746
+<< contact >>
+rect 72 282 106 316
+<< contact >>
+rect 72 208 106 242
+<< poly >>
+rect 128 464 152 488
+<< poly >>
+rect 126 464 152 888
+<< poly >>
+rect 128 462 152 488
+<< poly >>
+rect 128 464 152 488
+<< poly >>
+rect 128 412 152 436
+<< poly >>
+rect 128 412 182 486
+<< poly >>
+rect 126 140 152 436
+<< ndiff >>
+rect 168 192 210 384
+<< ndiff >>
+rect 68 192 210 384
+<< ndiff >>
+rect 68 192 110 384
+<< pdiff >>
+rect 168 516 210 836
+<< pdiff >>
+rect 68 516 210 836
+<< pdiff >>
+rect 68 516 110 836
+<< ndiffusion >>
+rect -36 -36 276 456
+<< pdiffusion >>
+rect -36 456 276 1076
+<< nwell >>
+rect -94 456 334 1134
+<< pwell >>
+rect -94 -94 334 456
+<< metal1 >>
+rect 0 896 240 1040
+<< metal1 >>
+rect 0 0 240 144
+<< metal1 >>
+rect 178 780 218 936
+<< metal1 >>
+rect 160 712 218 820
+<< metal1 >>
+rect 170 196 210 236
+<< metal1 >>
+rect 170 196 210 328
+<< metal1 >>
+rect 170 104 210 236
+<< metal1 >>
+rect 170 196 210 236
+<< metal1 >>
+rect 140 420 214 512
+<< metal1 >>
+rect 60 712 100 752
+<< metal1 >>
+rect 60 712 118 820
+<< metal1 >>
+rect 60 712 100 752
+<< metal1 >>
+rect 60 712 100 752
+<< metal1 >>
+rect 60 276 100 728
+<< metal1 >>
+rect 60 688 100 752
+<< metal1 >>
+rect 60 208 118 316
+<< glass >>
+rect 0 0 240 1040
+<< metal1 >>
+rect 0 896 240 1040
+<< metal1 >>
+rect 0 0 240 144
+<< metal1 >>
+rect 60 208 118 316
+<< metal1 >>
+rect 60 688 100 752
+<< metal1 >>
+rect 60 276 100 728
+<< metal1 >>
+rect 60 712 100 752
+<< metal1 >>
+rect 60 712 100 752
+<< metal1 >>
+rect 60 712 118 820
+<< metal1 >>
+rect 60 712 100 752
+<< metal1 >>
+rect 140 420 214 512
+<< metal1 >>
+rect 170 196 210 236
+<< metal1 >>
+rect 170 104 210 236
+<< metal1 >>
+rect 170 196 210 328
+<< metal1 >>
+rect 170 196 210 236
+<< metal1 >>
+rect 160 712 218 820
+<< metal1 >>
+rect 178 780 218 936
+<< metal1 >>
+rect 140 460 180 500
+<< metal1 >>
+rect 60 700 100 740
+<< end >>

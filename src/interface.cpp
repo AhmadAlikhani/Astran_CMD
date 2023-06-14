@@ -136,6 +136,6 @@ void generate_gds_output(std::string cellName)
 
 void generate_magic_output(std::string cellName)
 {
-design.generate_magic_output(cellName);
+    //design.generate_magic_output(cellName);
 }
 
