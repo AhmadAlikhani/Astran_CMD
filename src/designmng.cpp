@@ -773,7 +773,7 @@ void DesignMng::generate_magic_output(std::string circuit_name)
                         if(layers_it->first == check_over)
                         {
                             std::string layer_names = mag_layer_names[check_over];
-                            std::cout << layer_names << " " << layers_it->first <<std::endl;
+                            //std::cout << layer_names << " " << layers_it->first <<std::endl;
 
                                 layer_names = std::string("<< ") + layer_names + std::string(" >>");
                                 output = layer_names + std::string("\n");
