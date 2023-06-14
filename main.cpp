@@ -16,7 +16,7 @@ string optimizer_name = "cplex";
 
 int main(int argc, char * argv[])
 {
-    std::cout << "Ahmad Mohammad Alikhani 4007702002" << endl;
+    std::cout << "https://github.com/AhmadAlikhani/astran-new-cmd.git" << endl;
 
 /************* execute technology address parameter **************/
     string tech_arg = "-tech";
