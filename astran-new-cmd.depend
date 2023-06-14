@@ -290,7 +290,7 @@
 	"rules.h"
 	"util.h"
 
-1649127128 /home/ahmad/Desktop/astran-new-cmd/src/rules.h
+1686701423 /home/ahmad/Desktop/astran-new-cmd/src/rules.h
 	<iostream>
 	<fstream>
 	<strstream>
@@ -397,13 +397,14 @@
 	<regex>
 	<tgmath.h>
 
-1684525780 source:/home/ahmad/Desktop/astran-new-cmd/src/designmng.cpp
+1686693452 source:/home/ahmad/Desktop/astran-new-cmd/src/designmng.cpp
 	"designmng.h"
 	"gdslib/include/gdsCpp.hpp"
+	<magic.h>
 	<iostream>
 	<string.h>
 
-1684446349 /home/ahmad/Desktop/astran-new-cmd/src/designmng.h
+1686700408 /home/ahmad/Desktop/astran-new-cmd/src/designmng.h
 	<list>
 	<vector>
 	<string>
@@ -544,13 +545,13 @@
 	"designmng.h"
 	"cif.h"
 
-1684503033 /home/ahmad/Desktop/astran-new-cmd/src/interface.h
+1686666499 /home/ahmad/Desktop/astran-new-cmd/src/interface.h
 	<iostream>
 	"designmng.h"
 	"datatypes.h"
 	"cif.h"
 
-1684503496 source:/home/ahmad/Desktop/astran-new-cmd/src/interface.cpp
+1686693560 source:/home/ahmad/Desktop/astran-new-cmd/src/interface.cpp
 	"interface.h"
 	"gdslib/include/gdsCpp.hpp"
 	"datatypes.h"
@@ -651,7 +652,7 @@
 	<string>
 	<vector>
 
-1684525480 source:/home/ahmad/Desktop/astran-new-cmd/src/gdslib/src/gdsForge.cpp
+1685205282 source:/home/ahmad/Desktop/astran-new-cmd/src/gdslib/src/gdsForge.cpp
 	"../include/gdsForge.hpp"
 
 1684485673 source:/home/ahmad/Desktop/astran-new-cmd/src/gdslib/src/gdsImport.cpp
@@ -661,4 +662,159 @@
 	"../include/gdsParser.hpp"
 
 1684503155 /home/ahmad/Desktop/astran-new-cmd/src/datatypes.h
+
+1657149803 /usr/include/math.h
+	<bits/libc-header-start.h>
+	<bits/types.h>
+	<bits/math-vector.h>
+	<bits/floatn.h>
+	<bits/flt-eval-method.h>
+	<bits/fp-logb.h>
+	<bits/fp-fast.h>
+	<bits/mathcalls-helper-functions.h>
+	<bits/mathcalls.h>
+	<bits/mathcalls-helper-functions.h>
+	<bits/mathcalls.h>
+	<bits/mathcalls-helper-functions.h>
+	<bits/mathcalls.h>
+	<bits/mathcalls-helper-functions.h>
+	<bits/mathcalls.h>
+	<bits/mathcalls-helper-functions.h>
+	<bits/mathcalls.h>
+	<bits/mathcalls-helper-functions.h>
+	<bits/mathcalls.h>
+	<bits/mathcalls-helper-functions.h>
+	<bits/mathcalls.h>
+	<bits/mathcalls-helper-functions.h>
+	<bits/mathcalls.h>
+	<bits/mathcalls-helper-functions.h>
+	<bits/mathcalls.h>
+	<bits/mathcalls-helper-functions.h>
+	<bits/mathcalls.h>
+	<bits/mathcalls-narrow.h>
+	<bits/mathcalls-narrow.h>
+	<bits/mathcalls-narrow.h>
+	<bits/mathcalls-narrow.h>
+	<bits/mathcalls-narrow.h>
+	<bits/mathcalls-narrow.h>
+	<bits/mathcalls-narrow.h>
+	<bits/mathcalls-narrow.h>
+	<bits/mathcalls-narrow.h>
+	<bits/mathcalls-narrow.h>
+	<bits/mathcalls-narrow.h>
+	<bits/mathcalls-narrow.h>
+	<bits/mathcalls-narrow.h>
+	<bits/mathcalls-narrow.h>
+	<bits/mathcalls-narrow.h>
+	<bits/mathcalls-narrow.h>
+	<bits/mathcalls-narrow.h>
+	<bits/mathcalls-narrow.h>
+	<bits/mathcalls-narrow.h>
+	<bits/mathcalls-narrow.h>
+	<bits/mathcalls-narrow.h>
+	<bits/mathcalls-narrow.h>
+	<bits/mathcalls-narrow.h>
+	<bits/mathcalls-narrow.h>
+	<bits/iscanonical.h>
+
+1657149803 /usr/include/stdio.h
+	<bits/libc-header-start.h>
+	<stddef.h>
+	<stdarg.h>
+	<bits/types.h>
+	<bits/types/__fpos_t.h>
+	<bits/types/__fpos64_t.h>
+	<bits/types/__FILE.h>
+	<bits/types/FILE.h>
+	<bits/types/struct_FILE.h>
+	<bits/types/cookie_io_functions_t.h>
+	<stdarg.h>
+	<bits/stdio_lim.h>
+	<bits/floatn.h>
+	<bits/getopt_posix.h>
+	<bits/stdio.h>
+	<bits/stdio2.h>
+	<bits/floatn.h>
+	<bits/stdio-ldbl.h>
+
+1657149803 /usr/include/stdlib.h
+	<bits/libc-header-start.h>
+	<stddef.h>
+	<bits/waitflags.h>
+	<bits/waitstatus.h>
+	<bits/floatn.h>
+	<bits/types/locale_t.h>
+	<sys/types.h>
+	<alloca.h>
+	<bits/stdlib-bsearch.h>
+	<bits/stdlib-float.h>
+	<bits/stdlib.h>
+	<bits/floatn.h>
+	<bits/stdlib-ldbl.h>
+
+1657149803 /usr/include/alloca.h
+	<features.h>
+	<stddef.h>
+
+1657149803 /usr/include/features.h
+	<features-time64.h>
+	<stdc-predef.h>
+	<sys/cdefs.h>
+	<gnu/stubs.h>
+
+1657149803 /usr/include/features-time64.h
+	<bits/wordsize.h>
+	<bits/timesize.h>
+
+1657149803 /usr/include/stdc-predef.h
+
+1657149803 /usr/include/string.h
+	<bits/libc-header-start.h>
+	<stddef.h>
+	<bits/types/locale_t.h>
+	<strings.h>
+	<bits/string_fortified.h>
+
+1657149803 /usr/include/strings.h
+	<features.h>
+	<stddef.h>
+	<bits/types/locale_t.h>
+	<bits/strings_fortified.h>
+
+1657149803 /usr/include/time.h
+	<features.h>
+	<stddef.h>
+	<bits/time.h>
+	<bits/types/clock_t.h>
+	<bits/types/time_t.h>
+	<bits/types/struct_tm.h>
+	<bits/types/struct_timespec.h>
+	<bits/types/clockid_t.h>
+	<bits/types/timer_t.h>
+	<bits/types/struct_itimerspec.h>
+	<bits/types/locale_t.h>
+
+1657149803 /usr/include/tgmath.h
+	<bits/libc-header-start.h>
+	<bits/floatn.h>
+	<math.h>
+	<complex.h>
+
+1657149803 /usr/include/complex.h
+	<bits/libc-header-start.h>
+	<bits/mathdef.h>
+	<bits/floatn.h>
+	<bits/cmathcalls.h>
+	<bits/cmathcalls.h>
+	<bits/cmathcalls.h>
+	<bits/cmathcalls.h>
+	<bits/cmathcalls.h>
+	<bits/cmathcalls.h>
+	<bits/cmathcalls.h>
+	<bits/cmathcalls.h>
+	<bits/cmathcalls.h>
+	<bits/cmathcalls.h>
+
+1648141629 /usr/include/magic.h
+	<sys/types.h>
 

@@ -57,7 +57,7 @@ public:
 	void saveRules (string filename);
 	bool saveCIFLayerTable(string filename);
 	bool saveGDSIILayerTable(string filename);
-	
+
 	// Rules' methods
 	int getRule(rule_name name);
 	float getRulef(rule_name name);
@@ -84,60 +84,60 @@ public:
 	int getLayersSize(){return TECHNAME;};
 	void listLayersLabels();
 	string getLayerPurposeText(layerPurpose l);
-    
+
 private:
     unsigned int resolution;
     bool calcGrid();
     unsigned int grid;
-    
+
     struct layer_labels {
         string name, desc, valCIF, valGDSII, valTech;
         layerPurpose purpose;
     };
-    
+
     layer_labels layer_labels_lst[N_LAYER_NAMES]={
-        {"CONT","Contact","","","",L_DRAWING},
-        {"POLY","Polysilicon","","","",L_DRAWING},
-        {"NDIF","N+ Diffusion","","","",L_DRAWING},
-        {"PDIF","P+ Diffusion","","","",L_DRAWING},
-        {"NSEL","Select N-Type Diffusion","","","",L_DRAWING},
-        {"PSEL","Select P-Type Diffusion","","","",L_DRAWING},
-        {"NWEL","N Well","","","",L_DRAWING},
-        {"PWEL","P Well","","","",L_DRAWING},
-        {"VIA1","Via 1","","","",L_DRAWING},
-        {"VIA2","Via 2","","","",L_DRAWING},
-        {"VIA3","Via 3","","","",L_DRAWING},
-        {"VIA4","Via 4","","","",L_DRAWING},
-        {"VIA5","Via 5","","","",L_DRAWING},
-        {"VIA6","Via 6","","","",L_DRAWING},
-        {"VIA7","Via 7","","","",L_DRAWING},
-        {"VIA8","Via 8","","","",L_DRAWING},
-        {"VIA9","Via 9","","","",L_DRAWING},
-        {"MET1","Metal 1","","","",L_DRAWING},
-        {"MET2","Metal 2","","","",L_DRAWING},
-        {"MET3","Metal 3","","","",L_DRAWING},
-        {"MET4","Metal 4","","","",L_DRAWING},
-        {"MET5","Metal 5","","","",L_DRAWING},
-        {"MET6","Metal 6","","","",L_DRAWING},
-        {"MET7","Metal 7","","","",L_DRAWING},
-        {"MET8","Metal 8","","","",L_DRAWING},
-        {"MET9","Metal 9","","","",L_DRAWING},
-        {"MET10","Metal 10","","","",L_DRAWING},
-        {"CELLBOX","Cell Box","","","",L_DRAWING},
-        {"MET1P","Metal 1 Pin","","","",L_PIN},
-        {"MET2P","Metal 2 Pin","","","",L_PIN},
-        {"MET3P","Metal 3 Pin","","","",L_PIN},
+        {"genericcontact","Contact","","","",L_DRAWING},
+        {"poly","Polysilicon","","","",L_DRAWING},
+        {"ndiff","N+ Diffusion","","","",L_DRAWING},
+        {"pdiff","P+ Diffusion","","","",L_DRAWING},
+        {"ndiffusion","Select N-Type Diffusion","","","",L_DRAWING},
+        {"pdiffusion","Select P-Type Diffusion","","","",L_DRAWING},
+        {"nwell","N Well","","","",L_DRAWING},
+        {"pwell","P Well","","","",L_DRAWING},
+        {"via","Via 1","","","",L_DRAWING},
+        {"via","Via 2","","","",L_DRAWING},
+        {"via","Via 3","","","",L_DRAWING},
+        {"via","Via 4","","","",L_DRAWING},
+        {"via","Via 5","","","",L_DRAWING},
+        {"via","Via 6","","","",L_DRAWING},
+        {"via","Via 7","","","",L_DRAWING},
+        {"via","Via 8","","","",L_DRAWING},
+        {"via","Via 9","","","",L_DRAWING},
+        {"metal1","Metal 1","","","",L_DRAWING},
+        {"metal2","Metal 2","","","",L_DRAWING},
+        {"metal3","Metal 3","","","",L_DRAWING},
+        {"metal1","Metal 4","","","",L_DRAWING},
+        {"metal1","Metal 5","","","",L_DRAWING},
+        {"metal1","Metal 6","","","",L_DRAWING},
+        {"metal1","Metal 7","","","",L_DRAWING},
+        {"metal1","Metal 8","","","",L_DRAWING},
+        {"metal1","Metal 9","","","",L_DRAWING},
+        {"metal1","Metal 10","","","",L_DRAWING},
+        {"glass","Cell Box","","","",L_DRAWING},
+        {"metal1","Metal 1 Pin","","","",L_PIN},
+        {"metal2","Metal 2 Pin","","","",L_PIN},
+        {"metal3","Metal 3 Pin","","","",L_PIN},
         {"TECHNAME","","TECHNAME","","",L_OTHER},
         {"MLAYERS","","3","","",L_OTHER},
         {"SOI","","YES","","",L_OTHER}
     };
-    
+
     struct trules {
         string name;
         string desc;
         float val;
     };
-    
+
     trules rules_lst[N_RULES] = {
         {"S1P1P1","Minimum POLY1 spacing",0},
         {"S2P1P1","Minimum GATE to GATE spacing",0},

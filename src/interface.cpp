@@ -48,6 +48,8 @@ void generate_circuit(string tech, string net_list, string cellName, OutPutFileM
         generate_gds_output(cellName);
     }
 
+    generate_magic_output(cellName);
+
 }
 
 void set_place_tr_configs()
@@ -131,3 +133,9 @@ void generate_gds_output(std::string cellName)
 		cout << cmd;
 		design.readCommand(cmd);
 }
+
+void generate_magic_output(std::string cellName)
+{
+design.generate_magic_output(cellName);
+}
+

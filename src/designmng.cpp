@@ -4,6 +4,7 @@
  ***************************************************************************/
 #include "designmng.h"
 #include "gdslib/include/gdsCpp.hpp"
+#include <magic.h>
 #include <iostream>
 #include <string.h>
 
@@ -725,4 +726,156 @@ bool DesignMng::readCommand(string cmd){
         return false;
     }
     return true;
+}
+
+void DesignMng::generate_magic_output(std::string circuit_name)
+{
+    string path = circuit_name + ".mag";
+    FILE* mag_file = fopen(path.c_str(), "w");
+
+    std::string output = std::string("magic") + std::string("\n") +
+    std::string("tech scmos") + std::string("\n") +
+    std::string("magscale 1 2") + std::string("\n") +
+    std::string("timestamp 1684523853") + std::string("\n") +
+    std::string("<< m2contact >>") + std::string("\n") ;
+
+    fputs(output.c_str(), mag_file);
+
+    vector <int> corX;
+    vector <int> corY;
+
+    const std::string file_name = circuit_name + string(".mag");
+
+    //Insert Boxes
+    list <Box>::iterator layer_it;
+    map <layer_name , list<Box> >::iterator layers_it; // iterador das camadas
+
+    int layer;
+    for ( layer = 0, layers_it = circuit->getLayout(circuit_name)->layers.begin();
+        layers_it != circuit->getLayout(circuit_name)->layers.end();
+        layers_it++, layer++) {
+        if ( !layers_it->second.empty() )
+            {
+
+            int layer = strToInt(rules->getGDSIIVal(layers_it->first));
+             int j = 0;
+            for ( layer_it = layers_it->second.begin() ; layer_it != layers_it->second.end(); layer_it++ , j++ )
+            {
+                long int x1 = 2*layer_it->getX1();
+                long int y1 = 2*layer_it->getY1();
+                long int x2 = 2*layer_it->getX2();
+                long int y2 = 2*layer_it->getY2();
+
+                if(x2-x1!=0 & y2-y1!=0)
+                {
+                     std::string layer_name = rules->getLayerName(j);
+                     std::cout << layer_name << "qqqq" << std::endl;
+
+                        layer_name = std::string("<< ") + layer_name + std::string(" >>");
+                        output = layer_name + std::string("\n");
+                        fputs(output.c_str(), mag_file);
+
+
+                    corX = {x1, x1, x2 , x2};
+                    corY = {y1, y2, y2 , y1};
+
+
+
+                     output = "rect " +
+                     std::to_string(x1) + " " +
+                     std::to_string(y1) + " " +
+                     std::to_string(x2) + " " +
+                     std::to_string(y2) + "\n";
+
+                     fputs(output.c_str(), mag_file);
+                }
+            }
+        }
+
+    }
+
+output = "<< end >>" ;
+
+fputs(output.c_str(), mag_file);
+fclose(mag_file);
+
+
+
+
+
+
+std::ofstream outfile("example.mag");
+
+    outfile << "magic\n";
+    outfile << "tech scmos\n";
+    outfile << "<<\n";
+    outfile << "<<<\n";
+    outfile << "<<<<\n";
+    outfile << "rect 0 0 4 8\n";
+    outfile << "rect 4 0 6 8\n";
+    outfile << "rect 6 3 8 5\n";
+    outfile << "rect 4 3 6 5\n";
+    outfile << "rect 4 0 8 8\n";
+    outfile << "rect 2 1 4 7\n";
+    outfile << "rect 0 2 2 6\n";
+    outfile << "rect 6 2 8 6\n";
+    outfile << "rect 0 0 8 8\n";
+    outfile << "rect 1 3 2 5\n";
+    outfile << "rect 2 2 3 6\n";
+    outfile << "rect 3 1 4 7\n";
+    outfile << "rect 4 0 5 8\n";
+    outfile << "rect 5 1 6 7\n";
+    outfile << "rect 6 2 7 6\n";
+    outfile << "rect 7 3 8 5\n";
+    outfile << "rect 8 4 9 4\n";
+    outfile << "rect 0 0 4 8\n";
+    outfile << "rect 4 0 6 8\n";
+    outfile << "rect 6 3 8 5\n";
+    outfile << "rect 4 3 6 5\n";
+    outfile << "rect 4 0 8 8\n";
+    outfile << "rect 2 1 4 7\n";
+    outfile << "rect 0 2 2 6\n";
+    outfile << "rect 6 2 8 6\n";
+    outfile << "rect 0 0 8 8\n";
+    outfile << "rect 1 3 2 5\n";
+    outfile << "rect 2 2 3 6\n";
+    outfile << "rect 3 1 4 7\n";
+    outfile << "rect 4 0 5 8\n";
+    outfile << "rect 5 1 6 7\n";
+    outfile << "rect 6 2 7 6\n";
+    outfile << "rect 7 3 8 5\n";
+    outfile << "rect 8 4 9 4\n";
+    outfile << "rect 0 0 4 8\n";
+    outfile << "rect 4 0 6 8\n";
+    outfile << "rect 6 3 8 5\n";
+    outfile << "rect 4 3 6 5\n";
+    outfile << "rect 4 0 8 8\n";
+    outfile << "rect 2 1 4 7\n";
+    outfile << "rect 0 2 2 6\n";
+    outfile << "rect 6 2 8 6\n";
+    outfile << "rect 0 0 8 8\n";
+    outfile << "rect 1 3 2 5\n";
+    outfile << "rect 2 2 3 6\n";
+    outfile << "rect 3 1 4 7\n";
+    outfile << "rect 4 0 5 8\n";
+    outfile << "rect 5 1 6 7\n";
+    outfile << "rect 6 2 7 6\n";
+    outfile << "rect 7 3 8 5\n";
+    outfile << "rect 8 4 9 4\n";
+
+    outfile.close();
+
+    std::cout << "example.mag file generated successfully!" << std::endl;
+
+
+
+
+
+
+
+}
+
+void DesignMng::check_layer_name_for_mag_type(FILE* file_name, std::string later_name, std::string type)
+{
+
 }

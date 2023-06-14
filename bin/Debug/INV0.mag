@@ -1,0 +1,160 @@
+magic
+tech scmos
+magscale 1 2
+timestamp 1684523853
+<< m2contact >>
+<< poly >>
+rect 160 572 194 606
+<< pdiff >>
+rect 160 306 194 340
+<< ndiffusion >>
+rect 132 436 166 470
+<< nwell >>
+rect 60 572 94 606
+<< via >>
+rect 60 306 94 340
+<< genericcontact >>
+rect 116 466 140 490
+<< poly >>
+rect 114 466 140 674
+<< ndiff >>
+rect 116 416 140 440
+<< pdiff >>
+rect 116 416 174 490
+<< ndiffusion >>
+rect 116 384 140 440
+<< pdiffusion >>
+rect 116 416 140 440
+<< nwell >>
+rect 114 250 140 408
+<< genericcontact >>
+rect 144 302 210 356
+<< poly >>
+rect 44 302 210 356
+<< ndiff >>
+rect 44 302 110 356
+<< genericcontact >>
+rect 156 518 198 622
+<< poly >>
+rect 56 518 198 622
+<< ndiff >>
+rect 56 518 98 622
+<< genericcontact >>
+rect -36 -36 276 456
+<< genericcontact >>
+rect -36 456 276 1076
+<< genericcontact >>
+rect -94 456 334 1134
+<< genericcontact >>
+rect -94 -94 334 456
+<< genericcontact >>
+rect 0 896 240 1040
+<< poly >>
+rect 0 0 240 144
+<< ndiff >>
+rect 160 896 200 936
+<< pdiff >>
+rect 160 896 200 936
+<< ndiffusion >>
+rect 160 896 200 936
+<< pdiffusion >>
+rect 160 896 200 936
+<< nwell >>
+rect 160 896 200 936
+<< pwell >>
+rect 160 578 200 936
+<< via >>
+rect 160 896 200 936
+<< via >>
+rect 160 560 200 618
+<< via >>
+rect 160 104 200 334
+<< via >>
+rect 160 294 200 352
+<< via >>
+rect 160 104 200 144
+<< via >>
+rect 160 104 200 144
+<< via >>
+rect 160 104 200 144
+<< via >>
+rect 160 104 200 144
+<< via >>
+rect 160 104 200 144
+<< metal1 >>
+rect 160 104 200 144
+<< metal2 >>
+rect 132 424 208 512
+<< metal3 >>
+rect 48 300 88 606
+<< metal1 >>
+rect 48 566 106 606
+<< metal1 >>
+rect 48 300 88 340
+<< metal1 >>
+rect 48 300 88 340
+<< metal1 >>
+rect 54 300 94 340
+<< metal1 >>
+rect 48 300 112 340
+<< metal1 >>
+rect 48 300 106 340
+<< genericcontact >>
+rect 0 0 240 1040
+<< genericcontact >>
+rect 0 896 240 1040
+<< poly >>
+rect 0 0 240 144
+<< ndiff >>
+rect 48 300 106 340
+<< pdiff >>
+rect 48 300 112 340
+<< ndiffusion >>
+rect 54 300 94 340
+<< pdiffusion >>
+rect 48 300 88 340
+<< nwell >>
+rect 48 300 88 340
+<< pwell >>
+rect 48 566 106 606
+<< via >>
+rect 48 300 88 606
+<< via >>
+rect 132 424 208 512
+<< via >>
+rect 160 104 200 144
+<< via >>
+rect 160 104 200 144
+<< via >>
+rect 160 104 200 144
+<< via >>
+rect 160 104 200 144
+<< via >>
+rect 160 104 200 144
+<< via >>
+rect 160 104 200 144
+<< via >>
+rect 160 294 200 352
+<< metal1 >>
+rect 160 104 200 334
+<< metal2 >>
+rect 160 560 200 618
+<< metal3 >>
+rect 160 896 200 936
+<< metal1 >>
+rect 160 578 200 936
+<< metal1 >>
+rect 160 896 200 936
+<< metal1 >>
+rect 160 896 200 936
+<< metal1 >>
+rect 160 896 200 936
+<< metal1 >>
+rect 160 896 200 936
+<< metal1 >>
+rect 160 896 200 936
+<< metal1 >>
+rect 140 460 180 500
+<< glass >>
+rect 60 300 100 340
+<< end >>
