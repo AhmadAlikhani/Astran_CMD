@@ -11,3 +11,10 @@
 *.d
 *.d
 *.log
+*.sp
+*.rul
+bin/Debug/astran-new-cmd
+bin/Debug/Astran_CMD
+*.log
+*.gds
+*.mag

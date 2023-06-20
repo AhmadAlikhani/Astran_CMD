@@ -1,3 +1,3 @@
-read /home/ahmad/Desktop/astran-new-cmd/bin/Debug/ILPmodel.lp
+read /home/ahmadalikhani/Desktop/astran-new-cmd/bin/Debug/ILPmodel.lp
 optimize
-write /home/ahmad/Desktop/astran-new-cmd/bin/Debug/xmlsol.sol
+write /home/ahmadalikhani/Desktop/astran-new-cmd/bin/Debug/xmlsol.sol

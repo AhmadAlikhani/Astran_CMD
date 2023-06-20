@@ -1,4 +1,4 @@
-cplex "/home/ahmad/cpl/cplex/bin/x86-64_linux/cplex"
+cplex "/home/ahmadalikhani/cplex/cplex/bin/x86-64_linux/cplex"
 gurobi "/opt/gurobi605/linux64/bin/gurobi_cl"
-solcreator "/home/ahmad/Desktop/astran-new-cmd/solcreator.txt"
+solcreator "/home/ahmadalikhani/Desktop/astran-new-cmd/solcreator.txt"
 
