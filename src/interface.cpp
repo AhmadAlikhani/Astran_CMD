@@ -7,7 +7,6 @@
 
 extern DesignMng design;
 extern cellgen_cfg cellgen_configs;
-extern std::string astran_path;
 
 void generate_circuit(string tech, string net_list, string cellName, OutPutFileMode output_mode)
 {

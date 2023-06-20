@@ -20,7 +20,9 @@
 #include <regex>
 #include <tgmath.h>
 
-extern string astran_path;
+extern std::string cplex_path;
+extern std::string gurobi_path;
+extern std::string solcreator_path;
 
 /** Constructor. */
 Compaction::Compaction( cp_algo a ,string name) {
@@ -587,9 +589,15 @@ int Compaction::solve(string lpSolverFile, int timeLimit , string appSolver) {
 
     if(appSolver == "cplex"){
 
-    string xmsol_address = astran_path + "/bin/Debug/xmlsol.sol";
+    string xmsol_address = "xmlsol.sol";
     	remove(xmsol_address.c_str());
-    	system("/home/ahmad/cpl/cplex/bin/x86-64_linux/cplex -f /home/ahmad/Desktop/astran-new-cmd/solcreator.txt") ;
+    	//system("/home/ahmad/cpl/cplex/bin/x86-64_linux/cplex -f /home/ahmad/Desktop/astran-new-cmd/solcreator.txt") ;
+
+std::string cplex_cmd = cplex_path + " -f " + solcreator_path;
+
+std::cout << "cplex_cmd =" << cplex_cmd << std::endl;
+
+		system(cplex_cmd.c_str()) ;
 
    	    string xmlsol = "xmlsol.sol";
 

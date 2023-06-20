@@ -8,15 +8,17 @@ cellgen_cfg cellgen_configs;
 
 vector <string> name_of_cells{};
 
-string astran_path = "/home/ahmad/Desktop/astran-new-cmd";
 string cplex_path = "\"/home/ahmad/cpl/cplex/bin/x86-64_linux/cplex\"";
 string gurobi_path = "\"/opt/gurobi605/linux64/bin/gurobi_cl\"";
+string solcreator_path = "\"/home/ahmad/Desktop/astran-new-cmd/solcreator.txt\"";
 string optimizer_name = "cplex";
 
 
 int main(int argc, char * argv[])
 {
     std::cout << "https://github.com/AhmadAlikhani/Astran_CMD.git" << endl;
+
+    read_optimizer_path();
 
 /************* execute technology address parameter **************/
     string tech_arg = "-tech";

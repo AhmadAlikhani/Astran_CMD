@@ -369,8 +369,8 @@ bool DesignMng::readCommand(string cmd){
 
                                         if(x2-x1!=0 & y2-y1!=0)
                                         {
-                                            corX = {x1, x1, x2 , x2};
-                                            corY = {y1, y2, y2 , y1};
+                                            corX = {static_cast<int>(x1), static_cast<int>(x1), static_cast<int>(x2) , static_cast<int>(x2)};
+                                            corY = {static_cast<int>(y1), static_cast<int>(y2), static_cast<int>(y2) , static_cast<int>(y1)};
 
                                             //fooSTR.BOUNDARY.push_back(drawBoundary(layer, corX, corY));
                                             fooSTR.BOUNDARY.push_back(draw2ptBox(layer, x1, y1, x2, y2));
@@ -775,26 +775,24 @@ void DesignMng::generate_magic_output(std::string circuit_name)
                             std::string layer_names = mag_layer_names[check_over];
                             //std::cout << layer_names << " " << layers_it->first <<std::endl;
 
-                                layer_names = std::string("<< ") + layer_names + std::string(" >>");
-                                output = layer_names + std::string("\n");
+                            layer_names = std::string("<< ") + layer_names + std::string(" >>");
+                            output = layer_names + std::string("\n");
+                            fputs(output.c_str(), mag_file);
+                            
+                            corX = {static_cast<int>(x1), static_cast<int>(x1), static_cast<int>(x2) , static_cast<int>(x2)};
+                            corY = {static_cast<int>(y1), static_cast<int>(y2), static_cast<int>(y2) , static_cast<int>(y1)};
 
-                                fputs(output.c_str(), mag_file);
 
-                                corX = {x1, x1, x2 , x2};
-                                corY = {y1, y2, y2 , y1};
-
-                                output = "rect " +
-                                std::to_string(x1) + " " +
-                                std::to_string(y1) + " " +
-                                std::to_string(x2) + " " +
-                                std::to_string(y2) + "\n";
-
-                                fputs(output.c_str(), mag_file);
+                            output = "rect " +
+                            std::to_string(x1) + " " +
+                            std::to_string(y1) + " " +
+                            std::to_string(x2) + " " +
+                            std::to_string(y2) + "\n";
+                            fputs(output.c_str(), mag_file);
                         }
                     }
                 }
             }
-
         }
     }
 output = "<< end >>" ;

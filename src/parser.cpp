@@ -13,14 +13,14 @@
 #include "parser.h"
 #include "interface.h"
 
-extern string astran_path;
 extern string cplex_path;
 extern string gurobi_path;
+extern string solcreator_path;
 extern cellgen_cfg cellgen_configs;
 
 void parse_cellgen_cfg()
 {
-string path = astran_path + "/cellgen_cfg.txt";
+string path = "../../cellgen_cfg.txt";
     FILE* cellgen_cfg_file = fopen(path.c_str(), "r");
 
     char line[150];
@@ -190,7 +190,7 @@ string path = astran_path + "/cellgen_cfg.txt";
 void change_optimizer(string optimizer_name)
 {
     vector <string> lines;
-    string path = astran_path + "/astran.cfg";
+    string path = "../../astran.cfg";
     FILE* astran_cfg_file = fopen(path.c_str(), "r+");
 
     char line[350];
@@ -221,4 +221,43 @@ void change_optimizer(string optimizer_name)
         fputs(temp.c_str(), astran_cfg);
     }
     fclose(astran_cfg);
+}
+
+void read_optimizer_path(void)
+{
+    vector <string> lines;
+    string path = "../../optimizer_path.txt";
+    FILE* optimizer_path_file = fopen(path.c_str(), "r");
+
+    char line[350];
+    while(fgets(line, 350, optimizer_path_file))
+    {
+        string s_line1 = string(line);
+
+        if(s_line1.find("cplex") < 5)
+        {
+            int path_position = s_line1.find("\"");
+            cplex_path = s_line1.erase(0, path_position);
+            std::cout << "cplex_path =" << cplex_path << std::endl;
+            cplex_path.pop_back(); // remove last enter char
+        }
+        else if(s_line1.find("gurobi") < 5)
+        {
+            int path_position = s_line1.find("\"");
+            gurobi_path = s_line1.erase(0, path_position);
+            gurobi_path.pop_back(); // remove last enter char
+        }
+
+        else if(s_line1.find("solcreator") < 5)
+        {
+            int path_position = s_line1.find("\"");
+            solcreator_path = s_line1.erase(0, path_position);
+            solcreator_path.pop_back(); // remove last enter char
+        }
+
+std::cout << "cplex path =" << cplex_path << std::endl;
+std::cout << "gurobi path =" << gurobi_path << std::endl;
+std::cout << "solcreator path =" << solcreator_path << std::endl;
+    }
+    fclose(optimizer_path_file);
 }

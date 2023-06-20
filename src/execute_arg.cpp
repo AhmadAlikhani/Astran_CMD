@@ -3,11 +3,10 @@
 extern DesignMng design;
 extern cellgen_cfg cellgen_configs;
 extern vector <string> name_of_cells;
-extern string astran_path;
 
 bool On_Init()
 {
-    string cmdFilename = astran_path + "/astran.cfg";
+    string cmdFilename = "../../astran.cfg";
 
     setlocale(LC_ALL, "C");
 
@@ -23,7 +22,7 @@ bool On_Init()
 
         string astran_cfg;
         astran_cfg = "astran.cfg";
-        astran_cfg = astran_path + "/astran.cfg";
+        astran_cfg = "../../astran.cfg";
 
         // By default load astran.cfg
         ifstream afile(astran_cfg.c_str());
