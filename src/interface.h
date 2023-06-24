@@ -5,29 +5,29 @@
 
 struct cellgen_cfg{
 
-string conservative_gen;
-string nr_of_internal_tracks;
-string width_cost;
-string gate_miss_match_cost;
-string routing_cost;
-string routing_density_cost;
-string nr_of_gaps_cost;
-string nr_of_iterations;
-string nr_of_attempts;
+std::string conservative_gen;
+std::string nr_of_internal_tracks;
+std::string width_cost;
+std::string gate_miss_match_cost;
+std::string routing_cost;
+std::string routing_density_cost;
+std::string nr_of_gaps_cost;
+std::string nr_of_iterations;
+std::string nr_of_attempts;
 bool horizontal_poly;
 bool align_diff_top_btm;
 bool reduce_vertical_routing;
 bool optimize;
 bool diffusion_stretching;
 bool gridded_polly;
-string redundant_diff_cnts;
-string max_diff_cnts;
+std::string redundant_diff_cnts;
+std::string max_diff_cnts;
 bool align_diffusion_cnts;
 bool reduce_l_turns;
 bool enable_dfm;
 bool experimental;
 bool debug;
-string time_limit;
+std::string time_limit;
 };
 
 

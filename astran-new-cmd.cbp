@@ -15,10 +15,6 @@
 					<Add option="-g" />
 					<Add directory="/usr/include" />
 				</Compiler>
-				<Linker>
-					<Add option="-lmagic" />
-					<Add library="magic" />
-				</Linker>
 			</Target>
 			<Target title="Release">
 				<Option output="bin/Release/astran-new-cmd" prefix_auto="1" extension_auto="1" />
@@ -78,6 +74,21 @@
 		<Unit filename="src/gridrouter.h" />
 		<Unit filename="src/interface.cpp" />
 		<Unit filename="src/interface.h" />
+		<Unit filename="src/jsoncpp/inc/allocator.h" />
+		<Unit filename="src/jsoncpp/inc/assertions.h" />
+		<Unit filename="src/jsoncpp/inc/config.h" />
+		<Unit filename="src/jsoncpp/inc/forwards.h" />
+		<Unit filename="src/jsoncpp/inc/json.h" />
+		<Unit filename="src/jsoncpp/inc/json_features.h" />
+		<Unit filename="src/jsoncpp/inc/reader.h" />
+		<Unit filename="src/jsoncpp/inc/value.h" />
+		<Unit filename="src/jsoncpp/inc/version.h" />
+		<Unit filename="src/jsoncpp/inc/writer.h" />
+		<Unit filename="src/jsoncpp/src/json_reader.cpp" />
+		<Unit filename="src/jsoncpp/src/json_tool.h" />
+		<Unit filename="src/jsoncpp/src/json_value.cpp" />
+		<Unit filename="src/jsoncpp/src/json_valueiterator.h" />
+		<Unit filename="src/jsoncpp/src/json_writer.cpp" />
 		<Unit filename="src/lef.cpp" />
 		<Unit filename="src/lef.h" />
 		<Unit filename="src/parser.cpp" />
@@ -90,6 +101,7 @@
 		<Unit filename="src/rules.h" />
 		<Unit filename="src/spice.h" />
 		<Unit filename="src/thresholdaccept.h" />
+		<Unit filename="src/types.h" />
 		<Unit filename="src/util.h" />
 		<Unit filename="src/verilog.cpp" />
 		<Unit filename="src/verilog.h" />

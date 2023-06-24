@@ -9,9 +9,10 @@
 #include <sstream>
 #include <stdio.h>
 #include <stdlib.h>
-
+#include "jsoncpp/inc/json.h" // or jsoncpp/json.h , or json/json.h etc.
 #include "parser.h"
 #include "interface.h"
+#include "types.h"
 
 extern string cplex_path;
 extern string gurobi_path;
@@ -260,4 +261,77 @@ std::cout << "gurobi path =" << gurobi_path << std::endl;
 std::cout << "solcreator path =" << solcreator_path << std::endl;
     }
     fclose(optimizer_path_file);
+}
+
+int32_t parse_json_cfg()
+{
+    ifstream ifs("../../astran_cfg.json");
+    Json::Reader reader;
+    Json::Value obj;
+    reader.parse(ifs, obj); // reader can also read strings
+
+    if(obj.size() == 0)
+    {
+        std::cout << ".json File Not Found !!!" << std::endl;
+        return RESULTFAILED;
+    }
+
+    std::cout << "cplex_path: " << obj["cplex_path"].asString() << std::endl;
+    cout << "gurobi_path: " << obj["gurobi_path"].asString() << endl;
+    cout << "viewer: " << obj["viewer"].asString() << endl;
+    cout << "rotdl: " << obj["rotdl"].asString() << endl;
+    cout << "placer: " << obj["placer"].asString() << endl;
+    cout << "log: " << obj["log"].asString() << endl;
+    cout << "verbose_mode: " << obj["verbose_mode"].asUInt() << endl;
+    cout << "lpsolve: " << obj["lpsolve"].asString() << endl;
+
+    cellgen_configs.conservative_gen = obj["conservative_gen"].asString();
+    cellgen_configs.nr_of_internal_tracks = obj["nr_of_internal_tracks"].asString();
+    cellgen_configs.width_cost = obj["width_cost"].asString();
+    cellgen_configs.gate_miss_match_cost = obj["gate_miss_match_cost"].asString();
+    cellgen_configs.routing_cost = obj["routing_cost"].asString();
+    cellgen_configs.routing_density_cost = obj["routing_density_cost"].asString();
+    cellgen_configs.nr_of_gaps_cost = obj["nr_of_gaps_cost"].asString();
+    cellgen_configs.nr_of_iterations = obj["nr_of_iterations"].asString();
+    cellgen_configs.nr_of_attempts = obj["nr_of_attempts"].asString();
+    cellgen_configs.horizontal_poly = obj["horizontal_poly"].asBool();
+    cellgen_configs.align_diff_top_btm = obj["align_diff_top_btm"].asBool();
+    cellgen_configs.reduce_vertical_routing = obj["reduce_vertical_routing"].asBool();
+    cellgen_configs.optimize = obj["optimize"].asBool();
+    cellgen_configs.diffusion_stretching = obj["diffusion_stretching"].asBool();
+    cellgen_configs.gridded_polly = obj["gridded_polly"].asBool();
+    cellgen_configs.redundant_diff_cnts = obj["redundant_diff_cnts"].asString();
+    cellgen_configs.max_diff_cnts = obj["max_diff_cnts"].asString();
+    cellgen_configs.align_diffusion_cnts = obj["align_diffusion_cnts"].asBool();
+    cellgen_configs.reduce_l_turns = obj["reduce_l_turns"].asBool();
+    cellgen_configs.enable_dfm = obj["enable_dfm"].asBool();
+    cellgen_configs.experimental = obj["experimental"].asBool();
+    cellgen_configs.debug = obj["debug"].asBool();
+    cellgen_configs.time_limit = obj["time_limit"].asString();
+
+    cout << "conservative_gen: " << cellgen_configs.conservative_gen << endl;
+    cout << "nr_of_internal_tracks: " << cellgen_configs.nr_of_internal_tracks << endl;
+    cout << "width_cost: " << cellgen_configs.width_cost << endl;
+    cout << "gate_miss_match_cost: " << cellgen_configs.gate_miss_match_cost << endl;
+    cout << "routing_cost: " << cellgen_configs.routing_cost << endl;
+    cout << "routing_density_cost: " << cellgen_configs.routing_density_cost << endl;
+    cout << "nr_of_gaps_cost: " << cellgen_configs.nr_of_gaps_cost << endl;
+    cout << "nr_of_iterations: " << cellgen_configs.nr_of_iterations << endl;
+    cout << "nr_of_attempts: " << cellgen_configs.nr_of_attempts << endl;
+    cout << "horizontal_poly: " << cellgen_configs.horizontal_poly << endl;
+    cout << "align_diff_top_btm: " << cellgen_configs.align_diff_top_btm << endl;
+    cout << "reduce_vertical_routing: " << cellgen_configs.reduce_vertical_routing << endl;
+    cout << "optimize: " << cellgen_configs.optimize << endl;
+    cout << "diffusion_stretching: " << cellgen_configs.diffusion_stretching << endl;
+    cout << "gridded_polly: " << cellgen_configs.gridded_polly << endl;
+    cout << "redundant_diff_cnts: " << cellgen_configs.redundant_diff_cnts << endl;
+    cout << "max_diff_cnts: " << cellgen_configs.max_diff_cnts << endl;
+    cout << "align_diffusion_cnts: " << cellgen_configs.align_diffusion_cnts << endl;
+    cout << "reduce_l_turns: " << cellgen_configs.reduce_l_turns << endl;
+    cout << "enable_dfm: " << cellgen_configs.enable_dfm << endl;
+    cout << "experimental: " << cellgen_configs.experimental << endl;
+    cout << "debug: " << cellgen_configs.debug << endl;
+    cout << "time_limit: " << cellgen_configs.time_limit << endl;
+
+    return RESULTSUCCESSFULL;
 }

@@ -1,5 +1,6 @@
 #include"main.h"
 #include "src/datatypes.h"
+#include "src/types.h"
 
 class DesignMng;
 
@@ -17,6 +18,10 @@ string optimizer_name = "cplex";
 int main(int argc, char * argv[])
 {
     std::cout << "https://github.com/AhmadAlikhani/Astran_CMD.git" << endl;
+    int32_t result = parse_json_cfg();
+
+    //if(!result) //TODO: uncomment
+        return 0;
 
     read_optimizer_path();
 
