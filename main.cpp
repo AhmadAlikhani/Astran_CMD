@@ -20,10 +20,8 @@ int main(int argc, char * argv[])
     std::cout << "https://github.com/AhmadAlikhani/Astran_CMD.git" << endl;
     int32_t result = parse_json_cfg();
 
-    //if(!result) //TODO: uncomment
+    if(!result) //TODO: uncomment
         return 0;
-
-    read_optimizer_path();
 
 /************* execute technology address parameter **************/
     string tech_arg = "-tech";
@@ -103,8 +101,8 @@ int main(int argc, char * argv[])
         return 0;
     }
 
-    On_Init();
-    parse_cellgen_cfg();
+    //On_Init();
+    //parse_cellgen_cfg();
     generate_circuit(tech, net_list, cellName, output_mode);
   }
     return 0;

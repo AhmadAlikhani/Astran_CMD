@@ -13,11 +13,13 @@
 #include "parser.h"
 #include "interface.h"
 #include "types.h"
+#include <algorithm>
 
 extern string cplex_path;
 extern string gurobi_path;
 extern string solcreator_path;
 extern cellgen_cfg cellgen_configs;
+extern DesignMng design;
 
 void parse_cellgen_cfg()
 {
@@ -190,77 +192,24 @@ string path = "../../cellgen_cfg.txt";
 
 void change_optimizer(string optimizer_name)
 {
-    vector <string> lines;
-    string path = "../../astran.cfg";
-    FILE* astran_cfg_file = fopen(path.c_str(), "r+");
+ ifstream ifs("../../astran_cfg.json");
+    Json::Reader reader;
+    Json::StyledStreamWriter writer;
+    Json::Value obj;
+    reader.parse(ifs, obj); // reader can also read strings
 
-    char line[350];
-    while(fgets(line, 350, astran_cfg_file))
+    if(optimizer_name == "cplex")
     {
-        string s_line1 = string(line);
-
-        std::string::size_type position = 1000;
-        position =s_line1.find("lpsolve");
-
-        if(position < 350)
-        {
-            position += 8;
-            string corrected_line = "set lpsolve ";
-            corrected_line += (optimizer_name == "gurobi") ? gurobi_path : cplex_path;
-            lines.push_back(corrected_line);
-        }
-        else
-        {
-            lines.push_back(s_line1);
-        }
+        cout << "lpsolve: " << obj["cplex_path"].asString() << endl;
+        std::string cmd = string("set lpsolve ") + std::string(obj["cplex_path"].asString());
+        design.readCommand(cmd);
     }
-    fclose(astran_cfg_file);
-
-    FILE* astran_cfg = fopen(path.c_str(), "w+");
-    for(auto& temp : lines)
+    else if(optimizer_name == "gurobi")
     {
-        fputs(temp.c_str(), astran_cfg);
+        cout << "lpsolve: " << obj["gurobi_path"].asString() << endl;
+        std::string cmd = string("set lpsolve ") + std::string(obj["gurobi_path"].asString());
+        design.readCommand(cmd);
     }
-    fclose(astran_cfg);
-}
-
-void read_optimizer_path(void)
-{
-    vector <string> lines;
-    string path = "../../optimizer_path.txt";
-    FILE* optimizer_path_file = fopen(path.c_str(), "r");
-
-    char line[350];
-    while(fgets(line, 350, optimizer_path_file))
-    {
-        string s_line1 = string(line);
-
-        if(s_line1.find("cplex") < 5)
-        {
-            int path_position = s_line1.find("\"");
-            cplex_path = s_line1.erase(0, path_position);
-            std::cout << "cplex_path =" << cplex_path << std::endl;
-            cplex_path.pop_back(); // remove last enter char
-        }
-        else if(s_line1.find("gurobi") < 5)
-        {
-            int path_position = s_line1.find("\"");
-            gurobi_path = s_line1.erase(0, path_position);
-            gurobi_path.pop_back(); // remove last enter char
-        }
-
-        else if(s_line1.find("solcreator") < 5)
-        {
-            int path_position = s_line1.find("\"");
-            solcreator_path = s_line1.erase(0, path_position);
-            solcreator_path.pop_back(); // remove last enter char
-        }
-
-std::cout << "cplex path =" << cplex_path << std::endl;
-std::cout << "gurobi path =" << gurobi_path << std::endl;
-std::cout << "solcreator path =" << solcreator_path << std::endl;
-    }
-    fclose(optimizer_path_file);
 }
 
 int32_t parse_json_cfg()
@@ -276,14 +225,40 @@ int32_t parse_json_cfg()
         return RESULTFAILED;
     }
 
-    std::cout << "cplex_path: " << obj["cplex_path"].asString() << std::endl;
+    cout << "cplex_path: " << obj["cplex_path"].asString() << std::endl;
+    cplex_path = obj["cplex_path"].asString();
+
     cout << "gurobi_path: " << obj["gurobi_path"].asString() << endl;
+    gurobi_path = obj["conservative_gen"].asString();
+
+    cout << "solcreator_path: " << obj["solcreator_path"].asString() << endl;
+    solcreator_path = obj["solcreator_path"].asString();
+
+    cout << "cplex_read_cmd :" << obj["cplex_read_cmd"].asString() << endl;
+    cout << "cplex_write_cmd: " << obj["cplex_write_cmd"].asString() << endl;
+    
+    std::string new_path = solcreator_path;
+    new_path.erase(std::remove(new_path.begin(), new_path.end(), '\"'), new_path.end());
+
     cout << "viewer: " << obj["viewer"].asString() << endl;
+    std::string cmd = string("set viewer ") + std::string(obj["viewer"].asString());
+    design.readCommand(cmd);
+
     cout << "rotdl: " << obj["rotdl"].asString() << endl;
+    cmd = string("set rotdl ") + std::string(obj["rotdl"].asString());
+    design.readCommand(cmd);
+
     cout << "placer: " << obj["placer"].asString() << endl;
+    cmd = string("set placer ") + std::string(obj["placer"].asString());
+    design.readCommand(cmd);
+
     cout << "log: " << obj["log"].asString() << endl;
+    cmd = string("set log ") + std::string(obj["log"].asString());
+    design.readCommand(cmd);
+    
     cout << "verbose_mode: " << obj["verbose_mode"].asUInt() << endl;
-    cout << "lpsolve: " << obj["lpsolve"].asString() << endl;
+    cmd = string("set verbose_mode ") + std::to_string(obj["verbose_mode"].asUInt());
+    design.readCommand(cmd);
 
     cellgen_configs.conservative_gen = obj["conservative_gen"].asString();
     cellgen_configs.nr_of_internal_tracks = obj["nr_of_internal_tracks"].asString();
