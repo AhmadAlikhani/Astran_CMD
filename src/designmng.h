@@ -35,6 +35,7 @@ public:
 
 	bool readCommand(string cmd);
 	void generate_magic_output(std::string circuit_name);
+    void generate_micro_magic_output(std::string circuit_name);
 	int getPosCmdLog(){return poscmdlog;};
 	void setPosCmdLog(int pos){poscmdlog = pos;};
 	vector<string> getCommandLog(){return commandlog;};
@@ -243,6 +244,40 @@ private:
         {"metal1"},
         {"metal2"},
         {"metal3"},
+	};
+
+    std::string max_layer_names[N_LAYER_NAMES] = {
+        {"type m2"},
+        {"type poly"},
+        {"type ndif"},
+        {"type pdif"},
+        {"type nplus"},
+        {"type pplus"},
+        {"type nw"},
+        {"type pw"},
+        {"via"},
+        {"via"},
+        {"via"},
+        {"via"},
+        {"via"},
+        {"via"},
+        {"via"},
+        {"via"},
+        {"via"},
+        {"type m1"},
+        {"type m2"},
+        {"type m1"},
+        {"type m1"},
+        {"type m1"},
+        {"type m1"},
+        {"type m1"},
+        {"type m1"},
+        {"type m1"},
+        {"type m1"},
+        {"glass"},
+        {"type m1"},
+        {"type m1"},
+        {"type m1"},
 	};
 
     string name;

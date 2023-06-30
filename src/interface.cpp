@@ -48,7 +48,7 @@ void generate_circuit(string tech, string net_list, string cellName, OutPutFileM
     }
 
     interface_generate_magic_output(cellName);
-
+    interface_generate_micro_magic_output(cellName);
 }
 
 void set_place_tr_configs()
@@ -138,3 +138,7 @@ void interface_generate_magic_output(std::string cellName)
     design.generate_magic_output(cellName);
 }
 
+void interface_generate_micro_magic_output(std::string cellName)
+{
+    design.generate_micro_magic_output(cellName);
+}

@@ -799,7 +799,84 @@ output = "<< end >>" ;
 
 fputs(output.c_str(), mag_file);
 fclose(mag_file);
+}
 
+void DesignMng::generate_micro_magic_output(std::string circuit_name)
+{
+
+    string path = circuit_name + ".max";
+    FILE* max_file = fopen(path.c_str(), "w");
+
+    std::string output = std::string("max 2") + std::string("\n") +
+    std::string("tech mmi18") + std::string("\n") +
+    std::string("resolution 0.001") + std::string("\n") +
+    std::string("vMAIN 958154094 3") + std::string("\n") +
+    std::string("vDRC 958154094 3") + std::string("\n") +
+    std::string("vBBOX 954574730 105") + std::string("\n") + std::string("\n") +
+    std::string("SECTION PAINT {") + std::string("\n") ;
+
+    fputs(output.c_str(), max_file);
+
+    vector <int> corX;
+    vector <int> corY;
+
+    const std::string file_name = circuit_name + string(".mag");
+
+    for ( int check_over = N_LAYER_NAMES - 1; check_over >= 0; check_over--)
+    {
+        if(check_over == 27)
+            continue;;
+        //Insert Boxes
+        list <Box>::iterator layer_it;
+        map <layer_name , list<Box> >::iterator layers_it; // iterador das camadas
+
+        int layer;
+        for ( layer = 0, layers_it = circuit->getLayout(circuit_name)->layers.begin();
+            layers_it != circuit->getLayout(circuit_name)->layers.end();
+            layers_it++, layer++) {
+            if ( !layers_it->second.empty() )
+                {
+
+                int layer = strToInt(rules->getGDSIIVal(layers_it->first));
+                int j = 0;
+                for ( layer_it = layers_it->second.begin() ; layer_it != layers_it->second.end(); layer_it++ , j++ )
+                {
+                    long int x1 = 2*layer_it->getX1();
+                    long int y1 = 2*layer_it->getY1();
+                    long int x2 = 2*layer_it->getX2();
+                    long int y2 = 2*layer_it->getY2();
+
+                    if(x2-x1!=0 & y2-y1!=0)
+                    {
+                        if(layers_it->first == check_over)
+                        {
+                            std::string layer_names = max_layer_names[check_over];
+                            //std::cout << layer_names << " " << layers_it->first <<std::endl;
+
+                            output = layer_names + std::string("\n");
+                            fputs(output.c_str(), max_file);
+                            
+                            corX = {static_cast<int>(x1), static_cast<int>(x1), static_cast<int>(x2) , static_cast<int>(x2)};
+                            corY = {static_cast<int>(y1), static_cast<int>(y2), static_cast<int>(y2) , static_cast<int>(y1)};
+
+
+                            output = "rect " +
+                            std::to_string(x1) + " " +
+                            std::to_string(y1) + " " +
+                            std::to_string(x2) + " " +
+                            std::to_string(y2) + "\n";
+                            fputs(output.c_str(), max_file);
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+output = std::string("\n") + std::string("\n") + std::string("} SECTION PAINT") + std::string("\n") + std::string("\n");
+
+fputs(output.c_str(), max_file);
+fclose(max_file);
 
 }
 

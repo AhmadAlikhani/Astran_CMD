@@ -41,3 +41,4 @@ void set_compact_layout_configs();
 void generate_cif_output(std::string cellName);
 void generate_gds_output(std::string cellName);
 void interface_generate_magic_output(std::string cellName);
+void interface_generate_micro_magic_output(std::string cellName);
