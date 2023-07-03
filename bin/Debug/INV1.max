@@ -4,51 +4,52 @@ resolution 0.001
 vMAIN 958154094 3
 vDRC 958154094 3
 vBBOX 954574730 105
+
 SECTION PAINT {
 type m1
 rect 0 896 240 1040
 type m1
 rect 0 0 240 144
 type m1
-rect 60 300 118 340
+rect 48 300 106 340
 type m1
 rect 44 300 112 340
 type m1
-rect 60 300 100 340
+rect 66 300 106 340
 type m1
-rect 44 560 84 600
+rect 44 300 84 340
 type m1
-rect 44 300 84 600
+rect 44 300 84 340
 type m1
-rect 44 560 110 668
+rect 44 600 110 708
 type m1
-rect 44 560 84 600
+rect 44 300 84 640
 type m1
 rect 128 416 206 500
 type m1
-rect 166 104 206 144
+rect 160 104 200 144
 type m1
-rect 166 104 206 144
+rect 160 104 200 144
 type m1
-rect 166 104 206 144
+rect 160 104 200 144
 type m1
-rect 166 104 206 144
+rect 160 104 200 144
 type m1
-rect 166 292 206 350
+rect 160 292 200 350
 type m1
-rect 166 104 206 332
+rect 160 104 200 332
 type m1
-rect 164 548 204 680
+rect 164 588 204 720
 type m1
-rect 164 640 204 680
+rect 164 680 204 720
 type m1
-rect 164 640 204 680
+rect 164 680 204 720
 type m1
-rect 164 640 204 680
+rect 164 680 204 720
 type m1
-rect 164 640 204 936
+rect 164 680 204 936
 type m1
-rect 164 640 204 680
+rect 164 680 204 720
 type m1
 rect 140 460 180 500
 type m1
@@ -58,45 +59,45 @@ rect 0 896 240 1040
 type m1
 rect 0 0 240 144
 type m1
-rect 164 640 204 680
+rect 164 680 204 720
 type m1
-rect 164 640 204 936
+rect 164 680 204 936
 type m1
-rect 164 640 204 680
+rect 164 680 204 720
 type m1
-rect 164 640 204 680
+rect 164 680 204 720
 type m1
-rect 164 640 204 680
+rect 164 680 204 720
 type m1
-rect 164 548 204 680
+rect 164 588 204 720
 type m1
-rect 166 104 206 332
+rect 160 104 200 332
 type m1
-rect 166 292 206 350
+rect 160 292 200 350
 type m1
-rect 166 104 206 144
+rect 160 104 200 144
 type m1
-rect 166 104 206 144
+rect 160 104 200 144
 type m1
-rect 166 104 206 144
+rect 160 104 200 144
 type m1
-rect 166 104 206 144
+rect 160 104 200 144
 type m1
 rect 128 416 206 500
 type m1
-rect 44 560 84 600
+rect 44 300 84 640
 type m1
-rect 44 560 110 668
+rect 44 600 110 708
 type m1
-rect 44 300 84 600
+rect 44 300 84 340
 type m1
-rect 44 560 84 600
+rect 44 300 84 340
 type m1
-rect 60 300 100 340
+rect 66 300 106 340
 type m1
 rect 44 300 112 340
 type m1
-rect 60 300 118 340
+rect 48 300 106 340
 type pw
 rect -94 -94 334 456
 type nw
@@ -112,38 +113,40 @@ rect 60 516 202 724
 type pdif
 rect 60 516 102 724
 type ndif
-rect 168 288 210 384
+rect 156 288 198 384
 type ndif
-rect 68 288 210 384
+rect 56 288 198 384
 type ndif
-rect 68 288 110 384
+rect 56 288 98 384
 type poly
 rect 120 464 144 488
 type poly
 rect 118 464 144 776
 type poly
-rect 128 412 152 438
+rect 120 412 144 436
 type poly
-rect 120 414 170 488
+rect 120 412 170 488
 type poly
-rect 128 412 152 436
+rect 116 412 140 436
 type poly
-rect 128 412 152 436
+rect 116 412 144 436
 type poly
-rect 126 236 152 436
+rect 114 236 140 436
 type m2
-rect 164 634 198 668
+rect 164 674 198 708
 type m2
-rect 164 560 198 594
+rect 164 600 198 634
 type m2
-rect 172 304 206 338
+rect 160 304 194 338
 type m2
 rect 128 434 162 468
 type m2
-rect 64 634 98 668
+rect 64 674 98 708
 type m2
-rect 64 560 98 594
+rect 64 600 98 634
 type m2
-rect 72 304 106 338
+rect 60 304 94 338
+
 
 } SECTION PAINT
+

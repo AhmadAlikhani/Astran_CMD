@@ -5,7 +5,9 @@ enum class OutPutFileMode
 {
     CIF_OUTPUT_MODE = 0,
     GDS_OUTPUT_MODE = 1,
-    ALL_OUTPUT_MODES = 2,
+    MAG_OUTPUT_MODE = 2,
+    MAX_OUTPUT_MODE = 3,
+    ALL_OUTPUT_MODES = 4,
 };
 
 

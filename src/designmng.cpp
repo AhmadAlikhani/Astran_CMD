@@ -820,7 +820,6 @@ void DesignMng::generate_micro_magic_output(std::string circuit_name)
     vector <int> corX;
     vector <int> corY;
 
-    const std::string file_name = circuit_name + string(".mag");
 
     for ( int check_over = N_LAYER_NAMES - 1; check_over >= 0; check_over--)
     {

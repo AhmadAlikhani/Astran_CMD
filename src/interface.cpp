@@ -35,20 +35,27 @@ void generate_circuit(string tech, string net_list, string cellName, OutPutFileM
 // generate cif output file
     if(output_mode == OutPutFileMode::CIF_OUTPUT_MODE || output_mode == OutPutFileMode::ALL_OUTPUT_MODES)
     {
-        cout << "create file based on : " << static_cast<int>(output_mode) << std::endl;
+        cout << "create file based on : " << "CIF" << std::endl;
         generate_cif_output(cellName);
     }
-
-
 //generate gds file output
     if(output_mode == OutPutFileMode::GDS_OUTPUT_MODE || output_mode == OutPutFileMode::ALL_OUTPUT_MODES)
     {
-        cout << "create file based on : " << static_cast<int>(output_mode) << std::endl;
+        cout << "create file based on : " << "GDS" << std::endl;
         generate_gds_output(cellName);
     }
-
-    interface_generate_magic_output(cellName);
-    interface_generate_micro_magic_output(cellName);
+//generate gds file output
+    if(output_mode == OutPutFileMode::MAG_OUTPUT_MODE || output_mode == OutPutFileMode::ALL_OUTPUT_MODES)
+    {
+        cout << "create file based on : " << "MAG" << std::endl;
+        interface_generate_magic_output(cellName);
+    }
+//generate gds file output
+    if(output_mode == OutPutFileMode::MAX_OUTPUT_MODE || output_mode == OutPutFileMode::ALL_OUTPUT_MODES)
+    {
+        cout << "create file based on : " << "MAX" << std::endl;
+        interface_generate_micro_magic_output(cellName);
+    }
 }
 
 void set_place_tr_configs()

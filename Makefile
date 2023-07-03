@@ -11,7 +11,7 @@ CCC=g++
 CXX=g++
 AS=as
 
-OBJECTDIR = /home/ahmadalikhani/vlsi_workspace/Astran_CMD
+OBJECTDIR = /home/ahmad/Desktop/astran-new-cmd
 OFILESDIR = ${OBJECTDIR}/obj/Debug
 
 # Object Files

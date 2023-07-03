@@ -81,7 +81,16 @@ int main(int argc, char * argv[])
         std::cout << "Output File will be created in GDS mode!" <<endl;
         output_mode = OutPutFileMode::GDS_OUTPUT_MODE;
     }
-
+    else if((out_mode == "mag") || (out_mode == "MAG"))
+    {
+        std::cout << "Output File will be created in MAG mode!" <<endl;
+        output_mode = OutPutFileMode::MAG_OUTPUT_MODE;
+    }
+    else if((out_mode == "max") || (out_mode == "MAX"))
+    {
+        std::cout << "Output File will be created in MAX mode!" <<endl;
+        output_mode = OutPutFileMode::MAX_OUTPUT_MODE;
+    }
     else if((out_mode == "all") || (out_mode == "ALL"))
     {
         output_mode = OutPutFileMode::ALL_OUTPUT_MODES;
