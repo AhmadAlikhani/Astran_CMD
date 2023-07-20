@@ -1,4 +1,4 @@
-.SUBCKT XNOR2_CMOS A B outputname GND VCC
-M0P outputname A^B VCC VCC pmos W=260.00n L=65.00n
-M1N GND A^B outputname GND nmos W=260.00n L=65.00n
+.SUBCKT XNOR2_CMOS A Q GND VCC
+MN Q A GND GND nmos L=65n W=480n
+MP Q A VCC VCC pmos L=65n W=800n
 .ENDS XNOR2_CMOS 

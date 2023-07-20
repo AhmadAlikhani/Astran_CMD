@@ -1,0 +1,132 @@
+max 2
+tech mmi18
+resolution 0.001
+vMAIN 958154094 3
+vDRC 958154094 3
+vBBOX 954574730 105
+
+SECTION PAINT {
+type m1
+rect 0 896 320 1040
+type m1
+rect 0 0 320 144
+type m1
+rect 32 192 90 300
+type m1
+rect 50 104 90 232
+type m1
+rect 38 544 78 676
+type m1
+rect 38 636 78 676
+type m1
+rect 38 636 78 936
+type m1
+rect 38 636 78 676
+type m1
+rect 48 416 126 500
+type m1
+rect 178 192 236 300
+type m1
+rect 196 540 272 582
+type m1
+rect 196 260 236 580
+type m1
+rect 190 542 236 582
+type m1
+rect 196 542 236 582
+type m1
+rect 190 542 230 674
+type m1
+rect 190 542 230 582
+type m1
+rect 220 540 260 580
+type m1
+rect 60 460 100 500
+type m1
+rect 0 896 320 1040
+type m1
+rect 0 0 320 144
+type m1
+rect 190 542 230 582
+type m1
+rect 190 542 230 674
+type m1
+rect 196 542 236 582
+type m1
+rect 190 542 236 582
+type m1
+rect 196 260 236 580
+type m1
+rect 196 540 272 582
+type m1
+rect 178 192 236 300
+type m1
+rect 48 416 126 500
+type m1
+rect 38 636 78 676
+type m1
+rect 38 636 78 936
+type m1
+rect 38 636 78 676
+type m1
+rect 38 544 78 676
+type m1
+rect 50 104 90 232
+type m1
+rect 32 192 90 300
+type pw
+rect -94 -94 414 456
+type nw
+rect -94 456 414 1134
+type pplus
+rect -36 456 356 1076
+type nplus
+rect -36 -36 356 456
+type pdif
+rect 186 516 228 804
+type pdif
+rect 40 516 228 804
+type pdif
+rect 40 516 82 804
+type ndif
+rect 186 176 228 384
+type ndif
+rect 40 96 228 384
+type ndif
+rect 40 176 82 384
+type poly
+rect 98 464 122 488
+type poly
+rect 98 464 170 856
+type poly
+rect 98 462 122 486
+type poly
+rect 98 462 122 488
+type poly
+rect 98 412 122 436
+type poly
+rect 72 412 122 486
+type poly
+rect 98 44 170 436
+type m2
+rect 190 628 224 662
+type m2
+rect 190 554 224 588
+type m2
+rect 190 266 224 300
+type m2
+rect 190 192 224 226
+type m2
+rect 80 432 114 466
+type m2
+rect 44 630 78 664
+type m2
+rect 44 556 78 590
+type m2
+rect 44 266 78 300
+type m2
+rect 44 192 78 226
+
+
+} SECTION PAINT
+

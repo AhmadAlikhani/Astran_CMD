@@ -1,0 +1,404 @@
+max 2
+tech mmi18
+resolution 0.001
+vMAIN 958154094 3
+vDRC 958154094 3
+vBBOX 954574730 105
+
+SECTION PAINT {
+type m1
+rect 0 896 640 1040
+type m1
+rect 0 0 640 144
+type m1
+rect 40 104 80 144
+type m1
+rect 40 104 80 144
+type m1
+rect 40 104 80 144
+type m1
+rect 40 104 80 144
+type m1
+rect 40 104 80 144
+type m1
+rect 40 104 80 144
+type m1
+rect 40 328 80 386
+type m1
+rect 40 104 80 368
+type m1
+rect 30 564 88 604
+type m1
+rect 30 564 70 604
+type m1
+rect 30 564 70 604
+type m1
+rect 30 896 70 936
+type m1
+rect 30 564 70 936
+type m1
+rect 30 896 70 936
+type m1
+rect 30 896 70 936
+type m1
+rect 30 896 70 936
+type m1
+rect 20 434 100 516
+type m1
+rect 258 256 318 364
+type m1
+rect 220 368 298 432
+type m1
+rect 258 324 298 408
+type m1
+rect 258 632 298 690
+type m1
+rect 258 650 298 690
+type m1
+rect 258 650 298 690
+type m1
+rect 258 896 298 936
+type m1
+rect 258 650 298 936
+type m1
+rect 258 896 298 936
+type m1
+rect 258 896 298 936
+type m1
+rect 258 896 298 936
+type m1
+rect 258 392 298 468
+type m1
+rect 258 392 298 432
+type m1
+rect 342 428 382 468
+type m1
+rect 258 428 382 468
+type m1
+rect 342 606 412 646
+type m1
+rect 342 428 382 646
+type m1
+rect 372 606 430 714
+type m1
+rect 372 606 412 646
+type m1
+rect 422 428 500 512
+type m1
+rect 460 104 500 144
+type m1
+rect 460 104 500 144
+type m1
+rect 460 188 518 296
+type m1
+rect 460 104 500 228
+type m1
+rect 540 428 618 512
+type m1
+rect 560 606 618 714
+type m1
+rect 578 896 618 936
+type m1
+rect 578 674 618 936
+type m1
+rect 578 896 618 936
+type m1
+rect 578 896 618 936
+type m1
+rect 578 896 618 936
+type m1
+rect 540 460 580 500
+type m1
+rect 460 460 500 500
+type m1
+rect 220 380 260 420
+type m1
+rect 60 460 100 500
+type m1
+rect 0 896 640 1040
+type m1
+rect 0 0 640 144
+type m1
+rect 578 896 618 936
+type m1
+rect 578 896 618 936
+type m1
+rect 578 896 618 936
+type m1
+rect 578 674 618 936
+type m1
+rect 578 896 618 936
+type m1
+rect 560 606 618 714
+type m1
+rect 566 336 606 376
+type m1
+rect 566 244 606 376
+type m1
+rect 540 428 618 512
+type m1
+rect 460 340 606 380
+type m1
+rect 566 336 606 380
+type m1
+rect 452 340 500 380
+type m1
+rect 460 340 500 380
+type m1
+rect 460 104 500 228
+type m1
+rect 460 188 518 296
+type m1
+rect 460 104 500 144
+type m1
+rect 460 104 500 144
+type m1
+rect 422 428 500 512
+type m1
+rect 372 340 492 380
+type m1
+rect 452 340 492 380
+type m1
+rect 372 606 412 646
+type m1
+rect 372 606 430 714
+type m1
+rect 342 428 382 646
+type m1
+rect 342 606 412 646
+type m1
+rect 258 428 382 468
+type m1
+rect 342 428 382 468
+type m1
+rect 372 244 412 380
+type m1
+rect 148 530 294 570
+type m1
+rect 254 512 294 570
+type m1
+rect 258 392 298 432
+type m1
+rect 258 392 298 468
+type m1
+rect 258 896 298 936
+type m1
+rect 258 896 298 936
+type m1
+rect 258 896 298 936
+type m1
+rect 258 650 298 936
+type m1
+rect 258 896 298 936
+type m1
+rect 258 650 298 690
+type m1
+rect 258 650 298 690
+type m1
+rect 258 632 298 690
+type m1
+rect 140 530 188 570
+type m1
+rect 148 530 188 570
+type m1
+rect 258 324 298 408
+type m1
+rect 220 368 298 432
+type m1
+rect 258 256 318 364
+type m1
+rect 140 530 180 592
+type m1
+rect 140 552 180 610
+type m1
+rect 140 346 180 570
+type m1
+rect 140 530 180 570
+type m1
+rect 140 346 180 386
+type m1
+rect 140 346 180 386
+type m1
+rect 140 328 180 386
+type m1
+rect 20 434 100 516
+type m1
+rect 30 896 70 936
+type m1
+rect 30 896 70 936
+type m1
+rect 30 896 70 936
+type m1
+rect 30 564 70 936
+type m1
+rect 30 896 70 936
+type m1
+rect 30 564 70 604
+type m1
+rect 30 564 70 604
+type m1
+rect 30 564 88 604
+type m1
+rect 40 104 80 368
+type m1
+rect 40 328 80 386
+type m1
+rect 40 104 80 144
+type m1
+rect 40 104 80 144
+type m1
+rect 40 104 80 144
+type m1
+rect 40 104 80 144
+type m1
+rect 40 104 80 144
+type m1
+rect 40 104 80 144
+type pw
+rect -94 -94 734 456
+type nw
+rect -94 456 734 1134
+type pplus
+rect -36 456 676 1076
+type nplus
+rect -36 -36 676 456
+type pdif
+rect 568 522 610 730
+type pdif
+rect 482 522 610 730
+type pdif
+rect 380 522 508 730
+type pdif
+rect 380 590 422 730
+type pdif
+rect 260 590 422 694
+type pdif
+rect 260 590 302 694
+type pdif
+rect 138 516 180 620
+type pdif
+rect 38 516 180 620
+type pdif
+rect 38 516 80 620
+type ndif
+rect 568 176 610 380
+type ndif
+rect 468 172 610 380
+type ndif
+rect 468 172 510 380
+type ndif
+rect 368 172 510 380
+type ndif
+rect 368 176 410 380
+type ndif
+rect 268 172 410 380
+type ndif
+rect 268 176 310 380
+type ndif
+rect 130 332 196 384
+type ndif
+rect 30 332 196 384
+type ndif
+rect 30 332 96 384
+type poly
+rect 528 470 552 494
+type poly
+rect 526 470 552 782
+type poly
+rect 528 420 552 444
+type poly
+rect 528 420 582 494
+type poly
+rect 528 408 552 432
+type poly
+rect 528 408 552 444
+type poly
+rect 526 120 552 432
+type poly
+rect 438 470 462 494
+type poly
+rect 438 470 464 782
+type poly
+rect 438 470 462 494
+type poly
+rect 438 470 462 494
+type poly
+rect 426 408 450 444
+type poly
+rect 414 420 464 494
+type poly
+rect 426 120 452 432
+type poly
+rect 318 538 342 562
+type poly
+rect 318 538 344 746
+type poly
+rect 318 408 342 540
+type poly
+rect 240 516 342 566
+type poly
+rect 326 408 350 432
+type poly
+rect 318 408 350 432
+type poly
+rect 326 120 352 432
+type poly
+rect 96 464 120 488
+type poly
+rect 96 464 122 672
+type poly
+rect 96 438 120 462
+type poly
+rect 46 438 120 488
+type poly
+rect 100 412 124 462
+type poly
+rect 96 438 124 462
+type poly
+rect 100 280 126 436
+type m2
+rect 572 680 606 714
+type m2
+rect 572 606 606 640
+type m2
+rect 572 330 606 364
+type m2
+rect 572 256 606 290
+type m2
+rect 540 440 574 474
+type m2
+rect 472 262 506 296
+type m2
+rect 472 188 506 222
+type m2
+rect 422 440 456 474
+type m2
+rect 384 680 418 714
+type m2
+rect 384 606 418 640
+type m2
+rect 372 330 406 364
+type m2
+rect 372 256 406 290
+type m2
+rect 260 524 294 558
+type m2
+rect 264 644 298 678
+type m2
+rect 272 330 306 364
+type m2
+rect 272 256 306 290
+type m2
+rect 142 564 176 598
+type m2
+rect 146 340 180 374
+type m2
+rect 66 446 100 480
+type m2
+rect 42 564 76 598
+type m2
+rect 46 340 80 374
+
+
+} SECTION PAINT
+

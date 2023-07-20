@@ -1,4 +1,4 @@
-.SUBCKT INV_CMOS A outputname gnd vdd
-M0P outputname A Vdd Vdd pmos W=260.00n L=65.00n
-M1N gnd A outputname gnd nmos W=260.00n L=65.00n
+.SUBCKT INV_CMOS A outputname GND VCC
+M0P outputname A VCC VCC pmos W=720.00n L=180.00n
+M1N GND A outputname GND nmos W=720.00n L=180.00n
 .ENDS INV_CMOS 
