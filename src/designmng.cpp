@@ -947,8 +947,85 @@ void DesignMng::generate_micro_magic_output(std::string circuit_name)
             }
         }
     }
-output = std::string("\n") + std::string("\n") + std::string("} SECTION PAINT") + std::string("\n") + std::string("\n");
+output = std::string("} SECTION PAINT") + std::string("\n") + std::string("\n");
+fputs(output.c_str(), max_file);
 
+
+
+// set labels
+
+std::string label_part = std::string("SECTION LABELS {");
+output = label_part + std::string("\n");
+fputs(output.c_str(), max_file);
+
+std::vector<std::string> previous_labels;
+
+for ( int check_over = 0; check_over < N_LAYER_NAMES; check_over++)
+    {
+
+        //Insert Boxes
+        list <Box>::iterator layer_it;
+        map <layer_name , list<Box> >::iterator layers_it; // iterador das camadas
+
+        int layer;
+        for ( layer = 0, layers_it = circuit->getLayout(circuit_name)->layers.begin();
+            layers_it != circuit->getLayout(circuit_name)->layers.end();
+            layers_it++, layer++) {
+            if ( !layers_it->second.empty() )
+                {
+
+                int layer = strToInt(rules->getGDSIIVal(layers_it->first));
+                int j = 0;
+                for ( layer_it = layers_it->second.begin() ; layer_it != layers_it->second.end(); layer_it++ , j++ )
+                {
+                    long int x1 = 2*layer_it->getX1();
+                    long int y1 = 2*layer_it->getY1();
+                    long int x2 = 2*layer_it->getX2();
+                    long int y2 = 2*layer_it->getY2();
+
+                    if(x2-x1!=0 & y2-y1!=0)
+                    {
+                        if(layers_it->first == check_over)
+                        {
+                            std::string layer_names = mag_layer_names[check_over];
+                            //std::cout << layer_names << " " << layers_it->first <<std::endl;
+                            
+                            corX = {static_cast<int>(x1), static_cast<int>(x1), static_cast<int>(x2) , static_cast<int>(x2)};
+                            corY = {static_cast<int>(y1), static_cast<int>(y2), static_cast<int>(y2) , static_cast<int>(y1)};
+
+
+                            if(layer_it->getNet() != "")
+                            {
+                                std::vector<std::string>::iterator is_exist = std::find_if(previous_labels.begin(), previous_labels.end(), [&](auto item)
+                                {
+                                    return (item == layer_it->getNet());
+                                });
+                                if(is_exist == previous_labels.end())
+                                {
+                                    uint32_t direction = 0; // set label in center of box
+
+                                    output = std::string("lab") + std::string(" ") +
+                                    layer_names + std::string(" ") +
+                                    std::to_string(layer_it->getX1() * 2) + std::string(" ") +
+                                    std::to_string(layer_it->getY1() * 2) + std::string(" ") +
+                                    std::to_string(layer_it->getX2() * 2) + std::string(" ") +
+                                    std::to_string(layer_it->getY2() * 2) + std::string(" ") +
+                                    std::to_string(direction) + std::string(" ") +
+                                    std::to_string(2) + std::string(" ") +
+                                    layer_it->getNet() +
+                                    std::string("\n");
+                                    fputs(output.c_str(), max_file);
+
+                                    previous_labels.emplace_back(layer_it->getNet());
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+output = std::string("} SECTION LABELS") + std::string("\n") + std::string("\n");
 fputs(output.c_str(), max_file);
 fclose(max_file);
 

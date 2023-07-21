@@ -398,7 +398,16 @@ type m2
 rect 42 564 76 598
 type m2
 rect 46 340 80 374
-
-
 } SECTION PAINT
+
+SECTION LABELS {
+lab metal1 0 896 640 1040 0 2 VCC
+lab metal1 0 0 640 144 0 2 GND
+lab metal1 566 336 606 376 0 2 W_1
+lab metal1 540 428 618 512 0 2 A1
+lab metal1 422 428 500 512 0 2 A2
+lab metal1 372 606 412 646 0 2 OUTPUTNAME
+lab metal1 148 530 294 570 0 2 WB_B1_N
+lab metal1 20 434 100 516 0 2 B1_N
+} SECTION LABELS
 

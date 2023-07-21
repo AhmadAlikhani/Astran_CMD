@@ -1,0 +1,88 @@
+# WARNING:
+#
+# The .max file format continues to evolve.
+#
+# Micro Magic recommends you do not write or parse .max files directly.
+# Instead use the Max API (e.g. 'db_search' and 'db_paint' commands).
+# The API is also easier to interface to.  See 'Text Commands' under
+# the Max 'Help' menu for full documentation on the API.
+
+max 3
+tech mmi18
+resolution 0.001
+
+
+DEF #via!-type!v12!-_version!1111030468 "via (S)" "v12"
+
+SECTION RECTS {
+layer m1
+-190 -190 190 190
+layer v12
+-130 -130 130 130
+layer m2
+-190 -190 190 190
+} SECTION RECTS
+
+
+DEF
+
+SECTION VERSIONS {
+vMAIN 1689977098 113
+vDRC 1689977098 113
+vBBOX 1689977098 70
+} SECTION VERSIONS
+
+SECTION RECTS {
+layer m1
+335 -75 565 855
+-1095 -305 -955 -75
+-1095 -305 -955 -75
+-955 -305 -725 -75
+-955 -305 -725 -75
+-955 -305 -725 -75
+-725 -305 335 -75
+335 -305 565 -75
+335 -305 565 -75
+-955 -360 -725 -305
+layer m2
+-6370 3250 -3930 3530
+-3930 3250 -3650 3530
+-3930 3250 -3650 3530
+-3930 330 -3650 3250
+-3930 50 -3650 330
+-3930 50 -3650 330
+-3650 50 -1400 330
+-1400 210 -1120 330
+-1400 210 -1120 330
+-1400 50 -1120 210
+-1400 50 -1120 210
+-1400 50 -1120 210
+-1400 -70 -1120 50
+-1400 -70 -1120 50
+-1120 -70 -1030 210
+-1030 -70 -750 210
+-1030 -70 -750 210
+-1030 -80 -750 -70
+-1030 -360 -955 -80
+-1030 -360 -955 -80
+-955 -360 -750 -80
+-955 -360 -750 -80
+-955 -360 -750 -80
+-750 -360 -690 -80
+-750 -360 -690 -80
+} SECTION RECTS
+
+SECTION LABELS {
+lab m2 -3740 2630 -3740 2630 0 2 out
+} SECTION LABELS
+
+SECTION GROUPS {
+} SECTION GROUPS
+
+SECTION INSTANCES {
+gcell 1111030468 #via!-type!v12
+bbox -190 -190 190 190
+uses {
+	_0 1 0 -840 0 1 -220
+}
+} SECTION INSTANCES
