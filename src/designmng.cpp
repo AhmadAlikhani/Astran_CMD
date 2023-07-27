@@ -748,6 +748,18 @@ void DesignMng::generate_magic_output(std::string circuit_name)
     for ( int check_over = 0; check_over < N_LAYER_NAMES; check_over++)
     {
 
+    //std::cout << layer_names << " " << layers_it->first <<std::endl;
+    std::string layer_names = mag_layer_names[check_over];
+    if(layer_names != "")
+    {
+        layer_names = std::string("<< ") + layer_names + std::string(" >>");
+        output = layer_names + std::string("\n");
+        
+        fputs(output.c_str(), mag_file);
+    }
+    else 
+        continue;
+
         //Insert Boxes
         list <Box>::iterator layer_it;
         map <layer_name , list<Box> >::iterator layers_it; // iterador das camadas
@@ -772,12 +784,6 @@ void DesignMng::generate_magic_output(std::string circuit_name)
                     {
                         if(layers_it->first == check_over)
                         {
-                            std::string layer_names = mag_layer_names[check_over];
-                            //std::cout << layer_names << " " << layers_it->first <<std::endl;
-
-                            layer_names = std::string("<< ") + layer_names + std::string(" >>");
-                            output = layer_names + std::string("\n");
-                            fputs(output.c_str(), mag_file);
                             
                             corX = {static_cast<int>(x1), static_cast<int>(x1), static_cast<int>(x2) , static_cast<int>(x2)};
                             corY = {static_cast<int>(y1), static_cast<int>(y2), static_cast<int>(y2) , static_cast<int>(y1)};
@@ -837,12 +843,9 @@ for ( int check_over = 0; check_over < N_LAYER_NAMES; check_over++)
                             corX = {static_cast<int>(x1), static_cast<int>(x1), static_cast<int>(x2) , static_cast<int>(x2)};
                             corY = {static_cast<int>(y1), static_cast<int>(y2), static_cast<int>(y2) , static_cast<int>(y1)};
 
-
-                            if(layer_it->getNet() != "")
-                            {
                                 std::vector<std::string>::iterator is_exist = std::find_if(previous_labels.begin(), previous_labels.end(), [&](auto item)
                                 {
-                                    return (item == layer_it->getNet());
+                                    return ((item == layer_it->getNet()) || (item == mag_layer_names[check_over]));
                                 });
                                 if(is_exist == previous_labels.end())
                                 {
@@ -855,13 +858,13 @@ for ( int check_over = 0; check_over < N_LAYER_NAMES; check_over++)
                                     std::to_string(layer_it->getX2() * 2) + std::string(" ") +
                                     std::to_string(layer_it->getY2() * 2) + std::string(" ") +
                                     std::to_string(direction) + std::string(" ") +
-                                    layer_it->getNet() + 
+                                    ((layer_it->getNet() != "") ? layer_it->getNet() : mag_layer_names[check_over]) + 
                                     std::string("\n");
                                     fputs(output.c_str(), mag_file);
 
-                                    previous_labels.emplace_back(layer_it->getNet());
+                                    previous_labels.emplace_back((layer_it->getNet() != "") ? (layer_it->getNet()) : (mag_layer_names[check_over]));
                                 }
-                            }
+                            
                         }
                     }
                 }
